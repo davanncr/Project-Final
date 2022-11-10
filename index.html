@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cambodia Restaurant</title>
+    <style>
+        @import 'css/style.css';
+        @import 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="header-bar">
+        <img src="image/logo1.png" class="logo-bar">
+        <div style="transform:translateX(60px);text-align: left;">
+            <label for="" class="label-logo">Cambodia Restaurant</label><br>
+            <label for="" style="font-size:12px;">find your favorite place to enjoy your meal!</label>            
+        </div>
+
+        <div class="form">
+            <select name="" id="choosen-bar">
+                <option value="">All</option>
+                <option value="">High</option>
+                <option value="">Medium</option>
+                <option value="">Low</option>
+            </select>
+            <input type="search" name="" id="search-bar" placeholder="Search a Restaurant or a Filter">
+            <button type="submit" id="button-search"><img src="image/search.png" alt="" width="20px"></button>
+            <script src="js/actionSellectorBar.js"></script>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><select name="" id="filter">
+                    <option value="" class="f1">Filter</option>
+                    <option value="" class="f">B</option>
+                    <option value="" class="f">C</option>
+                    <option value="" class="f">C</option>
+                </select></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">About US</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/windowScroll.js"></script>
+    </div>
+
+    <!-- slide show -->
+    <div class="slides">
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" > <img src="image/car.jpg" alt=""></div>
+              <div class="swiper-slide" ><img src="image/car1.jpg" alt=""></div>
+              <div class="swiper-slide" ><img src="image/car2.jpg" alt=""> </div>
+              <div class="swiper-slide" ><img src="image/car3.jpg" alt=""> </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:3000,
+            disableOnInteraction:false,
+        },
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+
 </body>
+
 </html>
