@@ -3,7 +3,9 @@ body{
     margin: 0;
     background-color: #DEECFC;
     overflow-y: hidden;
-
+    /* align-content: center;
+    align-items: center;
+    text-align: center; */
 }
 .header-bar{
     transition-duration: 1s;
@@ -31,6 +33,7 @@ body{
     color: orange;
     font-size: 20px;
     font-weight: bold;
+    font-family: Courgette;
 }
 .form{   
     position: relative;
@@ -120,10 +123,18 @@ body{
     animation: upperTO 1.5s linear 1;
 }
 .slides{
-
+    width: 98%;
     transform: translateY(130px) !important;
-    position:relative;
-    background-color: #DEECFC;
+    position:fixed;
+    background-color:white;
+    border-radius: 5% !important;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow: 3px 3px 3px gray;
+    box-shadow: 1px 1px 6px gray;
+    /* transform: translateX(12px) !important; */
+    margin-left: 13px !important;
+
 }
 .container{
     width: 100%;
@@ -148,7 +159,7 @@ body{
 }
 .swiper-slide img{
     width: 87%;
-    height: 79vh;
+    height: 80vh;
 }
 .swiper-wrapper{
 
