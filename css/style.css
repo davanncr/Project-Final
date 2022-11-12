@@ -1,7 +1,7 @@
 body{
 
     margin: 0;
-    background-color: #DEECFC;
+    background-color:white;
 
     /* align-content: center;
     align-items: center;
@@ -126,9 +126,6 @@ body{
 .slides{
     width: 98%;
     transform: translateY(130px) !important;
-    background-color:white;
-    border-radius: 5% !important;
-    box-shadow: 1px 1px 6px gray;
     /* transform: translateX(12px) !important; */
     margin-left: 13px !important;
     z-index: 0;
@@ -162,7 +159,6 @@ body{
     height: 80vh;
 }
 .swiper-wrapper{
-
     margin: 0;
 }
 .swiper .swiper-button-prev,.swiper .swiper-button-next{
@@ -177,21 +173,62 @@ body{
 }
 /* body */
 .body{
-    box-shadow:-1px 0px 6px gray;
-    border-top-right-radius: 3%;
-    border-top-left-radius: 3%;
+    padding-top:40px !important;
     transform:translateY(300px);
     z-index: 0;
     margin-left: 7px;
     width: 99%;
     height: 200vh !important;
     background-color: white;
+    position: relative;
     /* animation: rightToLeft 1s linear 1; */
 }
 .bodys{
-    transform:translateY(140px);
+    transform:translateY(160px);
         animation: upTo 0.7s linear 1;
 }
+.boby-bar{
+    display: flex !important;
+    width: 99%;
+}
+.share{
+    text-align: center;
+    padding: 10px;
+    transform: translateX(35%);
+    background-color: white;
+    border-radius:10px;
+    width: 250px;
+    height: 125px;
+    box-shadow: 1px 1px 6px gray;
+}
+.fine{
+    transform: translateX(105%);
+}
+.reserve{
+    transform: translateX(178%);
+}
+.share:hover{
+    box-shadow: 0.5px 0.5px 3px gray;
+}
+.h3{
+    text-decoration:none;
+    color:orange;
+    font-size: 20px !important;
+}
+.p{
+    font-size: 15px !important;
+}
+
+/* menu */
+.shopping{
+    width: 100%;
+    height: 100vh !important;
+}
+
+
+
+
+
 
 @keyframes animationHeaderBar{
     from{
