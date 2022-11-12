@@ -2,7 +2,6 @@ body{
 
     margin: 0;
     background-color:white;
-
     /* align-content: center;
     align-items: center;
     text-align: center; */
@@ -22,7 +21,7 @@ body{
     border-bottom:1px solid white;
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 0px 3px 3px gray;
     z-index: +1;
 
 }
@@ -199,7 +198,7 @@ body{
     border-radius:10px;
     width: 250px;
     height: 125px;
-    box-shadow: 1px 1px 6px gray;
+    box-shadow: 0px 1px 6px gray;
 }
 .fine{
     transform: translateX(105%);
