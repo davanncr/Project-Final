@@ -1,11 +1,13 @@
 body{
-
     margin: 0;
     background-color:white;
     /* align-content: center;
     align-items: center;
     text-align: center; */
-
+    height: 3000vh;
+}
+::-webkit-scrollbar {
+    width: 0px;
 }
 .header-bar{
     transition-duration: 1s;
@@ -19,8 +21,8 @@ body{
     position: fixed;
     animation: animationHeaderBar 1s linear 1;
     border-bottom:1px solid white;
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
     box-shadow: 0px 3px 3px gray;
     z-index: +1;
 
@@ -127,7 +129,6 @@ body{
     transform: translateY(130px) !important;
     /* transform: translateX(12px) !important; */
     margin-left: 13px !important;
-    z-index: 0;
 
 
 }
@@ -138,6 +139,8 @@ body{
     position:relative;
     text-align: center;
     align-content: center;
+
+
 }
 .swaper{
     width: 100%;
@@ -172,28 +175,33 @@ body{
 }
 /* body */
 .body{
+    padding-left: 7.5%;
+    padding-right: 7.5%;
     padding-top:40px !important;
-    transform:translateY(300px);
-    z-index: 0;
+    transform:translateY(140px);
+    z-index: +1;
     margin-left: 7px;
-    width: 99%;
+    width: 85%;
     height: 200vh !important;
-    background-color: white;
-    position: relative;
+    background-color:white;
+
     /* animation: rightToLeft 1s linear 1; */
 }
-.bodys{
+/* .bodys{
     transform:translateY(160px);
-        animation: upTo 0.7s linear 1;
+
+} */
+#body-bar{
+    display: flex;
+    width: 100%;
+    
 }
-.boby-bar{
-    display: flex !important;
-    width: 99%;
+.body-bar{
+    animation: upTo 0.75s linear 1;
 }
 .share{
     text-align: center;
     padding: 10px;
-    transform: translateX(35%);
     background-color: white;
     border-radius:10px;
     width: 250px;
@@ -201,10 +209,10 @@ body{
     box-shadow: 0px 1px 6px gray;
 }
 .fine{
-    transform: translateX(105%);
+    transform: translateX(70%);
 }
 .reserve{
-    transform: translateX(178%);
+    transform: translateX(138%);
 }
 .share:hover{
     box-shadow: 0.5px 0.5px 3px gray;
@@ -224,7 +232,77 @@ body{
     height: 100vh !important;
 }
 
-
+.recommence{
+    width:1200px;
+    height: 250px;
+    background-color:#F3F3F3;
+    display: flex;
+    overflow-x: scroll;
+}
+.recommence::-webkit-scrollbar-thumb{
+    background-color: orange;
+    height: 20px;
+}
+.recom{
+    width: 250px;
+    height: 210px;
+    margin-left: 20px;
+    display:inline-block;
+    text-align: center;
+}
+.recommence .menu-1{
+    background-color: white;
+}
+.recommence .menu-2{
+    background-color: rgb(246, 255, 0);
+}
+.recommence .menu-3{
+    background-color: rgb(0, 255, 30);
+}
+.recommence .menu-4{
+    background-color: rgb(0, 204, 255);
+}
+.recommence .menu-5{
+    background-color: rgb(55, 0, 255);
+}
+.recommence .menu-6{
+    background-color: rgb(242, 0, 255);
+}
+.recommence .menu-7{
+    background-color: rgb(255, 0, 174);
+}
+.recommence .menu-8{
+    background-color: rgb(0, 255, 136);
+}
+.recommence .menu-9{
+    background-color: rgb(76, 99, 0);
+}
+.recommence .menu-10{
+    background-color: rgb(255, 166, 0);
+}
+.fa-star{
+    color: orange;
+}
+.ratingStar{
+    margin-right: 25%;
+}
+.ratingStar input{
+    display: none;
+}
+.ratingStar label{
+    font-size: 20px;
+    color:white;
+    float: right;
+    transition: all 0.2s ease;
+    text-shadow: 1px 1px 3px orange;
+  }
+.ratingStar input:not(:checked) ~ label:hover,
+.ratingStar input:not(:checked) ~ label:hover ~ label{
+    color: orange;
+  }
+.ratingStar input:checked ~ label{
+    color: orange;
+  }
 
 
 
@@ -246,11 +324,13 @@ body{
 @keyframes upTo{
     from {
         /* transform: translateX(600px); */
-        transform: translateY(400px);
+        transform: translateY(900px);
+        opacity: 0;
+
     }
     to {
         /* transform: translateX(0px); */
-        transform: translateY(140px);
+        transform: translateY(0px);
     }
 }
 @keyframes upperTO{
