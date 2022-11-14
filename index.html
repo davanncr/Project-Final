@@ -11,18 +11,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    
+
     <style>
         @import 'css/style.css';
         @import 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
     </style>
 </head>
+
 <body>
     <div class="header-bar">
         <img src="image/logo.png" class="logo-bar">
         <div style="transform:translateX(60px);text-align: left;">
             <label for="" class="label-logo">Phnom Penh Restaurant</label><br>
-            <label for="" style="font-size:12px;font-family: Inconsolata;">find your favorite place to enjoy your meal!</label>            
+            <label for="" style="font-size:12px;font-family: Inconsolata;">find your favorite place to enjoy your
+                meal!</label>
         </div>
 
         <div class="form">
@@ -39,11 +44,11 @@
         <div class="menu-bar">
             <ul>
                 <li><select name="" id="filter">
-                    <option value="" class="f1">Filter</option>
-                    <option value="" class="f">B</option>
-                    <option value="" class="f">C</option>
-                    <option value="" class="f">C</option>
-                </select></li>
+                        <option value="" class="f1">Filter</option>
+                        <option value="" class="f">B</option>
+                        <option value="" class="f">C</option>
+                        <option value="" class="f">C</option>
+                    </select></li>
                 <li><a href="#">Map</a></li>
                 <li><a href="#">About US</a></li>
             </ul>
@@ -54,120 +59,205 @@
 
     <!-- slide show -->
     <div class="slides">
-    <div class="container">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" > <img src="image/car.jpg" alt=""></div>
-              <div class="swiper-slide" ><img src="image/car1.jpg" alt=""></div>
-              <div class="swiper-slide" ><img src="image/car2.jpg" alt=""> </div>
-              <div class="swiper-slide" ><img src="image/car3.jpg" alt=""> </div>
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="image/slide1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="image/slide2-assets/slide2.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-    </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-        autoplay:{
-            delay:3000,
-            disableOnInteraction:false,
-        },
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
     </script>
 
-        <div class="body">
-            <div id="body-bar">
-                <div class="share">
-                    <h3><a href="#" class="h3">Share your thought</a></h3>
-                    <p class="p">Give reviews to any<br>restaurants you've visited.</p>
-                </div>
-                <div class="share fine">
-                    <h3><a href="#" class="h3">Fine the best place to eat!</a></h3>
-                    <p class="p">There are more than 100<br>restaurants for you to choose.</p>
-                </div>
-                <div class="share reserve">
-                    <h3><a href="#" class="h3">Reserve a table</a></h3>
-                    <p class="p">Make online reservations<br>at the restaurant.</p>
-                </div>
+    <div class="body">
+        <div id="body-bar">
+            <div class="share">
+                <h3><a href="#" class="h3">Share your thought</a></h3>
+                <p class="p">Give reviews to any<br>restaurants you've visited.</p>
             </div>
-            <div class="shopping">
-                <h2>Recommence for you</h2>
-                <div class="recommence">
-                    <div>
-                        <div class="recom menu-1">
-                            <p>Restaurant <label class="fa fa-star">3.5</label></p>
-                            <div class="ratingStar">
-                                <input type="radio" name="star" id="star1"><label for="star1" class="fa fa-star"></label>
-                                <input type="radio" name="star" id="star2"><label for="star2" class="fa fa-star"></label>
-                                <input type="radio" name="star" id="star3"><label for="star3" class="fa fa-star"></label>
-                                <input type="radio" name="star" id="star4"><label for="star4" class="fa fa-star"></label>
-                                <input type="radio" name="star" id="star5"><label for="star5" class="fa fa-star"></label>
-                            </div>
-                        </div>                     
-                    </div>
-                    <div>
-                        <div class="recom menu-2">
-    
-                        </div>                        
-                    </div>
-                    <div>
-                        <div class="recom menu-3">
-    
-                        </div>                        
-                    </div>
-                    <div>
-                        <div class="recom menu-4">
-    
-                        </div>                        
-                    </div>
-                    <div>
-                        <div class="recom menu-5">
-    
-                        </div>                        
-                    </div>
-                    <div>
-                        <div class="recom menu-5">
-    
-                        </div>                        
-                    </div>
-                    <div>
-                        <div class="recom menu-7">
-                          
+            <div class="share fine">
+                <h3><a href="#" class="h3">Fine the best place to eat!</a></h3>
+                <p class="p">There are more than 100<br>restaurants for you to choose.</p>
+            </div>
+            <div class="share reserve">
+                <h3><a href="#" class="h3">Reserve a table</a></h3>
+                <p class="p">Make online reservations<br>at the restaurant.</p>
+            </div>
+        </div>
+        <div class="shopping">
+            <br><br><br>
+            <label>Recommence for you</label>
+            <br><br>
+            <div class="recommence restaurants">
+                <div>
+                    <div class="recom menu-1">
+                        <p>Restaurant <label class="fa fa-star">3.5</label></p>
+                        <div class="ratingStar">
+                            <input type="radio" name="star" id="star1"><label for="star1" class="fa fa-star"></label>
+                            <input type="radio" name="star" id="star2"><label for="star2" class="fa fa-star"></label>
+                            <input type="radio" name="star" id="star3"><label for="star3" class="fa fa-star"></label>
+                            <input type="radio" name="star" id="star4"><label for="star4" class="fa fa-star"></label>
+                            <input type="radio" name="star" id="star5"><label for="star5" class="fa fa-star"></label>
                         </div>
-                                  
                     </div>
-                    <div>
-                        <div class="recom menu-8">
-    
-                        </div>                        
+                </div>
+                <div>
+                    <div class="recom menu-2">
+
                     </div>
-                    <div>
-                        <div class="recom menu-9">
-    
-                        </div>                        
+                </div>
+                <div>
+                    <div class="recom menu-3">
+
                     </div>
-                    <div>
-                        <div class="recom menu-10">
-    
-                        </div>                        
+                </div>
+                <div>
+                    <div class="recom menu-4">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-5">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-5">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-7">
+
                     </div>
 
                 </div>
+                <div>
+                    <div class="recom menu-8">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-9">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-10">
+
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+            <label>Popular restaurants</label><button class="see-more see-more-1">see all</button>
+            <div class="popular restaurant restaurants">
+                <div>
+                    <div class="recom menu-1">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-2">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-3">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-4">
+
+                    </div>
+                </div>
+                <span class="hide-1">
+                    <div>
+                        <div class="recom menu-5">
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-5">
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-7">
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="recom menu-8">
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-9">
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-10">
+
+                        </div>
+                    </div>
+                    <nav class="clear"></nav>
+                    <button class="see-more see-more-11">see less</button>
+                   
+                </span>
+            </div>
+            <script src="js/showML.js"></script>
+            <div class="clear"></div>
+            <br><br>
+            <label>Dinner restaurants</label>
+            <div class="dinner restaurant restaurants">
+
+            </div>
+
+            <br><br>
+            <label>Lunch restaurants</label>
+            <div class="lunch restaurant restaurants">
+
+            </div>
+
+            <br><br>
+            <label>Chinese restaurants</label>
+            <div class="chinese restaurant restaurants">
+
+            </div>
+
+            <br><br>
+            <label>Nearby restaurants</label>
+            <div class="nearby restaurant restaurants">
+
             </div>
         </div>
-        <script src="js/windowScroll.js"></script>
+    </div>
+    <script src="js/windowScroll.js"></script>
 </body>
 
 </html>
