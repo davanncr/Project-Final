@@ -4,7 +4,7 @@ body{
     /* align-content: center;
     align-items: center;
     text-align: center; */
-    height: 3000vh;
+
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -243,7 +243,6 @@ body{
 }
 .recommence::-webkit-scrollbar-thumb{
     background-color: orange;
-    height: 20px;
 }
 .recommence .recom{
     margin-left: 20px;
@@ -254,38 +253,7 @@ body{
     width: 290px;
     height: 180px;
 }
-.restaurants .menu-1{
-    background-color: rgb(23, 23, 23);
-}
-.restaurants .menu-2{
-    background-color: rgb(246, 255, 0);
-}
-.restaurants .menu-3{
-    background-color: rgb(0, 255, 30);
-}
-.restaurants .menu-4{
-    background-color: rgb(36, 83, 95);
-}
-.restaurants .menu-5{
-    background-color: rgb(55, 0, 255);
-}
-.restaurants .menu-6{
-    background-color: rgb(242, 0, 255);
-}
-.restaurants .menu-7{
-    background-color: rgb(255, 0, 174);
-}
-.restaurants .menu-8{
-    background-color: rgb(0, 255, 136);
-}
-.restaurants .menu-9{
-    background-color: rgb(76, 99, 0);
-}
-.restaurants .menu-10{
-    background-color: rgb(255, 166, 0);
-}
 .ratingStar{
-    transform: translateY(-35px);
     display: flex;
 }
 .ratingStar input{
@@ -303,39 +271,43 @@ body{
 .restaurant{
     width: 102%;
 }
-
-
-.restaurants .recom .span-popular{
-    color:orange;
-    font-size: 17px;
-    margin-left: 10px;
-    transform: translateY(-35px);
+.footer-menu{
+    display:flex;
+    transform: translateY(-25px);
     float: left;
+
 }
-.restaurants .recom .span-popular1{
+
+.footer-menu{
+    width: 100%;
+}
+.footer-menu .span-popular{
+    color:orange;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.footer-menu .span-popular1{
     color: blue;
     font-size: 13px;
-    margin-left: 30px;
-    transform: translateY(-31px);
-    float: left;
+    padding-left: 35px;
+  
 }
-.restaurants .recom .span-popular2{
+.footer-menu .span-popular2{
     float: right;    
     font-size: 13px;
     color:#05FF00;
-    transform: translateY(-31px);
+    padding-left: 15px;
 }
 .restaurants div .recom img{
     width:100%;
     height:100%;
 }
-.restaurants div .recom span img{
-    width:100%;
-    height:100%;
+.popular span div{
+    padding-top: 60px;
 }
 .restaurants div .recom p{
     transform: translateY(-20px);
-    float:left;
+    text-align: left;
     font-size: 20px;
 }
 .restaurants div .recom .ratingStar{
@@ -344,17 +316,16 @@ body{
 .recommence{
     height: 320px;
 }
-.restaurant div{
-    margin-top: 15px;
-    float: left;
-    padding-left: 10px;
-} 
-.restaurant div .recom{
-    width: 280px;
+.restaurant{
+    width: 102%;
 }
-.restaurant .hide-1{
-    display: none;
-    
+.restaurant div .footer-menu{
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+.restaurant div .footer-menu .span-popular1{
+    padding-left: 20px;
 }
 .see-more{
     outline: none;
@@ -362,16 +333,91 @@ body{
     background-color: white;
     padding: 5px;
 }
-.see-more-1{
+.see-more-1,.see-more-2,.see-more-3,.see-more-4,.see-more-5{
     transform: translateX(950px);
 }
-.see-more-11{
+.see-more-11,.see-more-22,.see-more-33,.see-more-44,.see-more-55{
     transform: translateX(1150px);
 }
 .clear{
     clear: both;
 }
 
+.restaurant .part{
+    width: 102%;
+    height: 260px;
+    display: flex;
+}
+.hide-1,.hide-2,.hide-3,.hide-4,.hide-5{
+    display: none;
+}
+.restaurant {
+    display: table;  
+}
+.restaurant .part .menu{
+    width: 290px;
+    height: 180px;
+    background-color: black;
+    margin-left: 23px;
+}
+/* .restaurant span .part{
+    transform: translateY(-10px);
+} */
+.restaurant .part .menu img{
+    width: 100%;
+    height: 100%;
+}
+.restaurant .part .menu p{
+    transform: translateY(-10px);
+    font-size: 20px;
+}
+.restaurant .part .menu .footer-menu{
+    width: 100%;
+}
+.restaurant .part .menu .footer-menu .span-popular2 {
+    padding-left: 10px;
+}
+.restaurant .part .menu .footer-menu .span-popular1{
+    padding-left: 40px;
+}
+.restaurant .part1{
+    padding-top: 20px;
+}
+
+
+#footer{
+    background-color: #F8EDE1B2;
+    width: 100%;
+    height: 120px;
+    transform: translateY(1100px);
+    align-items: center;
+    align-content: center;
+    display: inline-flex;
+}
+#footer a{
+    text-decoration: none;
+    font-size: 30px;
+    color:orange;
+    padding-left: 15px;
+}
+#footer img{
+    padding-left: 75px;
+}
+#footer h3{
+    color: orange;
+    font-size: 25px;
+    padding-left: 50px;
+}
+#footer .left{
+    display: flex;
+    padding-left: 175px;
+}
+#footer .left .other{
+    font-size: 24px;
+    color:black;
+    padding: 15px;
+    font-weight: 500;
+}
 @keyframes animationHeaderBar{
     from{
         transform: translateY(-120px);
