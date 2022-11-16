@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&family=Kotta+One&display=swap" rel="stylesheet">
     
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <style>
         @import 'css/style.css';
         @import 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
@@ -22,12 +23,14 @@
 
 <body>
     <div class="header-bar">
-        <img src="image/logo.png" class="logo-bar">
-        <div style="transform:translateX(60px);text-align: left;">
-            <label for="" class="label-logo">Phnom Penh Restaurant</label><br>
-            <label for="" style="font-size:12px;font-family: Inconsolata;">find your favorite place to enjoy your
-                meal!</label>
-        </div>
+        <a href="index.html" class="web-logo">
+            <img src="image/logo.png" class="logo-bar">
+            <div style="transform:translateX(60px);text-align: left;" class="logo-title">
+                <label for="web-logo" class="label-logo">Phnom Penh Restaurant</label><br>
+                <label for="web-logo" style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
+                    meal!</label>
+            </div>
+        </a>
 
         <div class="form">
             <select name="" id="choosen-bar">
@@ -61,7 +64,7 @@
         <div class="container">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"> <img src="image/slide1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="image/slide1.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="image/slide2-assets/slide2.png" alt=""></div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -91,22 +94,25 @@
 
     <div class="body">
         <div id="body-bar">
-            <div class="share">
-                <h3><a href="#" class="h3">Share your thought</a></h3>
+            <fieldset class="share">
+                <legend><iconify-icon icon="noto-v1:thought-balloon" width="35px" height="35px"></iconify-icon></legend>
+                <h3 class="h3">Share your thought</h3>
                 <p class="p">Give reviews to any<br>restaurants you've visited.</p>
-            </div>
-            <div class="share fine">
-                <h3><a href="#" class="h3">Fine the best place to eat!</a></h3>
+            </fieldset>
+            <fieldset class="share fine">
+                <legend><iconify-icon icon="noto-v1:pot-of-food" width="35px" height="35px"></iconify-icon></legend>
+                <h3 class="h3">Find the best place to eat!</h3>
                 <p class="p">There are more than 100<br>restaurants for you to choose.</p>
-            </div>
-            <div class="share reserve">
-                <h3><a href="#" class="h3">Reserve a table</a></h3>
+            </fieldset>
+            <fieldset class="share reserve">
+                <legend><iconify-icon icon="simple-line-icons:calender" width="35px" height="35px"></iconify-icon></legend>
+                <h3 class="h3">Reserve a table</h3>
                 <p class="p">Make online reservations<br>at the restaurant.</p>
-            </div>
+            </fieldset>
         </div>
         <div class="shopping">
             <br><br><br>
-            <label>Recommence for you</label>
+            <label>Recommended for you</label>
             <br><br>
             <div class="recommence restaurants">
                 <div>

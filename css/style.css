@@ -1,3 +1,6 @@
+*{
+    font-family: "Inter", sans-serif;
+}
 body{
     margin: 0;
     background-color:white;
@@ -21,27 +24,36 @@ body{
     position: fixed;
     animation: animationHeaderBar 1s linear 1;
     border-bottom:1px solid white;
-    border-bottom-left-radius:15px;
-    border-bottom-right-radius:15px;
-    box-shadow: 0px 3px 3px gray;
+    /* border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px; */
+    /* box-shadow: 0px 3px 3px rgb(229, 229, 229); */
     z-index: +1;
 
+}
+.web-logo{
+    display: flex;
+    text-decoration: none;
+    color: black;
 }
 .logo-bar{
     transform: translateX(45px) !important;
     width: 100px;
 }
+.logo-title{
+    padding-top: 20px;
+    cursor: pointer;
+}
 .label-logo{
     color: orange;
     font-size: 20px;
-    font-weight: bold;
-    font-family: Courgette;
+    font-family: 'Cooper Black', sans-serif;
+    cursor: pointer;
 }
 .form{   
     position: relative;
     display: flex;
     height: 35px !important;
-    transform: translateX(130px) !important;
+    transform: translateX(100px) !important;
     border:2px solid #F3F3F3;
     border-radius: 20px;
     box-shadow: 0px 1px 3px grey;
@@ -63,6 +75,9 @@ body{
     border: none;
     background-color:#F3F3F3;
 }
+#search-bar::placeholder{
+    font-family: "Kotta One",sans-serif;
+}
 #button-search{
     text-align: center;
     align-content: center;
@@ -78,41 +93,43 @@ body{
 .menu-bar{
     position: relative;
     display: inline-block;
-    transform: translateX(110px) !important;
+    transform: translateX(80px) !important;
     animation: leftToRight 2s;
 }
 .menu-bar ul{
-
     display: flex;
 }
 .menu-bar ul li a{
     color: orange;
     text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: bolder;
 }
 .menu-bar ul li #filter{
     color: orange;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     border: none;
     outline: none;
 }
 .menu-bar ul li #filter .f{
-    font-size: 20px !important;
+    font-size: 15px !important;
     font-weight: none !important;
 }
 .menu-bar ul li{
     list-style-type:none;
     display:inline-block;
-    width: 120px !important;
+    width: 110px !important;
     text-align: center;
     align-items: center;
     align-content: center;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 .menu-bar ul li:hover{
-    transform: translateY(-4px) !important;
+    transform: scale(1.2,1.2) !important;
+    font-weight: bolder;
+    /* transform: translateY(-4px) !important; */
     /* border-radius: 10%;
     background-color: #DEECFC;
     box-shadow: 1px 1px 6px rgb(254, 214, 165); */
@@ -185,42 +202,40 @@ body{
 
     /* animation: rightToLeft 1s linear 1; */
 }
-/* .bodys{
+.bodys{
     transform:translateY(160px);
 
-} */
+}
 #body-bar{
     display: flex;
-    width: 102%;
+    width: 100%;
 }
-.body-bar{
+/* .body-bar{
     animation: upTo 0.75s linear 1;
-}
+} */
 .share{
     text-align: center;
-    padding: 10px;
     background-color: white;
-    border-radius:10px;
-    width: 250px;
+    border-radius:5px;
+    width: 220px;
     height: 125px;
-    box-shadow: 0px 1px 6px gray;
-    cursor:pointer;
+    border: 1px solid rgb(184, 184, 184);
+    /* box-shadow: 0px 1px 6px gray; */
 }
 .share .h3{
-    text-decoration: none;
     color:orange;
+    font-size: 15px;
 }
 .fine{
     transform: translateX(80%);
 }
+/* .fine legend iconify-icon{
+    padding-bottom: 10px;
+} */
 .reserve{
-    transform: translateX(159%);
-}
-.share:hover{
-    box-shadow: 0.5px 0.5px 3px gray;
+    transform: translateX(155%);
 }
 .shopping label{
-    text-decoration:none;
     color:orange;
     font-size: 25px !important;
     font-weight: 400;
@@ -333,8 +348,13 @@ body{
     background-color: white;
     padding: 5px;
 }
+
 .see-more-1,.see-more-2,.see-more-3,.see-more-4,.see-more-5{
     transform: translateX(950px);
+}
+.see-more-1{
+    transform: translateX(900px);
+
 }
 .see-more-11,.see-more-22,.see-more-33,.see-more-44,.see-more-55{
     transform: translateX(1150px);
