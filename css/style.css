@@ -246,14 +246,16 @@ body{
     height: 20px;
 }
 .recommence .recom{
-    width: 284px;
-    height: 210px;
     margin-left: 20px;
     display:inline-block;
     text-align: center;
 }
+.restaurants .recom{
+    width: 290px;
+    height: 180px;
+}
 .restaurants .menu-1{
-    background-color: rgb(255, 251, 0);
+    background-color: rgb(23, 23, 23);
 }
 .restaurants .menu-2{
     background-color: rgb(246, 255, 0);
@@ -262,7 +264,7 @@ body{
     background-color: rgb(0, 255, 30);
 }
 .restaurants .menu-4{
-    background-color: rgb(0, 204, 255);
+    background-color: rgb(36, 83, 95);
 }
 .restaurants .menu-5{
     background-color: rgb(55, 0, 255);
@@ -282,46 +284,77 @@ body{
 .restaurants .menu-10{
     background-color: rgb(255, 166, 0);
 }
-.fa-star{
-    color: orange;
-}
 .ratingStar{
-    margin-right: 25%;
+    transform: translateY(-35px);
+    display: flex;
 }
 .ratingStar input{
     display: none;
 }
-.ratingStar label{
-    font-size: 20px;
-    color:white;
-    float: right;
-    transition: all 0.2s ease;
-    text-shadow: 1px 1px 3px orange;
-}
-.ratingStar input:not(:checked) ~ label:hover,
-.ratingStar input:not(:checked) ~ label:hover ~ label{
-    color: orange;
-  }
-.ratingStar input:checked ~ label{
-    color: orange;
-  }
 
+.ratingStar span{
+    font-size: 15px;
+    text-shadow: 1px 1px 1px gray;
+    color: #F3F3F3;
+}
+.ratingStar .checked{
+    color: orange;
+}
 .restaurant{
     width: 102%;
 }
-.restaurant .recom{
-    width: 284px;
-    height: 210px;
-    margin-left: 20px;
 
-    text-align: center;
+
+.restaurants .recom .span-popular{
+    color:orange;
+    font-size: 17px;
+    margin-left: 10px;
+    transform: translateY(-35px);
+    float: left;
+}
+.restaurants .recom .span-popular1{
+    color: blue;
+    font-size: 13px;
+    margin-left: 30px;
+    transform: translateY(-31px);
+    float: left;
+}
+.restaurants .recom .span-popular2{
+    float: right;    
+    font-size: 13px;
+    color:#05FF00;
+    transform: translateY(-31px);
+}
+.restaurants div .recom img{
+    width:100%;
+    height:100%;
+}
+.restaurants div .recom span img{
+    width:100%;
+    height:100%;
+}
+.restaurants div .recom p{
+    transform: translateY(-20px);
+    float:left;
+    font-size: 20px;
+}
+.restaurants div .recom .ratingStar{
+    float: left;
+}
+.recommence{
+    height: 320px;
 }
 .restaurant div{
     margin-top: 15px;
     float: left;
+    padding-left: 10px;
 } 
+.restaurant div .recom{
+    width: 280px;
+}
 .restaurant .hide-1{
     display: none;
+    
 }
 .see-more{
     outline: none;
