@@ -30,20 +30,30 @@ body{
     z-index: +1;
 
 }
+.web-logo{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
 .logo-bar{
     transform: translateX(45px) !important;
     width: 100px;
+}
+.logo-title{
+    padding-top: 20px;
+    cursor: pointer;
 }
 .label-logo{
     color: orange;
     font-size: 20px;
     font-family: 'Cooper Black', sans-serif;
+    cursor: pointer;
 }
 .form{   
     position: relative;
     display: flex;
     height: 35px !important;
-    transform: translateX(130px) !important;
+    transform: translateX(100px) !important;
     border:2px solid #F3F3F3;
     border-radius: 20px;
     box-shadow: 0px 1px 3px grey;
@@ -92,31 +102,34 @@ body{
 .menu-bar ul li a{
     color: orange;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bolder;
 }
 .menu-bar ul li #filter{
     color: orange;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     border: none;
     outline: none;
 }
 .menu-bar ul li #filter .f{
-    font-size: 20px !important;
+    font-size: 15px !important;
     font-weight: none !important;
 }
 .menu-bar ul li{
     list-style-type:none;
     display:inline-block;
-    width: 120px !important;
+    width: 110px !important;
     text-align: center;
     align-items: center;
     align-content: center;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 .menu-bar ul li:hover{
-    transform: translateY(-4px) !important;
+    transform: scale(1.2,1.2) !important;
+    font-weight: bolder;
+    /* transform: translateY(-4px) !important; */
     /* border-radius: 10%;
     background-color: #DEECFC;
     box-shadow: 1px 1px 6px rgb(254, 214, 165); */
@@ -189,10 +202,10 @@ body{
 
     /* animation: rightToLeft 1s linear 1; */
 }
-/* .bodys{
+.bodys{
     transform:translateY(160px);
 
-} */
+}
 #body-bar{
     display: flex;
     width: 100%;
@@ -202,31 +215,27 @@ body{
 } */
 .share{
     text-align: center;
-    padding: 10px;
     background-color: white;
     border-radius:5px;
     width: 220px;
     height: 125px;
     border: 1px solid rgb(184, 184, 184);
     /* box-shadow: 0px 1px 6px gray; */
-    cursor:pointer;
 }
 .share .h3{
-    text-decoration: none;
     color:orange;
     font-size: 15px;
 }
 .fine{
     transform: translateX(80%);
 }
+/* .fine legend iconify-icon{
+    padding-bottom: 10px;
+} */
 .reserve{
-    transform: translateX(159%);
-}
-.share:hover{
-    box-shadow: 0.5px 0.5px 3px gray;
+    transform: translateX(155%);
 }
 .shopping label{
-    text-decoration:none;
     color:orange;
     font-size: 25px !important;
     font-weight: 400;
@@ -369,7 +378,7 @@ body{
     padding: 5px;
 }
 .see-more-1{
-    transform: translateX(950px);
+    transform: translateX(900px);
 }
 .see-more-11{
     transform: translateX(1150px);
