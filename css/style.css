@@ -7,7 +7,7 @@ body{
     /* align-content: center;
     align-items: center;
     text-align: center; */
-
+    position: relative;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -195,9 +195,9 @@ body{
     padding-right: 7.5%;
     padding-top:40px !important;
     transform:translateY(140px);
-    z-index: +1;
     margin-left: 7px;
-    width: 86%;
+    width: 85.5%;
+    clear:both;
     /* animation: rightToLeft 1s linear 1; */
 }
 .bodys{
@@ -259,7 +259,6 @@ body{
 }
 .recommence .recom{
     margin-left: 20px;
-    display:inline-block;
     text-align: center;
 }
 .restaurants .recom{
@@ -287,7 +286,7 @@ body{
 .footer-menu{
     display:flex;
     transform: translateY(-20px);
-    float: left;
+
 }
 
 .footer-menu{
@@ -304,8 +303,7 @@ body{
     padding-left: 14px;
   
 }
-.footer-menu .span-popular2{
-    float: right;    
+.footer-menu .span-popular2{   
     font-size: 13px;
     color:#05FF00;
     padding-left: 7px;
@@ -323,7 +321,7 @@ body{
     font-size: 17px;
 }
 .restaurants div .recom .ratingStar{
-    float: left;
+
 }
 .recommence{
     height: 320px;
@@ -401,13 +399,14 @@ body{
     padding-top: 20px;
 }
 #footer{
-    background-color: #F8EDE1B2;
     width: 100%;
     height: 120px;
-    transform: translate(0,110px);
+    position: relative;
     align-items: center;
     align-content: center;
     display: inline-flex;
+    clear: both;
+    transform: translateY(50px);
 }
 #footer a{
     text-decoration: none;
