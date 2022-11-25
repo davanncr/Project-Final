@@ -27,7 +27,7 @@ body{
     /* border-bottom-left-radius:15px;
     border-bottom-right-radius:15px; */
     /* box-shadow: 0px 3px 3px rgb(229, 229, 229); */
-    z-index: +1;
+    z-index: 10;
 
 }
 .web-logo{
@@ -52,13 +52,16 @@ body{
 }
 .form{   
     position: relative;
-    left: 5rem;
+    transform: translate(35%,0px);
     display: flex;
     /* height: 30px !important; */
-    /* transform: translateX(100px) !important; */
+    /* transform: translateX(70px) !important; */
     /* border:2px solid #F3F3F3; */
     border-radius: 30px;
     box-shadow: 0px 1px 3px grey;
+    width: 461px;
+    height: 40px;
+    background-color:white;
 }
 .form:hover,.form:focus{
     box-shadow: 0px 0.5px 0.5px grey;
@@ -80,10 +83,11 @@ body{
     border: none;
     padding: 15px 15px;
     border-radius: 3rem;
-    margin: 8px 0px;
     box-sizing: border-box;
     position: relative;
     top:0rem;
+    height: 40px;;
+
 }
 #search-bar::placeholder{
     font-family: "Kotta One",sans-serif;
@@ -93,44 +97,52 @@ body{
     text-align: center;
     align-content: center;
     align-items: center;
-    width: 40px !important;
+    width: 60px !important;
     outline: none;
-    border-top-right-radius:20px;
-    border-bottom-right-radius:20px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
     border: none;
     background-color: #F3F3F3;
     cursor: pointer;
 }
 .menu-bar{
     position: relative;
-    display: inline-block;
-    transform: translateX(80px) !important;
+    transform: translateX(250px) !important;
     animation: leftToRight 2s;
+
+    
 }
 .menu-bar ul{
     display: flex;
+    float: right;
 }
 .menu-bar ul li a{
     color: orange;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bolder;
+
 }
-.menu-bar ul li #filter{
-    color: orange;
+#filter{
+    color: black;
     font-size: 18px;
     font-weight: bold;
     border: none;
     outline: none;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    border-left:1px solid black;
+    background-color:#F3F3F3 ;
+
 }
-.menu-bar ul li #filter .f{
+#filter .f{
     font-size: 15px !important;
     font-weight: none !important;
 }
 .menu-bar ul li{
     list-style-type:none;
     display:inline-block;
-    width: 190px !important;
+    width: 120px !important;
     text-align: center;
     align-items: center;
     align-content: center;
@@ -192,7 +204,7 @@ body{
 }
 .swiper .swiper-button-prev,.swiper .swiper-button-next{
     color: gray;
-    width: 50px !important;
+    width: 60px !important;
 }
 .swiper .swiper-pagination-bullet-active{
     background-color:grey;
