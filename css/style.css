@@ -46,37 +46,48 @@ body{
 .label-logo{
     color: orange;
     font-size: 20px;
-    font-family: 'Cooper Black', sans-serif;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
     cursor: pointer;
 }
 .form{   
     position: relative;
+    left: 5rem;
     display: flex;
-    height: 35px !important;
-    transform: translateX(100px) !important;
-    border:2px solid #F3F3F3;
-    border-radius: 20px;
+    /* height: 30px !important; */
+    /* transform: translateX(100px) !important; */
+    /* border:2px solid #F3F3F3; */
+    border-radius: 30px;
     box-shadow: 0px 1px 3px grey;
 }
 .form:hover,.form:focus{
-    box-shadow: 0px 0px 0px grey;
+    box-shadow: 0px 0.5px 0.5px grey;
 }
-#choosen-bar{
+/* #choosen-bar{
     text-align: center;
     outline: none;
     border: none;
     border-top-left-radius:20px;
     border-bottom-left-radius:20px;
     cursor: pointer;
+    padding: 21px 21px;
+    border-radius: 3rem;
+    margin: 8px 2px;
     background-color: #F3F3F3;
-}
+} */
 #search-bar{
     outline: none;
     border: none;
-    background-color:#F3F3F3;
+    padding: 15px 15px;
+    border-radius: 3rem;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    position: relative;
+    top:0rem;
 }
 #search-bar::placeholder{
     font-family: "Kotta One",sans-serif;
+    font-size: 15px;
 }
 #button-search{
     text-align: center;
@@ -119,7 +130,7 @@ body{
 .menu-bar ul li{
     list-style-type:none;
     display:inline-block;
-    width: 110px !important;
+    width: 190px !important;
     text-align: center;
     align-items: center;
     align-content: center;
@@ -161,7 +172,7 @@ body{
 .swaper{
     width: 100%;
     height: fit-content;
-    background-color: rgb(241, 0, 0);
+    background-color: orange;
     position: relative;
     transform: translateX(50px) !important;
 
@@ -296,19 +307,19 @@ body{
     width: 100%;
 }
 .footer-menu .span-popular{
-    color:orange;
+    color:#FF8B3D;
     font-size: 13px;
     padding-left: 10px;
 }
 .footer-menu .span-popular1{
-    color: blue;
+    color: #009EF7;
     font-size: 13px;
     padding-left: 14px;
   
 }
 .footer-menu .span-popular2{   
     font-size: 13px;
-    color:#05FF00;
+    color:#50CD89;
     padding-left: 7px;
 }
 .restaurants div .recom img{
