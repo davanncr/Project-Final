@@ -43,7 +43,7 @@ setInterval(function(){
     if(indexSellcted==1||indexSellcted==2||indexSellcted==3||indexSellcted==4||indexSellcted==5||indexSellcted==6||indexSellcted==7||indexSellcted==8||indexSellcted==9||indexSellcted==10||indexSellcted==11||indexSellcted==12){
         select.style.fontSize="13px";
         select.style.opacity=0.55;
-        
+    
     }else{
         select.style.fontSize="20px";
         select.style.opacity=0.55;
