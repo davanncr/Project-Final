@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phnom Penh Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&family=Kotta+One&display=swap" rel="stylesheet">
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <style>
+        @import '../css/style.css';
+        @import '../css/restaurant.css';
+        @import 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
+    </style>
+</head>
+
+<body>
+    <label id="for-back"></label>
+    <div class="header-bar">
+        <a href="../index.html" class="web-logo">
+            <img src="../image/logo.png" class="logo-bar">
+            <div style="transform:translateX(60px);text-align: left;" class="logo-title">
+                <label for="web-logo" class="label-logo">Phnom Penh Restaurant</label><br>
+                <label for="web-logo" style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
+                    meal!</label>
+            </div>
+        </a>
+        <div class="form">
+            <button type="submit" id="button-search"><img src="../image/search.png" alt="" width="20px"></button>
+            <input type="search" name="" id="search-bar" placeholder="Search for any Restaurant">
+            <select name="" id="filter">
+                <option value="" class="f1">Filter</option>
+                <option value="" class="f">Popular</option>
+                <option value="" class="f">Breakfast Served</option>
+                <option value="" class="f">Lunch Served</option>
+                <option value="" class="f">Dinner Served</option>
+                <option value="" class="f">Fast Food</option>
+                <option value="" class="f">Chinese</option>
+                <option value="" class="f">Nearby</option>
+                <option value="" class="f">Natural Environment</option>
+                <option value="" class="f">Reasonable Price</option>
+                <option value="" class="f">Drinks and Milk Tea</option>
+                <option value="" class="f">Bars and Toproofs</option>
+                <option value="" class="f">Buffet</option>
+            </select>
+            <script src="../js/actionSellectorBar.js"></script>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#" class="map">Map</a></li>
+                <li><a href="#">About US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="show-image">
+        <div class="image-1">
+            <img src="../image/recom-10.webp" alt="">
+        </div>
+        <div class="image-2">
+            <img src="../image/recom-11.jpg" alt="">
+            <img src="../image/recom-3.jpg" alt="" style="margin-top: -3.5px;">
+        </div>
+        <div class="image-3">
+            <img src="../image/recom-4.jpg" alt="">
+        </div>
+    </div>
+    <div class="overview">
+        <fieldset>
+            <legend>Overview</legend>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div class="bottom-set">
+                <button>Reserve Now</button>
+                <label class="spacing">|</label>
+                <label class="fa fa-map-marker" aria-hidden="true"></label>
+                <a href="#">Restaurant location,Restaurant location,Restaurant location</a>
+                <label class="spacing">|</label>
+                <label class="fa fa-phone"></label>
+                <a href="tel:0964526262">+855 964 526 262</a>
+                <label class="spacing">|</label>
+                <img src="../image/globe.png" alt=""width=17px>
+                <a href="#">Website</a>
+                <label class="spacing">|</label>
+                <label class="fa fa-clock-o" aria-hidden="true"></label>
+                <label>7:00am-8:00pm</label>
+                <label class="fa fa-status"></label>
+                <label class="open" aria-hidden="true">Open</label>
+                <label class="close" aria-hidden="true">Close</label>
+                <label class="spacing">|</label>
+                <label class="fa fa-dollar"></label>
+                <label>Price range:  $2 - $50</label>
+            </div>
+        </fieldset>        
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script src="../js/windowScroll.js"></script>
+</body>
+
+</html>
