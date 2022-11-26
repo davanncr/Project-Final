@@ -373,14 +373,14 @@ body{
     padding: 5px;
 }
 
-.see-more-1,.see-more-2,.see-more-3,.see-more-4,.see-more-5{
+.see-more-1,.see-more-2,.see-more-3,.see-more-4,.see-more-5,.see-more-6{
     transform: translateX(950px);
 }
 .see-more-1{
     transform: translateX(900px);
 
 }
-.see-more-11,.see-more-22,.see-more-33,.see-more-44,.see-more-55{
+.see-more-11,.see-more-22,.see-more-33,.see-more-44,.see-more-55,.see-more-66{
     transform: translateX(1150px);
 }
 .clear{
@@ -392,7 +392,7 @@ body{
     height: 260px;
     display: flex;
 }
-.hide-1,.hide-2,.hide-3,.hide-4,.hide-5{
+.hide-1,.hide-2,.hide-3,.hide-4,.hide-5,.hide-6{
     display: none;
 }
 .restaurant {
