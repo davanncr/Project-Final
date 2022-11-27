@@ -60,3 +60,62 @@
 
     color: red;
 }
+.underBody{
+    width: 100%;
+    transform: translateY(200px);
+    display: flex;
+}
+.underBody .review{
+    width: 50%;
+}
+.underBody .menuRestaurant{
+    width: 50%;
+    height: 500px;
+    background-color: red;
+}
+.underBody .review table tr td{
+    padding-left: 30px;
+}
+#email{
+    width: 250px;
+    height: 20px;
+    outline: none;
+}
+#username{
+    height: 20px;
+    outline: none;
+}
+#comment{
+    outline: none;
+}
+#post{
+    padding: 5px;
+    width: 100px;
+    background-color: blue;
+    border: 0;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.commented .topcomment{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.commented .topcomment label:not(:first-child){
+   margin-left: 10px;
+   font-size: 12px;
+}
+.commented {
+    width: 100%;
+}
+.commented .bottoncomment{
+    padding-left: 9%;
+    width: 82%;
+    word-break: break-all;
+    margin-bottom: 20px;
+}
+.name{
+    width: 200px;
+}

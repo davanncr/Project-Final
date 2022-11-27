@@ -101,7 +101,43 @@
             </div>
         </fieldset>        
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="underBody">
+        <div class="review">
+            <fieldset>
+                <legend>Review</legend>
+                <p style="font-weight: bolder;">Share your thought</p>
+                <table>
+                    <tr>
+                        <td> <label>Username:</label><input type="tel" name="" id="username"></th>
+                        <td><label>Email:</label><input type="email" name="" id="email"></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Your review</p>
+                            <textarea name="" id="comment" cols="35" rows="7"></textarea>
+                        </td>
+                        <td>
+                            <label>Rate :</label> <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><br>
+                            <p><i class="fa fa-thumbs-up" aria-hidden="true"></i>Recommended</p>
+                            <p><i class="fa fa-thumbs-down" aria-hidden="true"></i>Not recommended</p><br>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <button id="post">Post</button><label id="eror" style="color:red;padding-left: 50px;"></label>
+                <p style="font-weight: bold;">Reviews</p>
+                <div id="getPost">
+
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="js/comment.js"></script>
+
+            </fieldset>
+        </div>
+        <div class="menuRestaurant">
+    
+        </div>
+    </div>
     <script src="../js/windowScroll.js"></script>
 </body>
 
