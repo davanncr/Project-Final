@@ -122,9 +122,9 @@ $(document).ready(function() {
         numStar=0
         recomnot=notrecom
         document.querySelector('#numRecomment').innerHTML=data.length
+        document.querySelector('#ratingRecomment').innerHTML='&nbsp;'
         }else{
             document.querySelector('#eror').innerHTML='Please complete all!'
         }
-
     })
 })
