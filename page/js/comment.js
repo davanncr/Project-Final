@@ -17,7 +17,7 @@ function commentTo(data){
     $('#getPost').append(html)
 }
 var numStar
-var recomnot
+var recomnot="<i class='fa fa-thumbs-down' aria-hidden='true'></i>Not recommended"
 $(document).ready(function() {
     var recom="<i class='fa fa-thumbs-up' aria-hidden='true'></i>Recommended"
     var notrecom="<i class='fa fa-thumbs-down' aria-hidden='true'></i>Not recommended"
@@ -79,7 +79,8 @@ $(document).ready(function() {
     }else{
         data=JSON.parse(localStorage.dataRestaurant1)
     }
-    for(var i=0;i<data.length;i++){
+    document.querySelector('#numRecomment').innerHTML=data.length
+    for(var i=data.length-1;i>=0;i--){
         commentTo(data[i])
     }
     $('#post').click(function(){
@@ -107,17 +108,23 @@ $(document).ready(function() {
         $('#username').val('')
         $('#email').val('')
         $('#comment').val('')     
-        numStar=0
         document.querySelector('#star1').style.color = 'white';
         document.querySelector('#star2').style.color = 'white';
         document.querySelector('#star3').style.color = 'white';
         document.querySelector('#star4').style.color = 'white';
         document.querySelector('#star5').style.color = 'white';
         document.querySelector('#star5').style.color = 'white';
+        document.querySelector('#getPost').innerHTML = ''
+        for(var i=data.length-1;i>=0;i--){
+            commentTo(data[i])
+        }
         document.querySelector('#ratingRecomment').innerHTML=''
+        numStar=0
+        recomnot=notrecom
+        document.querySelector('#numRecomment').innerHTML=data.length
         }else{
             document.querySelector('#eror').innerHTML='Please complete all!'
         }
-        
+
     })
 })
