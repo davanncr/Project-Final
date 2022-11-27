@@ -87,6 +87,12 @@
 }
 #comment{
     outline: none;
+    resize: none;
+}
+#comment::placeholder{
+    font-size: 20px;
+    text-align: center;
+    transform: translateY(150%);
 }
 #post{
     padding: 5px;
