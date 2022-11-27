@@ -10,6 +10,8 @@ function commentTo(data){
         stars="<span class='fa fa-star checked'></span><span class='fa fa-star checked'></span><span class='fa fa-star checked'></span><span class='fa fa-star checked'></span><span class='fa fa-star'></span>"
     }else if(data.numStars==5){
         stars="<span class='fa fa-star checked'></span><span class='fa fa-star checked'></span><span class='fa fa-star checked'></span><span class='fa fa-star checked'></span><span class='fa fa-star checked'></span>"
+    }else{
+        stars = "<span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span>"
     }
     var html="<div class='commented'><div class='topcomment'><img src='../image/user.png' width='40px'><label class='name'><label>"+data.name+"<br>"+data.email+"</label></label><label><br>"+stars+"</label><label class='recomnot'><br><label>"+data.recomnots+"</label></label><label><br><label>"+data.current+"</label></label></div><div class='bottoncomment'>"+data.comment+"</div></div>"
     $('#getPost').append(html)
@@ -105,7 +107,7 @@ $(document).ready(function() {
         $('#username').val('')
         $('#email').val('')
         $('#comment').val('')     
-        
+        numStar=0
         document.querySelector('#star1').style.color = 'white';
         document.querySelector('#star2').style.color = 'white';
         document.querySelector('#star3').style.color = 'white';
