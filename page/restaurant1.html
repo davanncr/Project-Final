@@ -106,24 +106,38 @@
             <fieldset>
                 <legend>Review</legend>
                 <p style="font-weight: bolder;">Share your thought</p>
-                <table>
-                    <tr>
-                        <td> <label>Username:</label><input type="tel" name="" id="username"></th>
-                        <td><label>Email:</label><input type="email" name="" id="email"></th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Your review</p>
-                            <textarea name="" id="comment" cols="35" rows="7" placeholder="comment here"></textarea>
-                        </td>
-                        <td>
-                            <label>Rate :</label><label id="ratingStar"><span class="fa fa-star" id="star1"></span><span class="fa fa-star" id="star2"></span><span class="fa fa-star" id="star3"></span><span class="fa fa-star" id="star4"></span><span class="fa fa-star" id="star5"></span></label><br>
-                            <p id="ratingRecomment">&nbsp;</p><br><br><br>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <button id="post">Post</button><label id="eror" style="color:red;padding-left: 50px;"></label>
+                <form>
+                    <table>
+                        <tr>
+                            <td> <label>Username:</label><input type="tel" name="name" id="username"></th>
+                            <td><label>Email:</label><input type="email" name="email" id="email"></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Your review</p>
+                                <textarea name="comment" id="comment" cols="35" rows="7" placeholder="comment here"></textarea>
+                            </td>
+                            <td>
+                                <label>Rate :</label><label id="ratingStar">
+                                    <input type="radio" name="star" id="st1" value="1">
+                                    <label class="fa fa-star" id="star1" for="#st1"></label>
+                                    <input type="radio" name="star" id="st2" value="2">
+                                    <label class="fa fa-star" id="star2" for="#st2"></label>
+                                    <input type="radio" name="star" id="st3" value="3">
+                                    <label class="fa fa-star" id="star3" for="#st3"></label>
+                                    <input type="radio" name="star" id="st4" value="4">
+                                    <label class="fa fa-star" id="star4" for="#st4"></label>
+                                    <input type="radio" name="star" id="st5" value="5">
+                                    <label class="fa fa-star" id="star5" for="#st5"></label>
+                                </label><br>
+                                <p id="ratingRecomment">&nbsp;</p><br><br><br>
+                            </td>
+                        </tr>
+                    </table>        
+                    <br>
+                    <button id="post" type="submit">Post</button><label id="eror" style="color:red;padding-left: 50px;"></label>            
+                </form>
+                <script src="js/sheetDB.js"></script>
                 <p style="font-weight: bold;">Reviews(<label id="numRecomment"></label>)</p>
                 <div id="getPost">
 

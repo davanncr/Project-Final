@@ -125,11 +125,14 @@
 .name{
     width: 200px;
 }
-#ratingStar span{
+#ratingStar label{
     color:white;
     text-shadow:0px 0px 5px orange;
     padding-left: 3px;
     font-size: 19px;
+}
+#ratingStar input{
+    display: none;
 }
 .checked{
     color:orange;
