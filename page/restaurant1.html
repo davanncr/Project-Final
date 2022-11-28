@@ -120,15 +120,15 @@
                             <td>
                                 <label>Rate :</label><label id="ratingStar">
                                     <input type="radio" name="star" id="st1" value="1">
-                                    <label class="fa fa-star" id="star1" for="#st1"></label>
+                                    <label class="fa fa-star" id="star1" for="st1"></label>
                                     <input type="radio" name="star" id="st2" value="2">
-                                    <label class="fa fa-star" id="star2" for="#st2"></label>
+                                    <label class="fa fa-star" id="star2" for="st2"></label>
                                     <input type="radio" name="star" id="st3" value="3">
-                                    <label class="fa fa-star" id="star3" for="#st3"></label>
+                                    <label class="fa fa-star" id="star3" for="st3"></label>
                                     <input type="radio" name="star" id="st4" value="4">
-                                    <label class="fa fa-star" id="star4" for="#st4"></label>
+                                    <label class="fa fa-star" id="star4" for="st4"></label>
                                     <input type="radio" name="star" id="st5" value="5">
-                                    <label class="fa fa-star" id="star5" for="#st5"></label>
+                                    <label class="fa fa-star" id="star5" for="st5"></label>
                                 </label><br>
                                 <p id="ratingRecomment">&nbsp;</p><br><br><br>
                             </td>
@@ -138,12 +138,11 @@
                     <button id="post" type="submit">Post</button><label id="eror" style="color:red;padding-left: 50px;"></label>            
                 </form>
                 <script src="js/sheetDB.js"></script>
-                <p style="font-weight: bold;">Reviews(<label id="numRecomment"></label>)</p>
+                <label style="font-weight: bold;">Reviews(<label id="numRecomment"></label>)</label><button id="refresh" style="background-color: white;border: none;margin-left: 80%;"><span class="fa fa-refresh" id="logoRefresh" style="font-size:18px"></span></button><br><br>
                 <div id="getPost">
 
                 </div>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <script src="js/comment.js"></script>
+
 
             </fieldset>
         </div>
@@ -151,6 +150,8 @@
     
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/comment.js"></script>
     <script src="../js/windowScroll.js"></script>
 </body>
 

@@ -132,7 +132,16 @@
     font-size: 19px;
 }
 #ratingStar input{
-    display: none;
+   display: none;
+}
+#ratingStar label:hover{
+    color:orange;
+}
+#ratingStar input:checked ~ label:not(::after) {
+    color: orange;
+}
+#logoRefresh{
+    transition: all 2s;
 }
 .checked{
     color:orange;
