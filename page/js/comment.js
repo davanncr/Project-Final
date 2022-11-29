@@ -62,6 +62,51 @@ function readStorage(){
 
 var i=1;
 $(document).ready(function() {
+    var recom="<i class='fa fa-thumbs-up' aria-hidden='true'></i>Recommended"
+    var notrecom="<i class='fa fa-thumbs-down' aria-hidden='true'></i>Not recommended"
+    $('#star1').click(function(){
+        document.querySelector('#ratingRecomment').innerHTML=notrecom
+        document.querySelector('#star1').style.color = 'orange';
+        document.querySelector('#star2').style.color = 'white';
+        document.querySelector('#star3').style.color = 'white';
+        document.querySelector('#star4').style.color = 'white';
+        document.querySelector('#star5').style.color = 'white';
+        document.querySelector('#star5').style.color = 'white';
+    })
+    $('#star2').click(function(){
+        document.querySelector('#ratingRecomment').innerHTML=notrecom
+        document.querySelector('#star1').style.color = 'orange';
+        document.querySelector('#star2').style.color = 'orange';
+        document.querySelector('#star3').style.color = 'white';
+        document.querySelector('#star4').style.color = 'white';
+        document.querySelector('#star5').style.color = 'white';
+    })
+    $('#star3').click(function(){
+        document.querySelector('#ratingRecomment').innerHTML=recom
+        document.querySelector('#star1').style.color = 'orange';
+        document.querySelector('#star2').style.color = 'orange';
+        document.querySelector('#star3').style.color = 'orange';
+        document.querySelector('#star4').style.color = 'white';
+        document.querySelector('#star5').style.color = 'white';
+    })
+    $('#star4').click(function(){
+        document.querySelector('#ratingRecomment').innerHTML=recom
+        document.querySelector('#star1').style.color = 'orange';
+        document.querySelector('#star2').style.color = 'orange';
+        document.querySelector('#star3').style.color = 'orange';
+        document.querySelector('#star4').style.color = 'orange';
+        document.querySelector('#star5').style.color = 'white';
+    })
+    $('#star5').click(function(){
+        document.querySelector('#ratingRecomment').innerHTML=recom
+        document.querySelector('#star1').style.color = 'orange';
+        document.querySelector('#star2').style.color = 'orange';
+        document.querySelector('#star3').style.color = 'orange';
+        document.querySelector('#star4').style.color = 'orange';
+        document.querySelector('#star5').style.color = 'orange';
+    })
+
+
     $('#post').click(function(){
         if(i%2==0){
             document.querySelector('#logoRefresh').style.transform='rotate(-1000deg)'            
@@ -89,6 +134,16 @@ $(document).ready(function() {
         tData.push(getData)
         localStorage.Restaurant1=JSON.stringify(tData)
         readStorage()
+        $('#username').val('')
+        $('#email').val('')
+        $('#comment').val('')            
+        $('#comment').val('')   
+        document.querySelector('#star1').style.color = 'white';
+        document.querySelector('#star2').style.color = 'white';
+        document.querySelector('#star3').style.color = 'white';
+        document.querySelector('#star4').style.color = 'white';
+        document.querySelector('#star5').style.color = 'white';
+        document.querySelector('#star5').style.color = 'white';
     })
     $('#refresh').click(function(){
         if(i%2==0){
