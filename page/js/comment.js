@@ -1,3 +1,7 @@
+
+
+
+
 var recom="<i class='fa fa-thumbs-up' aria-hidden='true'></i>Recommended"
 var notrecom="<i class='fa fa-thumbs-down' aria-hidden='true'></i>Not recommended"
 function commentTo(data){
@@ -25,12 +29,13 @@ function commentTo(data){
     var html="<div class='commented'><div class='topcomment'><img src='../image/user.png' width='40px'><label class='name'><label>"+data.name+"<br>"+data.email+"</label></label><label><br>"+stars+"</label><label class='recomnot'><br><label>"+recomnots+"</label></label><label><br><label>"+data.current+"</label></label></div><div class='bottoncomment'>"+data.comment+"</div></div>"
     $('#getPost').append(html)
 }
+let tData=[]
 function readData(){
+    delete localStorage.Restaurant1
     fetch('https://script.google.com/macros/s/AKfycbw9BUMRUsAj9PoBBjtQRbOcJ5sQAnaLBLX9HPfCw-cglXHGZlfKXgaz_twYlWRmIv5B/exec')
     .then(res=>res.json()).then(data=>{
         // console.log(data.content.length);
         document.querySelector('#numRecomment').innerHTML=data.content.length-1
-        let tData=[]
         for(var i=1; i<data.content.length;i++){
             let getData={'name':'','email':'','numStars':0,'comment':'','current':''}
             getData.name=data.content[i][0]
@@ -40,12 +45,21 @@ function readData(){
             getData.current=data.content[i][4]
             tData[i-1]=getData
         }
+        localStorage.Restaurant1=JSON.stringify(tData)
         for(var j=tData.length-1;j>=0;j--) {
             commentTo(tData[j])
         }
     })
 }
 readData()
+
+function readStorage(){
+    tData=JSON.parse(localStorage.Restaurant1)
+    for(var j=tData.length-1;j>=0;j--) {
+        commentTo(tData[j])
+    }
+}
+
 var i=1;
 $(document).ready(function() {
     $('#post').click(function(){
@@ -56,7 +70,25 @@ $(document).ready(function() {
         }
         i++
         document.querySelector('#getPost').innerHTML=''
-        readData()
+        //getCurrent time
+        var currentDate=new Date();
+        var day=currentDate.getDate();
+        var month=currentDate.getMonth()+1;
+        var year=currentDate.getFullYear();
+        var hour=currentDate.getHours();
+        var minute=currentDate.getMinutes();
+        var second=currentDate.getSeconds();
+        var current=day+'/'+month+'/'+year+'  '+hour+':'+minute+':'+second
+
+        let getData={'name':'','email':'','numStars':0,'comment':'','current':''}
+        getData.name=$('#username').val()
+        getData.email=$('#email').val()
+        getData.numStars=$('.numStars:checked').val()
+        getData.comment=$('#comment').val()
+        getData.current=current+''
+        tData.push(getData)
+        localStorage.Restaurant1=JSON.stringify(tData)
+        readStorage()
     })
     $('#refresh').click(function(){
         if(i%2==0){
@@ -66,6 +98,6 @@ $(document).ready(function() {
         }
         i++
         document.querySelector('#getPost').innerHTML=''
-        readData()
+        readStorage()
     })
 })
