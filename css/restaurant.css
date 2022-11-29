@@ -93,36 +93,93 @@
     width:100%;
     height: 200px;
 }
-.show-image .image-3{ 
+.show-image .box{ 
     width:100%;
     height: 400px;
     background-color: #150037;
     display: grid;
     place-items:center !important;
 }
-.show-image .image-3 #circle{
+.show-image .box .circle{
     width: 300px;
     height: 300px;
+    position: absolute;
     background-color: #1A0045;
     border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
-.show-image .image-3 #circle .food-decoration iconify-icon{
+.show-image .box .circle iconify-icon{
+    opacity: 40%;
     font-size: 60px;
     color: white;
-    /* position: absolute; */
-    transform: translate(120px,120px) !important;
+    position: absolute;
+    z-index: 2;
+    animation: 1s linear 0s 1 iconAnimation;
 }
-.food-decoration-img img{
-    position: relative;
+.box .circle .image{
     width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 0, 0);
+    position: absolute;
+    z-index: 1;
+}
+.box .circle :nth-child(2){
+    transform: translate(20px,-160px);
+    animation: 1s linear 0s 1  drink1-decoration-animation;
+}
+.box .circle :nth-child(3){
+    transform: translate(100px,-70px);
+    animation: 1s linear 0s 1  food1-decoration-animation;
+}
+.box .circle :nth-child(4){
+    transform: translate(105px,65px);
+    animation: 1s linear 0s 1  food2-decoration-animation;
+}
+.box .circle :nth-child(5){
+    transform: translate(-30px,150px);
+    animation: 1s linear 0s 1  food3-decoration-animation;
+}
+.box .circle :nth-child(6){
+    transform: translate(-120px,55px);
+    animation: 1s linear 0s 1  drink2-decoration-animation;
+}
+.box .circle :nth-child(7){
+    transform: translate(-170px,-40px);
+    animation: 1s linear 0s 1  food4-decoration-animation;
+}
+.box .circle :nth-child(8){
+    transform: translate(-100px,-140px);
+    animation: 1s linear 0s 1  food5-decoration-animation;
 }
 
+#drink1 img{
+    width: 90px;
+}
+#food1 img{
+    width: 120px;
+}
+#food2 img{
+    width: 70px;
+}
+#food3 img{
+    width: 90px;
+}
+#drink2 img{
+    width: 50px;
+}
+#food4 img{
+    width: 90px;
+}
+#food5 img{
+    width: 90px;
+}
 .show-image .image-1,.show-image .image-2{
     width: 25%;
 }
-.show-image .image-3{
+.show-image .box{
     width: 50%;
 }
 .overview{
@@ -255,31 +312,141 @@
     
 }
 
-/* @keyframes food1-decoration-animation{
-    from{transform: translate(0,0);}
-    to{transform: translate(50px,20px);}
+@keyframes iconAnimation {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 70%;
+    }
+    100%{
+        opacity: 40%;
+    }
+    
 }
-@keyframes food2-decoration-animation{
-    from{transform: translate(0,0);}
-    to{transform: translate(-50px,20px);}
+@keyframes drink1-decoration-animation {
+    0% {
+        transform: translate(0,0);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 30%;
+    }
+    50%{
+        opacity: 55%;
+    }
+    75%{
+        opacity: 80%;
+    }
+    100% {
+        transform: translate(20px,-160px);
+    }
 }
-@keyframes food3-decoration-animation{
-    from{transform: translate(0,0);}
-    to{transform: translate(80px,30px);}
+@keyframes food1-decoration-animation {
+    0% {
+        transform: translate(0,0);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 30%;
+    }
+    50%{
+        opacity: 55%;
+    }
+    75%{
+        opacity: 80%;
+    }
+    100% {
+        transform: translate(100px,-70px);
+    }
 }
-@keyframes food4-decoration-animation{
-    from{transform: translate(0,0);}
-    to{transform: translate(-80px,30px);}
+@keyframes food2-decoration-animation {
+    0% {
+        transform: translate(0,0);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 30%;
+    }
+    50%{
+        opacity: 55%;
+    }
+    75%{
+        opacity: 80%;
+    }
+    100% {
+        transform: translate(105px,65px);
+    }
 }
-@keyframes food5-decoration-animation{
-    from{transform: translate(0,0);}
-    to{transform: translate(100px,50px);}
+@keyframes food3-decoration-animation {
+    0% {
+        transform: translate(0,0);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 30%;
+    }
+    50%{
+        opacity: 55%;
+    }
+    75%{
+        opacity: 80%;
+    }
+    100% {
+        transform: translate(-30px,150px);
+    }
 }
-@keyframes drink1-decoration-animation{
-    from{transform: translate(0,0);}
-    to{transform: translate(-100px,50px);}
+@keyframes drink2-decoration-animation {
+    0% {
+        transform: translate(0,0);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 30%;
+    }
+    50%{
+        opacity: 55%;
+    }
+    75%{
+        opacity: 80%;
+    }
+    100% {
+        transform: translate(-120px,55px);
+    }
 }
-@keyframes drink2-decoration-animation{
-    from{transform: translate(0,0);}
-    to{transform: translate(150px,20px);}
-} */
+@keyframes food4-decoration-animation {
+    0% {
+        transform: translate(0,0);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 30%;
+    }
+    50%{
+        opacity: 55%;
+    }
+    75%{
+        opacity: 80%;
+    }
+    100% {
+        transform: translate(-170px,-40px);
+    }
+}
+@keyframes food5-decoration-animation {
+    0% {
+        transform: translate(0,0);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 30%;
+    }
+    50%{
+        opacity: 55%;
+    }
+    75%{
+        opacity: 80%;
+    }
+    100% {
+        transform: translate(-80px,-100px)9
+    }
+}

@@ -298,6 +298,10 @@ body{
     height: 180px;
     
 }
+.restaurant-page{
+    text-decoration: none;
+    color: black;
+}
 .ratingStar{
     display: flex;
 }
