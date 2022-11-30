@@ -1,7 +1,4 @@
 
-
-
-
 var recom="<i class='fa fa-thumbs-up' aria-hidden='true'></i>Recommended"
 var notrecom="<i class='fa fa-thumbs-down' aria-hidden='true'></i>Not recommended"
 function commentTo(data){
@@ -46,13 +43,14 @@ function readData(){
             tData[i-1]=getData
         }
         localStorage.Restaurant1=JSON.stringify(tData)
+        document.querySelector('#getPost').innerHTML=''
         for(var j=tData.length-1;j>=0;j--) {
             commentTo(tData[j])
         }
     })
 }
 readData()
-
+ setInterval(readData,5000)
 function readStorage(){
     tData=JSON.parse(localStorage.Restaurant1)
     for(var j=tData.length-1;j>=0;j--) {
@@ -134,10 +132,11 @@ $(document).ready(function() {
         tData.push(getData)
         localStorage.Restaurant1=JSON.stringify(tData)
         readStorage()
-        $('#username').val('')
-        $('#email').val('')
-        $('#comment').val('')            
-        $('#comment').val('')   
+        // $('#username').val('')
+        // $('#email').val('')
+        // $('#comment').val('')            
+        // $('#comment').val('')   
+        document.querySelector('#numRecomment').innerHTML=tData.length
         document.querySelector('#star1').style.color = 'white';
         document.querySelector('#star2').style.color = 'white';
         document.querySelector('#star3').style.color = 'white';
@@ -146,13 +145,17 @@ $(document).ready(function() {
         document.querySelector('#star5').style.color = 'white';
     })
     $('#refresh').click(function(){
+        $('#username').val('')
+        $('#email').val('')
+        $('#comment').val('')            
+        $('#comment').val('')   
         if(i%2==0){
             document.querySelector('#logoRefresh').style.transform='rotate(-1000deg)'            
         }else{
             document.querySelector('#logoRefresh').style.transform='rotate(1000deg)'            
         }
         i++
-        document.querySelector('#getPost').innerHTML=''
-        readStorage()
+        // document.querySelector('#getPost').innerHTML=''
+        readData()
     })
 })
