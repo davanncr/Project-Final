@@ -19,7 +19,8 @@ body{
     transition-duration: 1s;
     width: 100%;
     height: 120px;
-    background-color:#ffffffef;
+    background-color:#ffffffe6;
+    backdrop-filter: blur(5px);
     display: flex;
     text-align: center;
     align-content: center;
