@@ -1,8 +1,5 @@
 #top-menu{
-    /* position: absolute !important;
-    top: 130px; */
     transform: translateY(120px);
-    width: 100%;
     height: 75px !important;
     background-color: #F8EDE1;
     padding: 20px 50px;
@@ -106,30 +103,30 @@
 .show-image .box .circle{
     width: 300px;
     height: 300px;
-    position: absolute;
     background-image: url("../css/../page/image/profile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     z-index: 3;
 }
 .show-image .box .circle iconify-icon{
     opacity: 40%;
     font-size: 60px;
     color: white;
-    position: absolute;
     z-index: 2;
     animation: 1s linear 0s 1 iconAnimation;
+    grid-column: 1;
+    grid-row: 1;
 }
 .box .circle .image{
     width: 50px;
     height: 50px;
     background-color: rgba(255, 255, 0, 0);
-    position: absolute;
     z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
 }
 .box .circle :nth-child(2){
     transform: translate(20px,-160px);
