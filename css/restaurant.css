@@ -201,6 +201,7 @@
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
+
 }
 .overview fieldset legend{
     margin-left: 7%;
@@ -261,10 +262,42 @@
 .underBody .review{
     width: 50%;
 }
+.underBody .review fieldset::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+.underBody .review fieldset{
+    height: 160vh;
+    overflow: scroll;
+}
 .underBody .menuRestaurant{
     width: 50%;
     height: 500px;
-    background-color: red;
+
+}
+.underBody .menuRestaurant .similarRestaurant .menu{
+    width:95%;
+    height: 250px;
+    margin-top: 20px;
+    
+}
+.underBody .menuRestaurant .similarRestaurant .menu img{
+    width: 100%;
+    height: 190px;
+
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.underBody .menuRestaurant .similarRestaurant{
+    /* display: flex;
+    flex-direction: column; */
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(48%,5fr));
+    gap: 1.25rem;;
+    padding-left: 15px;
+}
+.underBody .menuRestaurant .similarRestaurant .menu .name-restaurant{
+    font-size: 20px;
 }
 .underBody .review table tr td{
     padding-left: 30px;
