@@ -194,11 +194,10 @@
     margin-top: 10px;
 }
 .overview fieldset{
-    border: 1px solid rgb(191, 191, 191);
+    border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 .overview fieldset legend{
     margin-left: 7%;
@@ -206,6 +205,37 @@
     color: orange;
     font-weight: 500;
     padding: 0 10px;
+}
+.overview fieldset .menu .menu-title{
+    font-size: 18px;
+    color: orange;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+.overview fieldset .menu .menu-list{
+    width: 50%;
+    height: 300px;
+    background-color: #f4f4f4;
+}
+.overview fieldset .trending .trending-title{
+    font-size: 18px;
+    color: orange;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+.overview fieldset .trending .trending-photos{
+    display: flex;
+    width: 1200px;
+    height: 200px;
+    gap: 20px;
+    overflow: auto;
+    flex-wrap: nowrap;
+}
+.overview fieldset .trending .trending-photos .trending-items{
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    background-color: #f4f4f4;
 }
 .overview fieldset button{
     background-color:#00a62485;
@@ -255,6 +285,8 @@
     width: 100%;
     transform: translateY(200px);
     display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .underBody .review{
     width: 50%;
@@ -265,6 +297,17 @@
 .underBody .review fieldset{
     height: 160vh;
     overflow: scroll;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.underBody .review fieldset legend{
+    margin-left: 7%;
+    font-size: 20px;
+    color: orange;
+    font-weight: 500;
+    padding: 0 10px;
 }
 .underBody .menuRestaurant{
     width: 50%;
