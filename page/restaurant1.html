@@ -166,25 +166,25 @@
                 <form>
                     <table>
                         <tr>
-                            <td> <label>Username:</label><input type="tel" name="name" id="username"></th>
-                            <td><label>Email:</label><input type="email" name="email" id="email"></th>
+                            <td> <label>Username:</label><input type="tel" name="name" id="username" required></th>
+                            <td><label>Email:</label><input type="email" name="email" id="email" required></th>
                         </tr>
                         <tr>
                             <td>
                                 <p>Your review</p>
-                                <textarea name="comment" id="comment" cols="35" rows="7" placeholder="comment here"></textarea>
+                                <textarea name="comment" id="comment" cols="35" rows="7" placeholder="comment here" required></textarea>
                             </td>
                             <td>
                                 <label>Rate :</label><label id="ratingStar">
-                                    <input type="radio" name="star" id="st1" value="1" class="numStars">
+                                    <input type="radio" name="star" id="st1" value="1" class="numStars" required>
                                     <label class="fa fa-star" id="star1" for="st1" class="numStars"></label>
-                                    <input type="radio" name="star" id="st2" value="2" class="numStars">
+                                    <input type="radio" name="star" id="st2" value="2" class="numStars" required>
                                     <label class="fa fa-star" id="star2" for="st2" class="numStars"></label>
-                                    <input type="radio" name="star" id="st3" value="3" class="numStars">
+                                    <input type="radio" name="star" id="st3" value="3" class="numStars" required>
                                     <label class="fa fa-star" id="star3" for="st3" class="numStars"></label>
-                                    <input type="radio" name="star" id="st4" value="4" class="numStars">
+                                    <input type="radio" name="star" id="st4" value="4" class="numStars" required>
                                     <label class="fa fa-star" id="star4" for="st4" class="numStars"></label>
-                                    <input type="radio" name="star" id="st5" value="5" class="numStars">
+                                    <input type="radio" name="star" id="st5" value="5" class="numStars" readonly>
                                     <label class="fa fa-star" id="star5" for="st5" class="numStars"></label>
                                 </label><br>
                                 <p id="ratingRecomment">&nbsp;</p><br><br><br>
@@ -195,7 +195,10 @@
                     <button id="post" type="submit">Post</button><label id="eror" style="color:red;padding-left: 50px;"></label>            
                 </form>
                 <script src="js/sheetDB.js"></script>
-                <label style="font-weight: bold;">Reviews(<label id="numRecomment"></label>)</label><button id="refresh" style="background-color: white;border: none;margin-left: 80%;"><span class="fa fa-refresh" id="logoRefresh" style="font-size:18px"></span></button><br><br>
+                <label style="font-weight: bold;">Reviews(<label id="numRecomment"></label>)</label>
+                <button id="refresh" style="background-color: white;border: none;margin-left: 80%;">
+                    <span class="fa fa-refresh" id="logoRefresh" style="font-size:18px"></span>
+                </button><br><br>
                 <div id="getPost">
 
                 </div>
@@ -204,7 +207,7 @@
         </div>
         <!-- Similar Restaurant -->
         <div class="menuRestaurant">
-              <label for="">Similarity Restaurants</label>  
+              <label class="similar-res-title">Similar Restaurants</label>  
               <div class="similarRestaurant">
                     <div class="menu">
                             <img src="../image/recom-1.jpg" alt="">

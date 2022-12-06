@@ -221,7 +221,7 @@
 }
 .overview fieldset .overview-mid-content .menu .menu-list{
     width: 99%;
-    height: 300px;
+    height: 285px;
     background-color: #f4f4f4;
 }
 .overview fieldset .overview-mid-content .trending{
@@ -242,7 +242,7 @@
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     width: 100%;
-    height: 315px;
+    height: 300px;
     overflow-x: scroll;
 }
 .overview fieldset .overview-mid-content .trending .trending-photos .trending-items{  
@@ -299,7 +299,6 @@
     font-weight: bold;
 }
 .underBody{
-    width: 100%;
     transform: translateY(200px);
     display: flex;
     margin-left: 15px;
@@ -312,7 +311,8 @@
     background-color: orange;
 }
 .underBody .review fieldset{
-    height: 160vh;
+    width: 100%;
+    height: 140vh;
     overflow: scroll;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -328,19 +328,27 @@
 }
 .underBody .menuRestaurant{
     width: 50%;
-    height: 500px;
-
+    padding-left: 4%;
+}
+.underBody .menuRestaurant .similar-res-title{
+    font-size: 20px;
+    color: orange;
+    font-weight: 500;
+    padding: 0 10px;
+}
+.underBody .menuRestaurant .similarRestaurant{
+    height: 140vh;
+    overflow-y: auto;
 }
 .underBody .menuRestaurant .similarRestaurant .menu{
     width:95%;
     height: 250px;
     margin-top: 20px;
-    
 }
 .underBody .menuRestaurant .similarRestaurant .menu img{
     width: 100%;
     height: 190px;
-
+    
     align-items: center;
     align-content: center;
     text-align: center;
@@ -349,18 +357,16 @@
     /* display: flex;
     flex-direction: column; */
     display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(48%,5fr));
-    gap: 1.25rem;;
+    grid-template-columns: repeat(2,300px);
+    gap: 1.25rem;
     padding-left: 15px;
 }
 .underBody .menuRestaurant .similarRestaurant .menu .name-restaurant{
     font-size: 20px;
 }
-.underBody .review table tr td{
-    padding-left: 30px;
-}
+
 #email{
-    width: 250px;
+    width: 200px;
     height: 20px;
     outline: none;
 }
@@ -375,6 +381,8 @@
 #comment::placeholder{
     font-size: 20px;
     text-align: center;
+    opacity: 0.5;
+    font-style: italic;
     transform: translateY(150%);
 }
 #post{
@@ -393,7 +401,7 @@
     align-items: center;
 }
 .commented .topcomment label:not(:first-child){
-   margin-left: 10px;
+   padding-left: 10px;
    font-size: 12px;
 }
 .commented {
@@ -406,7 +414,9 @@
     margin-bottom: 20px;
 }
 .name{
-    width: 200px;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #ratingStar label{
     color:rgb(255, 255, 255);
@@ -432,6 +442,9 @@
 .recomnot{
     width: 140px;
     padding-left: 30px;
+    
+}
+@media only screen and (max-width:1000px) {
     
 }
 
