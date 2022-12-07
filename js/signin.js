@@ -4,6 +4,7 @@ fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLb
     let ld=document.querySelector('#loginData')
     let eml=document.querySelector('#email')
     let psw=document.querySelector('#password')
+    let ans=document.querySelector('#answer')
     let myData=[]
     let obj={firstname:'',lastname:'',email:'',password:''};
     for(let i=1;i<data.content.length;i++){
@@ -14,16 +15,13 @@ fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLb
         myData[i-1]=obj
    
     }
-    // localStorage.yourData=JSON.stringify(obj);
     ld.addEventListener('click',function(){
         for(let i=0;i<myData.length;i++){
-            if(obj.email==eml.value){
+            if(obj.email==eml.value&&obj.password==psw.value){
                 localStorage.yourData=JSON.stringify(obj);
-                //window.location.assign("index.html")
                 location.replace('index.html')
-                alert("Success")
             }else{
-                alert('something wrong!')
+                ans.innerHTML='Something went wrong!'
             }
         }
     
