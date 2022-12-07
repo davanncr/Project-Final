@@ -6,12 +6,13 @@ fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLb
     let psw=document.querySelector('#password')
     let ans=document.querySelector('#answer')
     let remember=document.querySelector('#remember')
-    // if(localStorage.rememberData.length>0){
-    //     let reData=JSON.parse(localStorage.rememberData)
-    //     // eml.value=reData.email
-    //     // psw.value=reData.password
-    //     console.log(reData.email,reData.password)
-    // }
+    if(!localStorage.rememberData){
+        localStorage.rememberData=[]
+    }else{
+        let reData=JSON.parse(localStorage.rememberData)
+        eml.value=reData.email
+        psw.value=reData.password
+    }
     // console.log(localStorage.rememberData)
     for(var i=1;i<data.content.length;i++){
         let obj={firstname:'',lastname:'',email:'',password:''};
