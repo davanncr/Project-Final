@@ -1,3 +1,9 @@
+html{
+    font-size: 16px;
+}
+body{
+    max-width: 80rem;
+}
 #top-menu{
     transform: translateY(120px);
     height: 75px !important;
@@ -198,6 +204,7 @@
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 80rem;
 }
 .overview fieldset legend{
     margin-left: 7%;
@@ -208,11 +215,13 @@
 }
 .overview fieldset .overview-mid-content{
     display: flex;
+    margin-bottom: 2.8rem;
 }
 .overview fieldset .overview-mid-content .menu{
     width: 50%;
 }
 .overview fieldset .overview-mid-content .menu .menu-title{
+    margin-bottom: 0.64rem;
     font-size: 18px;
     color: orange;
     font-weight: 500;
@@ -221,14 +230,20 @@
 }
 .overview fieldset .overview-mid-content .menu .menu-list{
     width: 99%;
-    height: 285px;
+    height: 19rem;
     background-color: #f4f4f4;
+}
+.overview fieldset .overview-mid-content .menu .menu-list img{
+    width: 100%;
+    height: 19rem;
+    object-fit: cover;
 }
 .overview fieldset .overview-mid-content .trending{
     margin-left: 1%;
     width: 50%;
 }
 .overview fieldset .overview-mid-content .trending .trending-title{
+    margin-bottom: 0.64rem;
     font-size: 18px;
     color: orange;
     font-weight: 500;
@@ -237,19 +252,29 @@
 }
 .overview fieldset .overview-mid-content .trending .trending-photos{
     display: grid;
-    grid-template-columns: repeat(3,185px);
-    grid-auto-rows: 185px;
+    grid-template-columns: repeat(auto-fill,11.5rem);
+    grid-auto-rows: 11.5rem;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     width: 100%;
-    height: 300px;
-    overflow-x: scroll;
+    height: 19rem;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: visible;
 }
 .overview fieldset .overview-mid-content .trending .trending-photos .trending-items{  
     background-color: #f4f4f4;
+    transition:all 0.3s ease 0s;
+    cursor: pointer;
 }
 .overview fieldset .overview-mid-content .trending .trending-photos .trending-items img{
+    width: 11.5rem;
+    height: 11.5rem;
     object-fit: cover !important;
+}
+.overview fieldset .overview-mid-content .trending .trending-photos .trending-items:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 .overview fieldset button{
     outline: 1px solid #00a700;
@@ -257,8 +282,8 @@
     border-radius: 10px;
     border: 0;
     padding: 7px;
-    font-size: 13px;
-    margin-top: -10px;
+    font-size: 1vw;
+    margin-top: -8px;
     cursor: pointer;
     transition: 0.1s;
 }
@@ -267,19 +292,24 @@
     color: white;
 }
 .overview fieldset .spacing{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.overview fieldset .fa{
+    font-size: 1.25vw;
 }
 .overview fieldset .bottom-set{
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 13px;
+    font-size: 1vw;
 }
-.overview fieldset .bottom-set #location{
+/* .overview fieldset .bottom-set #location{
     width: 370px;
     height: 15px;
     overflow: hidden;
-}
+    text-overflow: ellipsis;
+    background-color: red;
+} */
 .overview .bottom-set{
     margin-top: 20px;
     display: flex;
@@ -357,7 +387,7 @@
     /* display: flex;
     flex-direction: column; */
     display:grid;
-    grid-template-columns: repeat(2,300px);
+    grid-template-columns: repeat(2,18rem);
     gap: 1.25rem;
     padding-left: 15px;
 }
@@ -444,8 +474,65 @@
     padding-left: 30px;
     
 }
-@media only screen and (max-width:1000px) {
-    
+@media only screen and (min-width:768px) and (max-width:1000px) {
+    .overview fieldset .overview-mid-content .trending .trending-photos{
+        grid-template-columns: repeat(auto-fill,10.5rem);
+        grid-auto-rows: 10.5rem;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        width: 100%;
+        height: 18rem;
+    }
+    .overview fieldset .overview-mid-content .trending .trending-photos .trending-items img{
+        width: 10.5rem;
+        height: 10.5rem;
+        object-fit: cover !important;
+    }
+    .overview fieldset .overview-mid-content .menu .menu-list{
+        width: 99%;
+        height: 18rem;
+        background-color: #f4f4f4;
+    }
+    .overview fieldset .overview-mid-content .menu .menu-list img{
+        width: 100%;
+        height: 18rem;
+        object-fit: cover;
+    }
+    .globe-img{
+        width: 1.3vw;
+    }
+    .overview fieldset .fa{
+        margin: 0 0.5vw;
+    }
+}
+@media only screen and (max-width:767px) {
+    .overview fieldset .overview-mid-content .trending .trending-photos{
+        grid-template-columns: repeat(auto-fill,10.5rem);
+        grid-auto-rows: 10.5rem;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        width: 100%;
+        height: 18rem;
+    }
+    .overview fieldset .overview-mid-content .trending .trending-photos .trending-items img{
+        width: 10.5rem;
+        height: 10.5rem;
+        object-fit: cover !important;
+    }
+    .overview fieldset .overview-mid-content .menu .menu-list{
+        width: 99%;
+        height: 18rem;
+        background-color: #f4f4f4;
+    }
+    .overview fieldset .overview-mid-content .menu .menu-list img{
+        width: 100%;
+        height: 18rem;
+        object-fit: cover;
+    }
+    .globe-img{
+        width: 1.15vw;
+        margin: 0 0.5vw;
+    }
 }
 
 @keyframes iconAnimation {
