@@ -20,8 +20,7 @@ fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLb
             if(obj.email==eml.value){
                 localStorage.yourData=JSON.stringify(obj);
                 //window.location.assign("index.html")
-                window.open("index.html");
-                window.close();
+                location.replace('index.html')
                 alert("Success")
             }else{
                 alert('something wrong!')
