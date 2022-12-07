@@ -1,5 +1,5 @@
 
-fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLbAUCq8MoIsMUjRLvqNHiMO5zpgpcKXjhGKh/exec')
+fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLbAUCq8MoIsMUjRLvqNHiMO5zpgpcKXjhGKh/exec',{method: 'GET'})
 .then(res=>res.json()).then(data=>{
     let ld=document.querySelector('#loginData')
     let eml=document.querySelector('#email')
@@ -19,7 +19,8 @@ fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLb
         for(let i=0;i<myData.length;i++){
             if(obj.email==eml.value){
                 localStorage.yourData=JSON.stringify(obj);
-                window.location.assign("https://davanncr.github.io/Project-Final/")
+                //window.location.assign("index.html")
+                //window.open("index.html");
                 alert("Success")
             }else{
                 alert('something wrong!')

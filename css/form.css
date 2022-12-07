@@ -49,7 +49,7 @@
     border-radius: 20px;
     transition: all 0.5s;
 }
-form input{
+form input,#formLogin input{
     width: 90%;
     height: 40px;
     margin-left: 5%;
@@ -58,7 +58,8 @@ form input{
     font-size: 20px;
     border-bottom: 1.5px solid orange;
 }
-form input[type="checkbox"]{
+
+form input[type="checkbox"],#formLogin input[type="checkbox"]{
     width: 12px;
     height: 12px;
     outline: none;
@@ -80,10 +81,11 @@ form input[type="checkbox"]{
     border-radius: 20px;
     cursor: pointer;
 }
-form{
+form,#formLogin{
     position: absolute;
     width: 100%;
 }
+
 #formSignup{
     left:400px;
     transition: all 0.5s;
@@ -91,6 +93,7 @@ form{
 #formLogin{
     transition: all 0.5s;
 }
-form label{
+form label,#formLogin label{
     color:black;
 }
+
