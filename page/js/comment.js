@@ -42,6 +42,7 @@ function readData(){
             getData.current=data.content[i][4]
             tData[i-1]=getData
         }
+     
         localStorage.Restaurant1=JSON.stringify(tData)
         document.querySelector('#getPost').innerHTML=''
         for(var j=tData.length-1;j>=0;j--) {
