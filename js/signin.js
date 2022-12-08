@@ -12,6 +12,7 @@ if(!localStorage.rememberData){
     let reData=JSON.parse(localStorage.rememberData)
     eml.value=reData.email
     psw.value=reData.password
+    delete localStorage.rememberData
 }
 fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLbAUCq8MoIsMUjRLvqNHiMO5zpgpcKXjhGKh/exec',{method: 'GET'})
 .then(res=>res.json()).then(data=>{
@@ -42,8 +43,6 @@ fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLb
                 location.replace('index.html')
                 if(remember.checked){
                     localStorage.rememberData=JSON.stringify(myData[i])
-                }else{
-                    delete localStorage.rememberData
                 }
                 bool=0;
                 break;

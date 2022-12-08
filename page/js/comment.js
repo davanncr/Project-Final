@@ -1,3 +1,9 @@
+let ydata=JSON.parse(localStorage.yourData)
+let yusername=document.querySelector('#username')
+let yemail=document.querySelector('#email')
+
+    yusername.value=ydata.firstname+' '+ydata.lastname
+    yemail.value=ydata.email
 
 var recom="<i class='fa fa-thumbs-up' aria-hidden='true'></i>Recommended"
 var notrecom="<i class='fa fa-thumbs-down' aria-hidden='true'></i>Not recommended"
@@ -29,7 +35,7 @@ function commentTo(data){
 let tData=[]
 function readData(){
     delete localStorage.Restaurant1
-    fetch('https://script.google.com/macros/s/AKfycbw9BUMRUsAj9PoBBjtQRbOcJ5sQAnaLBLX9HPfCw-cglXHGZlfKXgaz_twYlWRmIv5B/exec')
+    fetch('https://script.google.com/macros/s/AKfycbwKD2UV0Z4t8qYZ-cf52vIWgFJORbIUTLrmZNdBu5qd7xWDK8lAXFq0MOkFTX8ByY7Nig/exec')
     .then(res=>res.json()).then(data=>{
         // console.log(data.content.length);
         document.querySelector('#numRecomment').innerHTML=data.content.length-1
@@ -122,7 +128,7 @@ $(document).ready(function() {
         var hour=currentDate.getHours();
         var minute=currentDate.getMinutes();
         var second=currentDate.getSeconds();
-        var current=day+'/'+month+'/'+year+'  '+hour+':'+minute+':'+second
+        var current=hour+':'+minute+':'+second+' '+year+'/'+month+'/'+day+'  '
 
         let getData={'name':'','email':'','numStars':0,'comment':'','current':''}
         getData.name=$('#username').val()
