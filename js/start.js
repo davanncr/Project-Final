@@ -1,4 +1,5 @@
-localStorage.url=window.location.href
+
 if(!localStorage.yourData){
-    location.assign('index.html')
+    window.open('index.html','_parent')
+    localStorage.url=window.location.href
 }

@@ -9,9 +9,18 @@
     <style>
         @import 'css/form.css';
     </style>
-    <title>Document</title>
+            <script>
+
+                // window.addEventListener('beforeunload', function (e) {
+                //     localStorage.url='main.html'
+                // });
+                function afterleave(){
+                    delete localStorage.yourData
+                    
+                }
+            </script>
 </head>
-<body onpointerleave="delete localStorage.yourData">
+<body onpointerleave="afterleave()">
     <div class="container">
         <div class="formBox">
             <div class="background">

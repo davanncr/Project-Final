@@ -19,9 +19,16 @@
         @import 'css/style.css';
         @import 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
     </style>
+        <script>
+            function afterleave(){
+                
+                delete localStorage.yourData
+    
+            }
+        </script>
 </head>
 
-<body onpointerleave="delete localStorage.yourData">
+<body onpointercancel="afterleave()" onpointercancel="localStorage.url='main.html'">
     <label id="for-back"></label>
     <div class="header-bar">
         <a href="main.html" class="web-logo">
@@ -1522,7 +1529,12 @@
     </div>
 
     <script src="js/windowScroll.js"></script>
-
+    <script>
+        function affer(){
+            delete localStorage.yourData
+            delete localStorage.url
+        }
+    </script>
 </body>
 <script src="js/start.js"></script>
 </html>
