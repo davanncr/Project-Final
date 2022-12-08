@@ -6,11 +6,10 @@ body{
 }
 #top-menu{
     transform: translateY(120px);
-    height: 75px !important;
+    height: 4.6875rem;
     background-color: #F8EDE1;
     padding: 20px 50px;
     display: flex;
-    justify-content: space-between;
 }
 #top-menu div{
     display: inline-block;
@@ -42,11 +41,13 @@ body{
     border-radius: 3px;
 }
 .content-right{
+    margin-left: auto;
     margin-top: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .content-right ul{
     padding: 0;
+    cursor: pointer;
 }
 .content-right ul li{
     list-style: none;
@@ -66,17 +67,17 @@ body{
     margin-left: 15px;
 }
 .content-right ul li button{
-    width: 80px;
-    height: 45px;
+    width: 5rem;
+    height: 2.8125rem;
     color: white;
     font-size: large;
     font-weight: bold;
     background-color: #150037;
     border: none;
-    opacity: 100%;
-    border-radius: 20px;
-    margin-right: 10px;
+    border-radius: 1.25rem;
+    margin-right: 0.625rem;
     transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 .content-right ul li button:hover{
     background-color: rgba(1, 0, 55, 1);
@@ -88,27 +89,39 @@ body{
 .show-image{
     display: flex;
 }
-.show-image .image-1 img{
-    object-fit: cover;
-    width:100%;
-    height: 340px;
+.show-image .images{
+    display: flex;
+    width: 50%;
+    height: 21.25rem;
 }
-.show-image .image-2 img{
+.show-image .images .image-1{
+    width: 50%;
+}
+.show-image .images .image-2{
+    width: 50%;
+}
+.show-image .images .image-1 img{
     object-fit: cover;
     width:100%;
-    height: 170px;
+    height: 21.25rem;
+}
+
+.show-image .images .image-2 img{
+    object-fit: cover;
+    width:100%;
+    height: 10.625rem;
 }
 .show-image .box{ 
-    width:100%;
-    height: 340px;
+    width:50%;
+    height: 21.25rem;
     background-color: #150037;
     /* background-color: #eae0d5; */
     display: grid;
     place-items:center !important;
 }
 .show-image .box .circle{
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     background-image: url("../css/../page/image/profile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,12 +196,6 @@ body{
 }
 #food5 img{
     width: 90px;
-}
-.show-image .image-1,.show-image .image-2{
-    width: 25%;
-}
-.show-image .box{
-    width: 50%;
 }
 .overview{
     transform: translateY(160px);
@@ -506,6 +513,45 @@ body{
     }
 }
 @media only screen and (max-width:767px) {
+    #top-menu{
+        flex-direction: column;
+        padding: 0.2rem 20px ;
+        height: 8rem;
+    }
+    .content-right{
+        margin-top: -1.5rem;
+        margin-left: 0;
+    }
+    .content-right ul li button{
+        width: 4.2rem;
+        height: 2.0125rem;
+        border-radius: 0.75rem;
+    }
+    .content-right .content-sign1{
+        display: none;
+    }
+    .content-right .content-sign:after{
+        content: "";
+    }
+    .show-image{
+        flex-direction: column;
+    }
+    .show-image .images{
+        width: 100%;
+    }
+    .show-image .box{
+        width: 100%;
+        order: -1;
+    }
+    .overview fieldset .overview-mid-content{
+        flex-direction: column;
+    }
+    .overview fieldset .overview-mid-content .menu{
+        width: 100%;
+    }
+    .overview fieldset .overview-mid-content .trending{
+        width: 100%;
+    }
     .overview fieldset .overview-mid-content .trending .trending-photos{
         grid-template-columns: repeat(auto-fill,10.5rem);
         grid-auto-rows: 10.5rem;
