@@ -12,27 +12,35 @@ myform.addEventListener('submit',(e)=>{
     let fname=document.getElementById('firstnames')
     let lname=document.getElementById('lasstnames')
     let email=document.getElementById('emails')
-    if(chbox.checked){
-        if(fpw.length<8){
+        
+        if(fpw.value.length<8){
             alert('Password must less than 8 characters!')
         }else{
             if(fpw.value==fpws.value){
-                fetch('https://script.google.com/macros/s/AKfycbxrG2lt0oVFNzR8RXeYyJWfaGimEkaaglcg1-HY2vFjRk6F6UeFt4Ge0U1JoPh9riQ1/exec',{method:'POST',body:fdata})   
-                btn.style.left='0px'
-                flg.style.left='0px'
-                fsg.style.left='400px'
-                fname.value=''
-                lname.value=''
-                email.value=''
-                fpw.value=''
-                fpws.value=''
-                chbox.checked=false
+                if(chbox.checked){
+                    fetch('https://script.google.com/macros/s/AKfycbxrG2lt0oVFNzR8RXeYyJWfaGimEkaaglcg1-HY2vFjRk6F6UeFt4Ge0U1JoPh9riQ1/exec',{method:'POST',body:fdata})   
+                    let dataSignUp={'fristname':'','lastname':'','email':'','password':''}
+                    dataSignUp.fristname=fname.value
+                    dataSignUp.lastname=lname.value
+                    dataSignUp.email=email.value
+                    dataSignUp.password=fpw
+                    btn.style.left='0px'
+                    flg.style.left='0px'
+                    fsg.style.left='400px'
+                    fname.value=''
+                    lname.value=''
+                    email.value=''
+                    fpw.value=''
+                    fpws.value=''
+                    chbox.checked=false
+                    localStorage.myDataSignUP=JSON.stringify(dataSignUp)
+                }else{
+                    alert('You must agree!')
+                }
             }else{
                 alert('Password not match!');
             }        
         }        
-    }else{
-        alert('You must agree!')
-    }
+
     
 })

@@ -21,13 +21,13 @@
             </div>
             <br><br>
             <form id="formSignup">
-                <input type="text" name="firstnames" id="firstnames" placeholder="Enter firstname"><br><br>
-                <input type="text" name="lastnames" id="lasstnames" placeholder="Enter lastname"><br><br>
-                <input type="email" name="emails" id="emails" placeholder="Enter email"><br><br>
-                <input type="password" name="passwords" id="passwords" placeholder="Enter password"><br><br>
-                <input type="password" name="repasswords" id="repasswords"placeholder="Enter re-password"><br><br>
+                <input type="text" name="firstnames" id="firstnames" placeholder="Enter firstname" required><br><br>
+                <input type="text" name="lastnames" id="lasstnames" placeholder="Enter lastname" required><br><br>
+                <input type="email" name="emails" id="emails" placeholder="Enter email" required><br><br>
+                <input type="password" name="passwords" id="passwords" placeholder="Enter password" required><br><br>
+                <input type="password" name="repasswords" id="repasswords"placeholder="Enter re-password" required><br><br>
                 <input type="checkbox" name="agree" id="agree" value="1"><label for="agree">I agree to the term & conditions</label><br><br><br>
-                <button class="register">SignUp</button>
+                <button type="submit" class="register" id="signupData">SignUp</button>
             </form>
             <script src="js/signup.js"></script>
             <div id="formLogin">
@@ -40,5 +40,10 @@
             <script src="js/signin.js"></script>
     </div>
     <script src="js/form.js"></script>
+    <script type="text/javascript">
+            window.onbeforeunload = () => {
+                alert("Hello!");
+            };
+        </script>
 </body>
 </html>
