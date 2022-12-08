@@ -243,7 +243,7 @@ body{
 .overview fieldset .overview-mid-content .menu .menu-list img{
     width: 100%;
     height: 19rem;
-    object-fit: cover;
+    object-fit:contain;
 }
 .overview fieldset .overview-mid-content .trending{
     margin-left: 1%;
@@ -328,11 +328,12 @@ body{
 }
 .open{
     color: green;
-    display: none;
+    /* display: none; */
     font-weight:bold;
 }
 .close{
     color: red;
+    display: none;
     font-weight: bold;
 }
 .underBody{
@@ -545,39 +546,94 @@ body{
     }
     .overview fieldset .overview-mid-content{
         flex-direction: column;
+        gap: 0.5rem;
     }
     .overview fieldset .overview-mid-content .menu{
         width: 100%;
     }
+    .overview fieldset .overview-mid-content .menu .menu-list{
+        width: 88.8vw;
+    }
     .overview fieldset .overview-mid-content .trending{
-        width: 100%;
+        width: 88vw;
+    }
+    .overview fieldset .overview-mid-content .menu .menu-title{
+        text-align: start;
+        padding-left: 0;
+    }
+    .overview fieldset .overview-mid-content .trending .trending-title{
+        text-align: start;
+        margin-bottom: 0;
     }
     .overview fieldset .overview-mid-content .trending .trending-photos{
-        grid-template-columns: repeat(auto-fill,10.5rem);
-        grid-auto-rows: 10.5rem;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        width: 100%;
-        height: 18rem;
+        grid-template-columns: repeat(12,8.5rem);
+        grid-auto-rows: 8.5rem;
+        height: 10rem;
+        justify-content: flex-start;   
     }
     .overview fieldset .overview-mid-content .trending .trending-photos .trending-items img{
-        width: 10.5rem;
-        height: 10.5rem;
-        object-fit: cover !important;
+        width: 8.5rem;
+        height: 8.5rem;
     }
-    .overview fieldset .overview-mid-content .menu .menu-list{
-        width: 99%;
-        height: 18rem;
-        background-color: #f4f4f4;
+    .overview fieldset button{
+        border-radius: 0.85rem;
+        font-size: 0.5rem;
+        width: 4.5rem;
+        height: 2.25rem;
     }
-    .overview fieldset .overview-mid-content .menu .menu-list img{
-        width: 100%;
-        height: 18rem;
-        object-fit: cover;
+    .overview fieldset .spacing{
+        display: none;
+    }
+    .overview fieldset .fa{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .overview .bottom-set label{
+        margin-top: -0.75rem;
+    }
+    .overview .bottom-set .fa-map-marker::after{
+        content: "Location";
+        font-size: 0.5rem;
+        display: block;
+        text-align: center;
+        font-family: "Inter",sans-serif;
+    }
+    .overview .bottom-set .fa-phone::after{
+        content: "Call";
+        font-size: 0.5rem;
+        display: block;
+        text-align: center;
+        font-family: "Inter",sans-serif;
+    }
+    .overview .bottom-set .res-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    .overview .bottom-set .res-detail .opening-time,.overview .bottom-set .res-detail .price-range{
+        font-size: 0.5rem;
+    }
+    .overview .bottom-set .res-detail .opening-time label:nth-child(2),.overview .bottom-set .res-detail .price-range label:nth-child(2){
+        padding: 0 0.2rem;
+    }
+    .overview .bottom-set .res-detail .opening-time .fa-clock-o,.overview .bottom-set .res-detail .price-range .fa-dollar{
+        font-size: 1rem;
+    }
+    .overview .bottom-set div{
+        display: none;
     }
     .globe-img{
-        width: 1.15vw;
+        width: 2rem;
         margin: 0 0.5vw;
+        cursor: pointer;
+    }
+    #globe::after{
+        content: "Website";
+        font-size: 0.5rem;
+        display: block;
+        text-align: center;
+        font-family: "Inter",sans-serif;
     }
 }
 
