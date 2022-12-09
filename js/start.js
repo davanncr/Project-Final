@@ -1,11 +1,9 @@
 let forLog=document.querySelector('#forLogin');
-setInterval(function(){
+let wLog=document.querySelector('#wantLogin');
     if(!localStorage.yourData){
-        forLog.innerHTML = "<button class='login' id='wantLogin' onclick='window.open('form.html','_parent')'><a>Log In</a></button>"
+        forLog.innerHTML = "<button class='login' id='wantLogin' onclick='goLoging()'><a>Log In</a></button>"
     }else{
         let getData=JSON.parse(localStorage.yourData)
-        forLog.innerHTML="<label class='yourname'>"+getData.firstname+" "+getData.lastname+"<label>"
+        forLog.innerHTML="<label class='yourname' onclick='goLoging()'>"+getData.firstname+" "+getData.lastname+"<label>"
     }
-},0)
-
 
