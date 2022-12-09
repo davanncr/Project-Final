@@ -56,7 +56,7 @@ body{
 }
 .form{   
     position: relative;
-    transform: translate(0%,0px);
+    transform: translate(5%,0px);
     display: flex;
     /* height: 30px !important; */
     /* transform: translateX(70px) !important; */
@@ -159,7 +159,7 @@ body{
     list-style-type:none;
     display:flex;
     justify-content: end;
-    padding-right: 2rem;
+    padding-right: 1.5rem;
     /* width: 100px ; */
     transition: all 0.3s ease 0s;
    
@@ -500,6 +500,6 @@ body{
 }
 #forLogin{
     position: relative;
-    width: 150px;
+    width: 120px;
     word-break: break-all;
 }
