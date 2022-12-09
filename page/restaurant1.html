@@ -175,7 +175,7 @@
                 <button>Reserve Now</button>
                 <label class="spacing">|</label>
                 <label  class="fa fa-map-marker" aria-hidden="true"></label>
-                <div><a id="location" href="#">Restaurant location,Restaurant location,Restaurant location</a></div>
+                <div class="location"><a id="location" href="#">Restaurant location,Restaurant location,Restaurant location</a></div>
                 <label class="spacing">|</label>
                 <label for="phone-number" class="fa fa-phone"></label>
                 <div><a id="phone-number" href="tel:0964526262">+855 964 526 262</a></div>
@@ -217,10 +217,12 @@
                             
                         </tr>
                         <tr>
-                            <td>
-                                <p>Your review</p>
+                            <td class="review-section">
+                                <div>Your review:</div>
                                 <textarea name="comment" id="comment" cols="35" rows="7" placeholder="comment here" required></textarea>
                             </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <label>Rate :</label><label id="ratingStar">
                                     <input type="radio" name="star" id="st1" value="1" class="numStars" required>
@@ -233,12 +235,12 @@
                                     <label class="fa fa-star" id="star4" for="st4" class="numStars"></label>
                                     <input type="radio" name="star" id="st5" value="5" class="numStars" readonly>
                                     <label class="fa fa-star" id="star5" for="st5" class="numStars"></label>
-                                </label><br>
-                                <p id="ratingRecomment">&nbsp;</p><br><br><br>
+                                </label>
+                                <p id="ratingRecomment">&nbsp;</p>
                             </td>
                         </tr>
-                    </table>        
-                    <br>
+                    </table> 
+
                     <button id="post" type="submit">Post</button><label id="eror" style="color:red;padding-left: 50px;"></label>            
                 </form>
                 <script src="js/sheetDB.js"></script>
@@ -258,7 +260,10 @@
               <div class="similarRestaurant">
                     <div class="menu">
                             <img src="../image/recom-1.jpg" alt="">
-                            <label class="name-restaurant">Restaurant</label><br><br>
+                            <div class="res-title-and-status">
+                                <div class="name-restaurant">RestaurantRestaurantRestaurantRestaurant</div><br><br>
+                                <span class="span-popular2">Open</span>
+                            </div>
                             <div class="footer-menu">
                                 <div class="ratingStar">
                                     <span class="fa fa-star checked"></span>
@@ -269,12 +274,15 @@
                                 </div>
                                 <span class="span-popular">Popular</span>
                                 <span class="span-popular1">8:00am-8:00pm</span>
-                                <span class="span-popular2">Open</span>
+                                
                             </div>
                     </div>
                     <div class="menu">
                         <img src="../image/recom-1.jpg" alt="">
-                        <label class="name-restaurant">Restaurant</label><br><br>
+                        <div class="res-title-and-status">
+                            <div class="name-restaurant">RestaurantRestaurantRestaurantRestaurant</div><br><br>
+                            <span class="span-popular2">Open</span>
+                        </div>
                         <div class="footer-menu">
                             <div class="ratingStar">
                                 <span class="fa fa-star checked"></span>
@@ -285,12 +293,15 @@
                             </div>
                             <span class="span-popular">Popular</span>
                             <span class="span-popular1">8:00am-8:00pm</span>
-                            <span class="span-popular2">Open</span>
+                            
                         </div>
                     </div>
                     <div class="menu">
                         <img src="../image/recom-1.jpg" alt="">
-                        <label class="name-restaurant">Restaurant</label><br><br>
+                        <div class="res-title-and-status">
+                            <div class="name-restaurant">RestaurantRestaurantRestaurantRestaurant</div><br><br>
+                            <span class="span-popular2">Open</span>
+                        </div>
                         <div class="footer-menu">
                             <div class="ratingStar">
                                 <span class="fa fa-star checked"></span>
@@ -301,12 +312,15 @@
                             </div>
                             <span class="span-popular">Popular</span>
                             <span class="span-popular1">8:00am-8:00pm</span>
-                            <span class="span-popular2">Open</span>
+                            
                         </div>
                     </div>
                     <div class="menu">
                         <img src="../image/recom-1.jpg" alt="">
-                        <label class="name-restaurant">Restaurant</label><br><br>
+                        <div class="res-title-and-status">
+                            <div class="name-restaurant">RestaurantRestaurantRestaurantRestaurant</div><br><br>
+                            <span class="span-popular2">Open</span>
+                        </div>
                         <div class="footer-menu">
                             <div class="ratingStar">
                                 <span class="fa fa-star checked"></span>
@@ -317,12 +331,15 @@
                             </div>
                             <span class="span-popular">Popular</span>
                             <span class="span-popular1">8:00am-8:00pm</span>
-                            <span class="span-popular2">Open</span>
+                            
                         </div>
                     </div>
                     <div class="menu">
                         <img src="../image/recom-1.jpg" alt="">
-                        <label class="name-restaurant">Restaurant</label><br><br>
+                        <div class="res-title-and-status">
+                            <div class="name-restaurant">RestaurantRestaurantRestaurantRestaurant</div><br><br>
+                            <span class="span-popular2">Open</span>
+                        </div>
                         <div class="footer-menu">
                             <div class="ratingStar">
                                 <span class="fa fa-star checked"></span>
@@ -333,12 +350,15 @@
                             </div>
                             <span class="span-popular">Popular</span>
                             <span class="span-popular1">8:00am-8:00pm</span>
-                            <span class="span-popular2">Open</span>
+                            
                         </div>
                     </div>
                     <div class="menu">
                         <img src="../image/recom-1.jpg" alt="">
-                        <label class="name-restaurant">Restaurant</label><br><br>
+                        <div class="res-title-and-status">
+                            <div class="name-restaurant">RestaurantRestaurantRestaurantRestaurant</div><br><br>
+                            <span class="span-popular2">Open</span>
+                        </div>
                         <div class="footer-menu">
                             <div class="ratingStar">
                                 <span class="fa fa-star checked"></span>
@@ -349,12 +369,15 @@
                             </div>
                             <span class="span-popular">Popular</span>
                             <span class="span-popular1">8:00am-8:00pm</span>
-                            <span class="span-popular2">Open</span>
+                            
                         </div>
                     </div>
                     <div class="menu">
                         <img src="../image/recom-1.jpg" alt="">
-                        <label class="name-restaurant">Restaurant</label><br><br>
+                        <div class="res-title-and-status">
+                            <div class="name-restaurant">RestaurantRestaurantRestaurantRestaurant</div><br><br>
+                            <span class="span-popular2">Open</span>
+                        </div>
                         <div class="footer-menu">
                             <div class="ratingStar">
                                 <span class="fa fa-star checked"></span>
@@ -365,12 +388,15 @@
                             </div>
                             <span class="span-popular">Popular</span>
                             <span class="span-popular1">8:00am-8:00pm</span>
-                            <span class="span-popular2">Open</span>
+                            
                         </div>
                     </div>
                     <div class="menu">
                         <img src="../image/recom-1.jpg" alt="">
-                        <label class="name-restaurant">Restaurant</label><br><br>
+                        <div class="res-title-and-status">
+                            <div class="name-restaurant">RestaurantRestaurantRestaurantRestaurant</div><br><br>
+                            <span class="span-popular2">Open</span>
+                        </div>
                         <div class="footer-menu">
                             <div class="ratingStar">
                                 <span class="fa fa-star checked"></span>
@@ -381,7 +407,7 @@
                             </div>
                             <span class="span-popular">Popular</span>
                             <span class="span-popular1">8:00am-8:00pm</span>
-                            <span class="span-popular2">Open</span>
+                            
                         </div>
                     </div>
         

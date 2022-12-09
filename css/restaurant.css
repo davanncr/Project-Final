@@ -374,10 +374,6 @@ body{
     font-weight: 500;
     padding: 0 10px;
 }
-.underBody .menuRestaurant .similarRestaurant{
-    height: 140vh;
-    overflow-y: auto;
-}
 .underBody .menuRestaurant .similarRestaurant .menu{
     width:95%;
     height: 250px;
@@ -398,12 +394,24 @@ body{
     grid-template-columns: repeat(2,18rem);
     gap: 1.25rem;
     padding-left: 15px;
+    height: 140vh;
+    overflow-y: auto;
 }
-.underBody .menuRestaurant .similarRestaurant .menu .name-restaurant{
-    font-size: 20px;
+.underBody .menuRestaurant .similarRestaurant .menu .res-title-and-status{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 0.2rem;
+}
+.underBody .menuRestaurant .similarRestaurant .menu .res-title-and-status .name-restaurant{
+    font-size: 1.1rem;
+    margin-top: -0.3rem;
+    width: 14rem;
+    height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-#email{
+/* #email{
     width: 200px;
     height: 20px;
     outline: none;
@@ -411,6 +419,15 @@ body{
 #username{
     height: 20px;
     outline: none;
+} */
+.review-section{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.review-section div{
+    display: grid;
+    place-items: center;
 }
 #comment{
     outline: none;
@@ -426,12 +443,18 @@ body{
 #post{
     padding: 5px;
     width: 100px;
-    background-color: blue;
-    border: 0;
-    color:white;
+    background-color: white;
+    border: 1px solid black;
+    color:black;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+#post:hover{
+    background-color: black;
+    color:white;
 }
 .commented .topcomment{
     display: flex;
@@ -512,8 +535,39 @@ body{
     .overview fieldset .fa{
         margin: 0 0.5vw;
     }
+    .overview fieldset button{
+        border-radius: 0.85rem;
+        font-size: 0.5rem;
+        width: 4.5rem;
+        height: 2.25rem;
+        margin-top: -0.75rem;
+    }
+    .overview fieldset .bottom-set{
+        font-size: 1.25vw;
+    }
+    .location{
+        width: 15vw;
+        height: 2vh;
+        display: none;
+    }
+    .overview fieldset .bottom-set .fa-map-marker::after{
+        content: "Location";
+        padding-left: 0.2rem;
+        font-family: "Inter",sans-serif;
+    }
+    .underBody .menuRestaurant {
+        margin-left: 7%;
+    }
+    .underBody .menuRestaurant .similarRestaurant{
+        display:grid;
+        grid-template-columns: repeat(auto-fill,18rem);
+        gap: 1.25rem;
+        padding-left: 15px;
+        height: 140vh;
+        overflow-y: auto;
+    }
 }
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
     #top-menu{
         flex-direction: column;
         padding: 0.2rem 20px ;
@@ -552,10 +606,10 @@ body{
         width: 100%;
     }
     .overview fieldset .overview-mid-content .menu .menu-list{
-        width: 88.8vw;
+        width: 84vw;
     }
     .overview fieldset .overview-mid-content .trending{
-        width: 88vw;
+        width: 84vw;
     }
     .overview fieldset .overview-mid-content .menu .menu-title{
         text-align: start;
@@ -635,6 +689,54 @@ body{
         text-align: center;
         font-family: "Inter",sans-serif;
     }
+    .underBody{
+        flex-direction: column;
+    }
+    .underBody .review fieldset{
+        max-width: 80rem;
+        height: 140vh;
+        overflow: scroll;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .underBody .review{
+        width: 90%;
+    }
+    .underBody .menuRestaurant{
+        width: 90%;
+        margin-top: 1rem;
+    }
+    .underBody .menuRestaurant .similar-res-title{
+        padding-left: 0;
+    }
+    .underBody .menuRestaurant .similarRestaurant{
+        height: 18rem;
+        overflow-y: auto;
+        background-color: rgb(255, 255, 255);
+        display:grid;
+        grid-template-columns: repeat(8,18rem);
+        gap: 1.25rem;
+        padding-left: 15px;
+    }
+    .underBody .menuRestaurant .similarRestaurant .menu{
+        width:90%;
+        height: 12rem;
+        margin-top: 20px;
+    }
+    .underBody .menuRestaurant .similarRestaurant .menu img{
+        width: 100%;
+        height: 10rem;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    .underBody .menuRestaurant .similarRestaurant .menu .name-restaurant{
+        font-size: 1.2rem;
+    }
+    
 }
 
 @keyframes iconAnimation {
