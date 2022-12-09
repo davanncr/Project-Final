@@ -40,7 +40,12 @@ fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLb
            
             if(myData[i].email==eml.value&&myData[i].password==psw.value){
                 localStorage.yourData=JSON.stringify(myData[i])
-                window.open('index.html','_parent')
+                if(!localStorage.url){
+                    window.open('index.html','_parent')
+                }else{
+                    window.open(localStorage.url,'_parent')
+                }
+
                 if(remember.checked){
                     localStorage.rememberData=JSON.stringify(myData[i])
                     
