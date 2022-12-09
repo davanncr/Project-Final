@@ -44,9 +44,10 @@ fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLb
                     localStorage.url='main.html'
                 }else{
                     let urls=localStorage.url
+                    
                     delete localStorage.url
                     window.open(urls,'_parent')
-
+                    //alert("Successfully")
                 }
                 if(remember.checked){
                     localStorage.rememberData=JSON.stringify(myData[i])

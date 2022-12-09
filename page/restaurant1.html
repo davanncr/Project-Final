@@ -27,14 +27,11 @@
         // window.addEventListener('load',() => {
         //     localStorage.url=window.location.url
         // })
-        function afterleave(){
-            
-            delete localStorage.yourData
-        }
+//onpointerleave
     </script>
 </head>
 
-<body onpointerleave="afterleave()">
+<body onblur="delete localStorage.yourData">
     <label id="for-back"></label>
     <div class="header-bar">
         <a href="../main.html" class="web-logo">
