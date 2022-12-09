@@ -31,14 +31,16 @@
 <body onpointercancel="afterleave()" onpointercancel="localStorage.url='main.html'">
     <label id="for-back"></label>
     <div class="header-bar">
-        <a href="main.html" class="web-logo">
-            <img src="image/logo.png" class="logo-bar">
-            <div style="transform:translateX(60px);text-align: left;" class="logo-title">
-                <label for="web-logo" class="label-logo">Phnom Penh Restaurant</label><br>
-                <label for="web-logo" style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
-                    meal!</label>
-            </div>
-        </a>
+        <div>
+            <a href="main.html" class="web-logo">
+                <img src="image/logo.png" class="logo-bar">
+                <div style="transform:translateX(2.35rem);text-align: left;" class="logo-title">
+                    <label class="label-logo">Phnom Penh Restaurant</label><br>
+                    <label style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
+                        meal!</label>
+                </div>
+            </a>
+        </div>
         <div class="form">
             <button type="submit" id="button-search"><img src="image/search.png" alt="" width="20px"></button>
             <input type="search" name="" id="search-bar" placeholder="Search for any Restaurant">
@@ -63,6 +65,7 @@
             <ul>
                 <li><a href="#" class="map">Map</a></li>
                 <li><a href="#">About US</a></li>
+                <li><button class="login"><a href="#">Log In</a></button></li>
             </ul>
         </div>
     </div>
@@ -1537,4 +1540,5 @@
     </script>
 </body>
 <script src="js/start.js"></script>
+
 </html>
