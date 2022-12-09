@@ -19,8 +19,8 @@ myform.addEventListener('submit',(e)=>{
             if(fpw.value==fpws.value){
                 if(chbox.checked){
                     fetch('https://script.google.com/macros/s/AKfycbxrG2lt0oVFNzR8RXeYyJWfaGimEkaaglcg1-HY2vFjRk6F6UeFt4Ge0U1JoPh9riQ1/exec',{method:'POST',body:fdata})   
-                    let dataSignUp={'fristname':'','lastname':'','email':'','password':''}
-                    dataSignUp.fristname=fname.value
+                    let dataSignUp={'firstname':'','lastname':'','email':'','password':''}
+                    dataSignUp.firstname=fname.value
                     dataSignUp.lastname=lname.value
                     dataSignUp.email=email.value
                     dataSignUp.password=fpw.value

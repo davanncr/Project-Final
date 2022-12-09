@@ -1,54 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phnom Penh Restaurant</title>
     <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&family=Kotta+One&display=swap" rel="stylesheet">
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <style>
-        @import 'css/form.css';
+        @import 'css/style.css';
+        @import 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
     </style>
-            <script>
 
-                // window.addEventListener('beforeunload', function (e) {
-                //     localStorage.url='main.html'
-                // });
-                function afterleave(){
-                    
-                    
-                }
-            </script>
 </head>
-<body>
-    <div class="container">
-        <div class="formBox">
-            <div class="background">
-                <div class="btn"></div>
-                <div class="login">SignIn</div>
-                <div class="signup">SignUp</div>
-            </div>
-            <br><br>
-            <form id="formSignup">
-                <input type="text" name="firstnames" id="firstnames" placeholder="Enter firstname" required><br><br>
-                <input type="text" name="lastnames" id="lasstnames" placeholder="Enter lastname" required><br><br>
-                <input type="email" name="emails" id="emails" placeholder="Enter email" required><br><br>
-                <input type="password" name="passwords" id="passwords" placeholder="Enter password" required><br><br>
-                <input type="password" name="repasswords" id="repasswords"placeholder="Enter re-password" required><br><br>
-                <input type="checkbox" name="agree" id="agree" value="1"><label for="agree">I agree to the term & conditions</label><br><br><br>
-                <button type="submit" class="register" id="signupData">SignUp</button>
-            </form>
-            <script src="js/signup.js"></script>
-            <div id="formLogin">
-                <input type="email" name="email" id="email" placeholder="Enter email" required><br><br>
-                <input type="password" name="password" id="password" placeholder="Enter password" required><br><br>
-                <input type="checkbox" name="remember" id="remember"><label for="remember">Remember</label><br><br><br>
-                <button class="register" id="loginData">SignIn</button><br><br>
-                <label for="" id="answer" style="color:red;font-size: 12px;margin-left:37%;"></label>
-            </div>
-            <script src="js/signin.js"></script>
-    </div>
-    <script src="js/form.js"></script>
 
+<body>
+    <label id="for-back"></label>
+    <div class="header-bar">
+        <div>
+            <a href="main.html" class="web-logo">
+                <img src="image/logo.png" class="logo-bar">
+                <div style="transform:translateX(2.35rem);text-align: left;" class="logo-title">
+                    <label class="label-logo">Phnom Penh Restaurant</label><br>
+                    <label style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
+                        meal!</label>
+                </div>
+            </a>
+        </div>
+        <div class="form">
+            <button type="submit" id="button-search"><img src="image/search.png" alt="" width="20px"></button>
+            <input type="search" name="" id="search-bar" placeholder="Search for any Restaurant">
+            <select name="" id="filter">
+                <option value="" class="f1">Filter</option>
+                <option value="" class="f">Popular</option>
+                <option value="" class="f">Breakfast Served</option>
+                <option value="" class="f">Lunch Served</option>
+                <option value="" class="f">Dinner Served</option>
+                <option value="" class="f">Fast Food</option>
+                <option value="" class="f">Chinese</option>
+                <option value="" class="f">Nearby</option>
+                <option value="" class="f">Natural Environment</option>
+                <option value="" class="f">Reasonable Price</option>
+                <option value="" class="f">Drinks and Milk Tea</option>
+                <option value="" class="f">Bars and Toproofs</option>
+                <option value="" class="f">Buffet</option>
+            </select>
+            <script src="js/actionSellectorBar.js"></script>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#" class="map">Map</a></li>
+                <li><a href="#">About US</a></li>
+                <label id="forLogin" onclick="window.open('form.html','_parent')"></label>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    <div class="slides">
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/slide1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="image/slide2-assets/slide2.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <div class="body">
+        <div id="body-bar">
+            <fieldset class="share">
+                <legend><iconify-icon icon="noto-v1:thought-balloon" width="35px" height="35px"></iconify-icon></legend>
+                <h3 class="h3">Share your thought</h3>
+                <p class="p">Give reviews to any<br>restaurants you've visited.</p>
+            </fieldset>
+            <fieldset class="share fine">
+                <legend><iconify-icon icon="noto-v1:pot-of-food" width="35px" height="35px"></iconify-icon></legend>
+                <h3 class="h3">Find the best place to eat!</h3>
+                <p class="p">There are more than 100<br>restaurants for you to choose.</p>
+            </fieldset>
+            <fieldset class="share reserve">
+                <legend><iconify-icon icon="simple-line-icons:calender" width="35px" height="35px"></iconify-icon></legend>
+                <h3 class="h3">Reserve a table</h3>
+                <p class="p">Make online reservations<br>at the restaurant.</p>
+            </fieldset>
+        </div>
+        <div class="shopping">
+            <br><br><br>
+            <label>Recommended for you</label>
+            <br><br>
+            <div class="recommence restaurants">
+                <div>
+                    <div class="recom menu-1">
+                        <a class="restaurant-page" href="page/restaurant1.html"><img src="image/recom-2.jpg" alt=""></a>
+                        <p><a class="restaurant-page" href="page/restaurant1.html">Restaurant</a></p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">8:00am-8:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-2">
+                        <img src="image/recom-3.jpg" alt="" >
+                        <p>Restaurant</p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">8:00am-8:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-3">
+                        <img src="image/recom-4.jpg" alt="" >
+                        <p>Restaurant</p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">8:00am-8:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-4">
+                        <img src="image/recom-6.jpg" alt="" >
+                        <p>First time Buffet BBQ and Soup</p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">4:00pm-10:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-5">
+                        <img src="image/recom-7.jpg" alt="" >
+                        <p>KHMER CUISINE</p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">8:00am-8:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-5">
+                        <img src="image/recom-8.webp" alt="" >
+                        <p>Yi Sang Chinese Restaurant</p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">8:00am-8:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-7">
+                        <img src="image/recom-9.webp" alt="" >
+                        <p>EMPERORS</p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">8:00am-8:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="recom menu-8">
+                        <img src="image/recom-10.webp" alt="" >
+                        <p>ROSEWOOOD</p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">8:00am-8:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-9">
+                        <img src="image/recom-11.jpg" alt="" >
+                        <p>RNamaste India Restaurant BKK</p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">10:00am-11:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="recom menu-10">
+                        <img src="image/recom-3.jpg" alt="" >
+                        <p>Restaurant</p>
+                        <div class="clear"></div>
+                        <div class="footer-menu">
+                            <div class="ratingStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="span-popular">Popular</span>
+                            <span class="span-popular1">8:00am-8:00pm</span>
+                            <span class="span-popular2">Open</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="p">
+
+            </div>
+
+            
+            </div>
+            <a href="#for-back"><img src="image/traingle.png" alt="" width="35px" style="float: right;margin-right:100px; transform: translateY(45px);"></a>
+            <div id="footer">
+                <img src="image/logo.png" alt="" width=100px">
+                <h3>Follow us:</h3>
+                <a href="#" class="fa fa-facebook-square" aria-hidden="true"></a>
+                <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+                <a href="#" class="fa fa-twitter-square" aria-hidden="true"></a>
+                <a href="#"class="fa fa-telegram" aria-hidden="true"></a>
+                <div class="left">
+                    <a href="#" class="other">Privacy Policy</a>
+                    <a href="#" class="other">Terms & Conditions </a>
+                    <a href="#" class="other">Contact Us</a>
+                    <a href="#" class="other">Feedback</a>            
+                </div>    
+            </div>
+        </div>
+        <script src="js/showML.js"></script>
+        <script src="js/showML2.js"></script>
+        <script src="js/showML3.js"></script>
+        <script src="js/showML4.js"></script>
+        <script src="js/showML5.js"></script>
+        <script src="js/showML6.js"></script>
+        
+    </div>
+    
+    <script src="js/windowScroll.js"></script>
+    <script src="js/start.js"></script>
 </body>
+
+
 </html>
