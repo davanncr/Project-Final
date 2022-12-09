@@ -312,7 +312,7 @@ body{
 
 .ratingStar span{
     font-size: 15px;
-    text-shadow: 1px 1px 1px gray;
+    text-shadow: 0px 0px 1.5px gray;
     color: #F3F3F3;
 }
 .ratingStar .checked{
@@ -331,7 +331,7 @@ body{
 .footer-menu{
     display:flex;
     transform: translateY(-20px);
-
+    justify-content: space-between;
 }
 .restaurant .menu img{
     width: 100%;
@@ -353,12 +353,10 @@ body{
     color: #009EF7;
     font-size: 13px;
     padding-left: 14px;
-  
 }
-.footer-menu .span-popular2{   
+.span-popular2{   
     font-size: 13px;
     color:#50CD89;
-    padding-left: 7px;
 }
 .restaurants div .recom img{
     width:100%;
