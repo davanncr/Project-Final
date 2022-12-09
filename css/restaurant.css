@@ -79,6 +79,10 @@ body{
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
+.content-right ul li button a{
+    text-decoration: none;
+    color: white;
+}
 .content-right ul li button:hover{
     background-color: rgba(1, 0, 55, 1);
     transform: scale(1.15,1.15);
@@ -224,10 +228,10 @@ body{
     display: flex;
     margin-bottom: 2.8rem;
 }
-.overview fieldset .overview-mid-content .menu{
+.overview fieldset .overview-mid-content #menu{
     width: 50%;
 }
-.overview fieldset .overview-mid-content .menu .menu-title{
+.overview fieldset .overview-mid-content #menu .menu-title{
     margin-bottom: 0.64rem;
     font-size: 18px;
     color: orange;
@@ -235,12 +239,12 @@ body{
     padding: 10px 0px;
     text-align: center;
 }
-.overview fieldset .overview-mid-content .menu .menu-list{
+.overview fieldset .overview-mid-content #menu .menu-list{
     width: 99%;
     height: 19rem;
     background-color: #f4f4f4;
 }
-.overview fieldset .overview-mid-content .menu .menu-list img{
+.overview fieldset .overview-mid-content #menu .menu-list img{
     width: 100%;
     height: 19rem;
     object-fit:contain;
@@ -401,6 +405,10 @@ body{
     display: flex;
     justify-content:space-between;
     margin-top: 0.2rem;
+}
+.underBody .menuRestaurant .similarRestaurant .menu .res-title-and-status a{
+    text-decoration: none;
+    color: black;
 }
 .underBody .menuRestaurant .similarRestaurant .menu .res-title-and-status .name-restaurant{
     font-size: 1.1rem;
