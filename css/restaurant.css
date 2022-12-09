@@ -402,6 +402,10 @@ body{
     justify-content:space-between;
     margin-top: 0.2rem;
 }
+.underBody .menuRestaurant .similarRestaurant .menu .res-title-and-status a{
+    text-decoration: none;
+    color: black;
+}
 .underBody .menuRestaurant .similarRestaurant .menu .res-title-and-status .name-restaurant{
     font-size: 1.1rem;
     margin-top: -0.3rem;

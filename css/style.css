@@ -5,12 +5,13 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin: 0;
+    margin: 0px;
     background-color:white;
     /* align-content: center;
     align-items: center;y
     text-align: center; */
     position: relative;
+    padding: 0px;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -253,8 +254,9 @@ body{
 }
 #body-bar{
     display: flex;
-    width: 90%;
-    transform: translateX(10%);
+    justify-content: center;
+    gap: 12rem;
+    width: 80rem;
 }
 /* .body-bar{
     animation: upTo 0.75s linear 1;
@@ -263,29 +265,20 @@ body{
     text-align: center;
     background-color: white;
     border-radius:5px;
-    width: 220px;
-    height: 125px;
+    width: 16.9vw;
+    height: 20vh;
     border: 1px solid rgb(184, 184, 184);
     /* box-shadow: 0px 1px 6px gray; */
 }
 .share .h3{
     color:orange;
-    font-size: 15px;
+    font-size: 1em;
 }
-.fine{
-    transform: translateX(80%);
-}
-/* .fine legend iconify-icon{
-    padding-bottom: 10px;
-} */
-.reserve{
-    transform: translateX(155%);
-}
-.shopping label{
-    color:orange;
-    font-size: 25px !important;
-    font-weight: 400;
-    padding-left: 4%;
+
+.shopping div label{
+    font-size: 1.25rem ;
+    font-weight: bold;
+    padding-left: 3%;
 }
 .p{
     font-size: 15px !important;
@@ -293,31 +286,43 @@ body{
 
 /* menu */
 .shopping{
-    width:100%;
-    margin-left: 1.8%;
+    width:80rem;
+    padding: 0 3rem;
 }
 
-.recommence{
-    width:90% !important;
-    height: 250px;
+.restaurants{
+    width:88%;
+    height: 18.75rem;
     display: flex;
+    gap: 1.5rem;
+    transform: translateX(3%);
+}
+.recommence{
     overflow-x: scroll;
 }
 .recommence::-webkit-scrollbar-thumb{
     background-color: orange;
 }
 .recommence .recom{
-    margin-left: 25px;
-    text-align: center;
+    width: 16.3rem;
+    height: 11.15rem;
 }
-.restaurants .recom{
-    width: 290px;
-    height: 180px;
-    
+.res-title-and-status{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 0.2rem;
 }
-.restaurant-page{
+.res-title-and-status a{
     text-decoration: none;
     color: black;
+}
+.res-title-and-status .name-restaurant{
+    font-size: 1.1rem;
+    margin-top: -0.3rem;
+    width: 14rem;
+    height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .ratingStar{
     display: flex;
@@ -334,28 +339,10 @@ body{
 .ratingStar .checked{
     color: orange;
 }
-.restaurant{
-    width: 90%;
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-    background-color: #FF8B3D;
-    /* display: flex; */
-}
 .footer-menu{
     display:flex;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
     justify-content: space-between;
-}
-.restaurant .menu img{
-    width: 100%;
-    height: 190px;
-}
-.restaurant .menu{
-    width:30%;
-    height: 250px;
 }
 .footer-menu{
     width: 100%;
@@ -366,7 +353,6 @@ body{
     padding-left: 10px;
 }
 .footer-menu .span-popular1{
-    color: #009EF7;
     font-size: 13px;
     padding-left: 14px;
 }
@@ -377,6 +363,7 @@ body{
 .restaurants div .recom img{
     width:100%;
     height:100%;
+    object-fit: cover;
 }
 .popular span div{
     padding-top: 60px;
@@ -386,39 +373,26 @@ body{
     text-align: left;
     font-size: 17px;
 }
-.restaurants{
-    transform: translateX(3%);
-}
-/* .restaurants div .recom .ratingStar{
-
-} */
-.recommence{
-    height: 320px;
-}
-.restaurant{
-    width: 100%;
-}
-.restaurant div .footer-menu{
-    text-align: left;
-    margin-left: 0;
-    padding-left: 0;
-}
-.restaurant div .footer-menu .span-popular1{
-    padding-left: 0px;
+.restaurant-categories{
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
 }
 .see-more{
     outline: none;
     border: 0;
     background-color: white;
     padding: 5px;
+    color: black !important;
+    cursor: pointer;
+}
+.see-more:hover{
+    text-decoration: underline;
 }
 
 .see-more-1,.see-more-2,.see-more-3,.see-more-4,.see-more-5,.see-more-6{
-    transform: translateX(950px);
-}
-.see-more-1{
-    transform: translateX(900px);
-
+    /* transform: translateX(65vw); */
+    margin-left: auto;
 }
 .see-more-11,.see-more-22,.see-more-33,.see-more-44,.see-more-55,.see-more-66{
     transform: translateX(1150px);
@@ -427,48 +401,19 @@ body{
     clear: both;
 }
 
-.restaurant .part{
-    width: 100%;
-    height: 260px;
-    display: flex;
-}
+
 .hide-1,.hide-2,.hide-3,.hide-4,.hide-5,.hide-6{
     display: none;
 }
-.restaurant {
-    display: table; 
-    width: 90%;
-    transform: translateX(3%);
-}
-.restaurant .part .menu{
-    width: 290px;
-    height: 180px;
-    background-color: black;
-    margin-left: 23px;
-}
+
+
 /* .restaurant span .part{
     transform: translateY(-10px);
 } */
-.restaurant .part .menu img{
-    width: 100%;
-    height: 100%;
-}
-.restaurant .part .menu p{
-    transform: translateY(-10px);
-    font-size: 17px;
-}
-.restaurant .part .menu .footer-menu{
-    width: 100%;
-}
-.restaurant .part .menu .footer-menu .span-popular2 {
-    padding-left: 10px;
-}
-.restaurant .part .menu .footer-menu .span-popular1{
-    padding-left: 10px;
-}
-.restaurant .part1{
-    padding-top: 20px;
-}
+
+
+
+
 #footer{
     width: 100%;
     height: 120px;
@@ -495,7 +440,7 @@ body{
 }
 #footer .left{
     display: flex;
-    padding-left: 22%
+    padding-left: 22%;
 }
 #footer .left .other{
     font-size: 20px;
@@ -538,25 +483,3 @@ body{
     }
 }
 
-.restaurant .similarRestaurant .menu{
-    width:95%;
-    height: 250px;
-    margin-top: 20px;
-    
-}
-.restaurant .similarRestaurant .menu img{
-    width: 100%;
-    height: 190px;
-
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
-.restaurant .similarRestaurant{
-    /* display: flex;
-    flex-direction: column; */
-    display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(24.75%,1fr));
-    gap: 0.25rem;;
-    padding-left: 15px;
-}
