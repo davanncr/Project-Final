@@ -11,3 +11,6 @@ window.onscroll=function(){
     }
     prePos=newPos;
 }
+window.addEventListener('load',()=>{
+    document.querySelector('.header-bar').style.top="0";
+})
