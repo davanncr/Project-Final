@@ -55,7 +55,7 @@ fetch('https://script.google.com/macros/s/AKfycbx4mVyh9NAA_VZCFTfnhWhtpUy21IbxLb
             }
         }
         if(bool==1){
-            ans.innerHTML='Something went wrong!'
+            window.alert('Something went wrong!')
         }
     })
 })

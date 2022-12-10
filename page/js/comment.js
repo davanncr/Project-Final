@@ -112,7 +112,9 @@ $(document).ready(function() {
     })
 
 
-    $('#post').click(function(){
+$('#post').click(function(){
+    if($('#comment').val() != '') {
+        if($('.numStars:checked').val()!=null){       
         if(i%2==0){
             document.querySelector('#logoRefresh').style.transform='rotate(-1000deg)'            
         }else{
@@ -150,7 +152,13 @@ $(document).ready(function() {
         document.querySelector('#star4').style.color = 'white';
         document.querySelector('#star5').style.color = 'white';
         document.querySelector('#star5').style.color = 'white';
-    })
+    }else{
+        alert('Please rating star!')
+    }
+    }else{
+        alert('Please complete the comment!')
+    }
+})
     $('#refresh').click(function(){
         $('#username').val('')
         $('#email').val('')
