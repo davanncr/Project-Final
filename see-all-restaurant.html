@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phnom Penh Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&family=Kotta+One&display=swap" rel="stylesheet">
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <style>
+        @import 'css/style.css';
+        @import 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
+        @import 'see all/style.css';
+    </style>
+    <script>
+        function goLoging(){
+            window.open('form.html','_parent')
+        }
+    </script>
+</head>
+
+<body>
+    <label id="for-back"></label>
+    <div class="header-bar">
+        <div>
+            <a href="index.html" class="web-logo">
+                <img src="image/logo.png" class="logo-bar">
+                <div style="transform:translateX(2.35rem);text-align: left;" class="logo-title">
+                    <label class="label-logo">Phnom Penh Restaurant</label><br>
+                    <label style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
+                        meal!</label>
+                </div>
+            </a>
+        </div>
+        <div class="form">
+            <button type="submit" id="button-search"><img src="image/search.png" alt="" width="20px"></button>
+            <input type="search" name="" id="search-bar" placeholder="Search for any Restaurant">
+            <select name="" id="filter">
+                <option value="" class="f1">Filter</option>
+                <option value="" class="f">Popular</option>
+                <option value="" class="f">Breakfast Served</option>
+                <option value="" class="f">Lunch Served</option>
+                <option value="" class="f">Dinner Served</option>
+                <option value="" class="f">Fast Food</option>
+                <option value="" class="f">Chinese</option>
+                <option value="" class="f">Nearby</option>
+                <option value="" class="f">Natural Environment</option>
+                <option value="" class="f">Reasonable Price</option>
+                <option value="" class="f">Drinks and Milk Tea</option>
+                <option value="" class="f">Bars and Toproofs</option>
+                <option value="" class="f">Buffet</option>
+            </select>
+            <script src="js/actionSellectorBar.js"></script>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#" class="map">Map</a></li>
+                <li><a href="#">About US</a></li>
+                <li id="forLogin"></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="body">
+        <div class="shopping">
+            <!-- Popupar -->
+            <div>
+                <div class="restaurant-categories"><label>Popular Restaurants</label><button class="see-more see-more-1">see all</button></div>
+                <br>
+                <div class="recommence popular restaurants">
+                    <div>
+                        <div class="recom menu-1">
+                            <a href="page/restaurant1.html"><img src="../image/recomment restaurant assets/recom-1.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-2">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-2.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-3">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-3.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-4">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-4.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-5">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-5.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-6">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-6.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-7">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-7.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div>
+                        <div class="recom menu-8">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-8.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+
+            <!-- Nearby Restaurant -->
+            <div>
+                <div class="restaurant-categories"><label>Nearby Restaurant</label><button class="see-more see-more-1">see all</button></div>
+                <br>
+                <div class="recommence nearby restaurants">
+                    <div>
+                        <div class="recom menu-1">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-1.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-2">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-2.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-3">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-3.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-4">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-4.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-5">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-5.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-6">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-6.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-7">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-7.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div>
+                        <div class="recom menu-8">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-8.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+
+            <!-- Breakfast,Lunch,Dinner Restaurant -->
+            <div>
+                <div class="restaurant-categories"><label>Breakfast,Lunch,Dinner Served</label><button class="see-more see-more-1">see all</button></div>
+                <br>
+                <div class="recommence BLDS restaurants">
+                    <div>
+                        <div class="recom menu-1">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-1.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-2">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-2.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-3">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-3.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-4">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-4.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <div class="recom menu-5">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-5.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-6">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-6.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-7">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-7.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div>
+                        <div class="recom menu-8">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-8.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+
+            <!-- Fast Food -->
+            <div>
+                <div class="restaurant-categories"><label>Fast Food</label><button class="see-more see-more-1">see all</button></div>
+                <br>
+                <div class="recommence fast-food restaurants">
+                    <div>
+                        <div class="recom menu-1">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-1.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-2">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-2.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-3">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-3.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-4">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-4.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-5">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-5.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-6">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-6.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-7">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-7.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div>
+                        <div class="recom menu-8">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-8.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+
+            <!-- Chinese Restaurant -->
+            <div>
+                <div class="restaurant-categories"><label>Chinese Restaurant</label><button class="see-more see-more-1">see all</button></div>
+                <br>
+                <div class="recommence chinese restaurants">
+                    <div>
+                        <div class="recom menu-1">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-1.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-2">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-2.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-3">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-3.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-4">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-4.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <div class="recom menu-5">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-5.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-6">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-6.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recom menu-7">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-7.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div>
+                        <div class="recom menu-8">
+                            <a href="#"><img src="../image/recomment restaurant assets/recom-8.jpg" alt=""></a>
+                            <div class="res-title-and-status">
+                                <a href="#"><div class="name-restaurant">Restaurant</div><br><br></a>
+                                <span class="span-popular2">Open</span>
+                            </div>
+                            <div class="footer-menu">
+                                <div class="ratingStar">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="span-popular">Popular</span>
+                                <span class="span-popular1">8:00am-8:00pm</span>                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div style="margin-left: auto;"><a href="#for-back"><img src="image/traingle.png" alt="" width="35px"></a></div>
+        <div id="footer">
+            <div class="left">
+                <img src="image/logo.png" alt="logo">
+                <h3>Follow us:</h3>
+                <div class="social-media">
+                    <a href="#" class="fa fa-facebook-square" aria-hidden="true"></a>
+                    <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+                    <a href="#" class="fa fa-twitter-square" aria-hidden="true"></a>
+                    <a href="#"class="fa fa-telegram" aria-hidden="true"></a>
+                </div>
+            </div>
+            <div class="right">
+                <a href="#" class="other">Privacy Policy</a>
+                <a href="#" class="other">Terms & Conditions </a>
+                <a href="#" class="other">Contact Us</a>
+                <a href="#" class="other">Feedback</a>            
+            </div>    
+        </div>
+        <!-- <script src="js/showML.js"></script>
+        <script src="js/showML2.js"></script>
+        <script src="js/showML3.js"></script>
+        <script src="js/showML4.js"></script>
+        <script src="js/showML5.js"></script>
+        <script src="js/showML6.js"></script> -->
+        
+    </div>
+    
+    <script src="js/windowScroll.js"></script>
+    <script src="js/start.js"></script>
+</body>
+
+
+</html>

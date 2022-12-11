@@ -1,0 +1,24 @@
+.body{
+    transform:translateY(7rem);
+ }
+.shopping{
+    transform: translateX(-3rem);
+    width:80vw;
+}
+.restaurants{
+    width:88vw;
+    height: 33rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+ }
+ .chinese{
+    margin-bottom: -4rem;
+ }
+ .recommence{
+    overflow-x:hidden;
+ }
+ .see-more{
+    display: none;
+ }

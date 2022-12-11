@@ -513,6 +513,9 @@ body{
     padding-left: 30px;
     
 }
+#footer{
+    transform: translate(4rem,15rem);
+}
 @media only screen and (min-width:768px) and (max-width:1000px) {
     .overview fieldset .overview-mid-content .trending .trending-photos{
         grid-template-columns: repeat(auto-fill,10.5rem);
