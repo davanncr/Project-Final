@@ -22,3 +22,6 @@
  .see-more{
     display: none;
  }
+#footer{
+   transform: translateY(3rem);
+}

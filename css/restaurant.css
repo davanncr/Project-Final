@@ -514,7 +514,13 @@ body{
     
 }
 #footer{
-    transform: translate(4rem,15rem);
+    transform: translate(4rem,7rem);
+}
+.orangebar{
+    transform: translateY(15rem);
+    background-color: #F8EDE1;
+    width: 100%;
+    height: 10rem;
 }
 @media only screen and (min-width:768px) and (max-width:1000px) {
     .overview fieldset .overview-mid-content .trending .trending-photos{
