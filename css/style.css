@@ -57,7 +57,7 @@ body{
 }
 .form{   
     position: relative;
-    transform: translate(5%,0px);
+    
     display: flex;
     /* height: 30px !important; */
     /* transform: translateX(70px) !important; */
@@ -67,6 +67,36 @@ body{
     width: 461px;
     height: 40px;
     background-color:white;
+}
+.body-search{
+    position:relative;
+    margin-top: 20px;
+    transform: translate(5%,0px);
+}
+.list-search{
+    position:absolute;
+    text-align: left;
+    margin-left:-37.4% ;
+    background-color: #ffffffe6 !important;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: none;
+}
+.list-search a{
+    text-align: none;
+    text-decoration: none;
+    color:black;
+    
+}
+.list-search a li{
+    list-style-type: none;
+    padding-left: 5%;
+    font-size: 14px !important;
+}
+.list-search a li:hover{
+    background-color: rgb(239, 235, 235);
 }
 .form:hover,.form:focus{
     box-shadow: 0px 0.5px 0.5px grey;
