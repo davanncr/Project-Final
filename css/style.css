@@ -423,10 +423,8 @@ body{
    display: flex;
    justify-content: space-between;
 }
-.chinese{
-    height: 345.33px;
-}
-.see-more{
+
+.see-more,.see-less{
    outline: none;
    border: 0;
    background-color: white;
@@ -435,7 +433,7 @@ body{
    cursor: pointer;
    text-decoration: none;
 }
-.see-more:hover{
+.see-more:hover,.see-less:hover{
    text-decoration: underline;
 }
 
