@@ -48,7 +48,9 @@ setInterval(function(){
     }
 },0)
 document.addEventListener('click',(e)=>{
-    if(search!=e.target){
+    if(search==e.target){
+        searchList.style.display="inline"
+    }else{
         searchList.style.display="none"
     }
 })
