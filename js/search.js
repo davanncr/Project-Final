@@ -1,10 +1,29 @@
+//for add Name restraurant and url
+const bodySeach=document.querySelector('.body-search')
+const divSeachList=document.createElement('div')
+divSeachList.className='list-search'
+let ListName=[
+    {name:'Zhan Liang Chinese',link:''},
+    {name:'YiSang',link:''},
+    {name:'Terraza',link:''},
+    {name:'Sundown Social Club',link:''},
+    {name:'Red Bar',link:''},
+    {name:'One More',link:''},
+    {name:'Metro Azura',link:''},
+    {name:'Ming Palace',link:''},
+]
+let codeString=''
+ListName.forEach(data=>{
+    codeString+=`<a href='${data.link}'><li>${data.name}</li></a>`
+})
+divSeachList.innerHTML=codeString
+bodySeach.appendChild(divSeachList)
+
+
+//for searching
 const searchList=document.querySelector('.list-search')
 const search=document.querySelector('#search-bar')
 searchList.children[1].style.display="none"
-//console.log(searchList.children[7].textContent)
-// searchList.style.display="inline"
-// console.log(searchList.style)
-// console.log(list)
 search.addEventListener('keyup',(e)=>{
     let keyword=e.target.value.toLowerCase()
     let list=searchList.children
