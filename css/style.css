@@ -252,7 +252,7 @@ body{
    
 }
 .swiper-slide img{
-
+    object-fit: cover;
     width: 87%;
     height: 80vh;
 }
@@ -325,14 +325,18 @@ body{
    height: 18.75rem;
    display: flex;
    gap: 1.5rem;
+   transition: 1s;
+}
+.restaurants{
+    overflow: hidden !important;
 }
 .recommence{
-   overflow-x: scroll;
-}
+    overflow-x: scroll !important;
+ }
 .recommence::-webkit-scrollbar-thumb{
    background-color: orange;
 }
-.recommence .recom{
+.restaurants .recom{
    width: 16.3rem;
    height: 11.15rem;
 }
@@ -420,14 +424,14 @@ body{
    justify-content: space-between;
 }
 .chinese{
-    margin-bottom: -5rem;
+    height: 345.33px;
 }
 .see-more{
    outline: none;
    border: 0;
    background-color: white;
    padding: 5px;
-   color: black !important;
+   color: black;
    cursor: pointer;
    text-decoration: none;
 }
@@ -451,48 +455,6 @@ body{
    display: none;
 }
 
-
-/* .restaurant span .part{
-   transform: translateY(-10px);
-} */
-
-
-
-
-/* #footer{
-   width: 100%;
-   height: 120px;
-   position: relative;
-   align-items: center;
-   align-content: center;
-   display: inline-flex;
-   clear: both;
-   transform: translateY(50px);
-}
-#footer a{
-   text-decoration: none;
-   font-size: 30px;
-   color:orange;
-   padding-left: 15px;
-}
-#footer img{
-   padding-left: 25px;
-}
-#footer h3{
-   color: orange;
-   font-size: 20px;
-   padding-left: 20px;
-}
-#footer .left{
-   display: flex;
-   padding-left: 22%;
-}
-#footer .left .other{
-   font-size: 20px;
-   color:black;
-   padding: 10px;
-   font-weight: 500;
-} */
 #footer{
     width: 90vw;
     display: flex;
