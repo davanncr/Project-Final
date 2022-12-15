@@ -58,20 +58,20 @@ function check_restaurant(restaurant){
     }
 }
 
-
 function compare_time(open_time,realTime) {
     let result = false
     let array_time = open_time.split("-")
-    let am = array_time[0].split("am")
-    let pm = array_time[1].split("pm")
+    let am = array_time[0].split(":")
+    let pm = array_time[1].split(":")
     if(currentHour <= 12){
-        if(realTime >= am[0]) result = false
+        if (currentHour > Number[am[0]]) result = false
         else result = true
     }
     else{
         currentHour-=12
-        realTime = `${currentHour}:${currentMinute}`
-        if(realTime <= pm[0]) result = false
+        if (currentHour <= Number(pm[0])){
+            result = false
+        }
         else result = true
         currentHour+=12
     }
