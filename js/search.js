@@ -27,8 +27,9 @@ searchList.children[1].style.display="none"
 search.addEventListener('keyup',(e)=>{
     let keyword=e.target.value.toLowerCase()
     let list=searchList.children
-    if(keyword==''){
+    if(keyword==''||keyword==' '){
         searchList.style.display="none"
+        search.value=''
     }else{
         searchList.style.display="inline"
     }
@@ -48,7 +49,7 @@ setInterval(function(){
     }
 },0)
 document.addEventListener('click',(e)=>{
-    if(search==e.target){
+    if(search==e.target&&search.value!=''){
         searchList.style.display="inline"
     }else{
         searchList.style.display="none"
