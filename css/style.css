@@ -321,10 +321,14 @@ body{
 }
 
 .restaurants{
-   width:88vw;
+   width:89vw;
    height: 18.75rem;
+   margin-left: -1rem;
+   margin-top: -2rem;
    display: flex;
    gap: 1.5rem;
+   padding-left: 1rem;
+   padding-top: 2rem;
    transition: 1s;
 }
 .restaurants{
@@ -338,8 +342,42 @@ body{
 }
 .restaurants .recom{
    width: 16.3rem;
-   height: 11.15rem;
+   height: 15.15rem;
+   transition: all 0.3s ease 0s;
 }
+.restaurants .recom:hover{
+    background-color: rgb(0, 0, 0);
+    outline: 3px solid black;
+    border-radius: 0.1rem;
+    box-shadow: 1px 1px 30px black;
+    color: white;
+    position: relative;
+}
+.restaurants .recom:hover .name-restaurant{
+    color: white;
+}
+.restaurants .recom:hover img{
+    transform: scale(0.95);
+}
+.restaurants .recom:hover .res-title-and-status::before{
+    content: 'popular';
+    position: absolute;
+    top: 50%;
+    width: 16.3rem;
+    height: 2.5rem;
+    background-color: rgb(0, 0, 0,0.8);
+    font-size: smaller;
+    padding-top: 1rem;
+}
+.restaurants .recom:hover .span-popular{
+    display: none;
+}
+.restaurants div .recom img{
+    width:100%;
+    height:11.15rem;
+    object-fit: cover;
+    transition: 0.3s;
+ }
 .res-title-and-status{
    display: flex;
    justify-content:space-between;
@@ -350,28 +388,12 @@ body{
    color: black;
 }
 .res-title-and-status .name-restaurant{
-   font-size: 1.1rem;
+   font-size: 1.1rem !important;
    margin-top: -0.3rem;
    width: 14rem;
    height: 1.5rem;
    overflow: hidden;
    text-overflow: ellipsis;
-}
-.res-title-and-status .name-restaurant{
-    font-size: 1.1rem;
-    margin-top: -0.3rem;
-    width: 14rem;
-    height: 1.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.res-title-and-status .name-restaurant{
-    font-size: 1.1rem;
-    margin-top: -0.3rem;
-    width: 14rem;
-    height: 1.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .ratingStar{
    display: flex;
@@ -408,11 +430,6 @@ body{
 .span-popular2{   
    font-size: 13px;
    color:#50CD89;
-}
-.restaurants div .recom img{
-   width:100%;
-   height:100%;
-   object-fit: cover;
 }
 .popular span div{
    padding-top: 60px;
