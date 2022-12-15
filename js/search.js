@@ -158,11 +158,11 @@ filterID.addEventListener('change',(e)=>{
     }
     document.querySelector('#search-bar').value=''
 })
-
+document.querySelector('#search-bar').value=''
 //for searching
 const searchList=document.querySelector('.list-search')
 const search=document.querySelector('#search-bar')
-search.value='b'
+
 searchList.children[1].style.display="none"
 search.addEventListener('keyup',(e)=>{
     let keyword=e.target.value.toLowerCase()
