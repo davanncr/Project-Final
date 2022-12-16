@@ -359,11 +359,14 @@ body{
     color: white;
 }
 .restaurants .recom:hover img{
-    transform: scale(0.95);
+    transform: scale(0.9);
     border-radius: 0.1rem;
 }
+:root{
+    --my-content: 'popular'
+}
 .restaurants .recom:hover .res-title-and-status::before{
-    content: 'popular';
+    content: var(--my-content);
     position: absolute;
     top: 50%;
     width: 16.3rem;
@@ -424,9 +427,13 @@ body{
    width: 100%;
 }
 .footer-menu .span-popular{
-   color:#FF8B3D;
-   font-size: 13px;
-   padding-left: 10px;
+    color:#FF8B3D;
+    font-size: 13px;
+    width: 3.5rem;
+    height: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
 }
 .footer-menu .span-popular1{
    font-size: 13px;
