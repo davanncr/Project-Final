@@ -173,11 +173,13 @@ body{
     animation: leftToRight 2s;   
     /* width: 100px ; */
     margin-left: 5;
-    margin-top: 1rem;
+
 }
 .menu-bar ul{
-    display: flex;
+    display: inline-flex;
     margin-right: 10px;
+    align-items: center;
+
 }
 .menu-bar ul li a{
     color: orange;
@@ -321,10 +323,14 @@ body{
 }
 
 .restaurants{
-   width:88vw;
+   width:89vw;
    height: 18.75rem;
+   margin-left: -1rem;
+   margin-top: -2rem;
    display: flex;
    gap: 1.5rem;
+   padding-left: 1rem;
+   padding-top: 2rem;
    transition: 1s;
 }
 .restaurants{
@@ -338,8 +344,51 @@ body{
 }
 .restaurants .recom{
    width: 16.3rem;
-   height: 11.15rem;
+   height: 15.15rem;
+   transition: all 0.3s ease 0s;
 }
+
+.restaurants .recom:hover{
+    background-color: rgb(0, 0, 0);
+    outline: 3px solid rgb(0, 0, 0,0.7);
+    border-radius: 0.1rem;
+    box-shadow: 1px 1px 10px black;
+    color: white;
+    position: relative;
+    transform: scale(1.05);
+}
+.restaurants .recom:hover .name-restaurant{
+    color: white;
+}
+.restaurants .recom:hover img{
+    transform: scale(0.9);
+    border-radius: 0.1rem;
+}
+:root{
+    --my-content: 'popular'
+}
+.restaurants .recom:hover .res-title-and-status::before{
+    content: var(--my-content);
+    position: absolute;
+    top: 50%;
+    width: 16.3rem;
+    height: 2.5rem;
+    background-color: rgb(0, 0, 0,0.5);
+    backdrop-filter: blur(3px);
+    font-size: smaller;
+    padding-top: 1rem;
+    animation: 0.2s ease-in 0s 1 running widthLefttoRight;
+}
+
+.restaurants .recom:hover .span-popular{
+    display: none;
+}
+.restaurants div .recom img{
+    width:100%;
+    height:11.15rem;
+    object-fit: cover;
+    transition: 0.3s;
+ }
 .res-title-and-status{
    display: flex;
    justify-content:space-between;
@@ -350,28 +399,12 @@ body{
    color: black;
 }
 .res-title-and-status .name-restaurant{
-   font-size: 1.1rem;
+   font-size: 1.1rem !important;
    margin-top: -0.3rem;
    width: 14rem;
    height: 1.5rem;
    overflow: hidden;
    text-overflow: ellipsis;
-}
-.res-title-and-status .name-restaurant{
-    font-size: 1.1rem;
-    margin-top: -0.3rem;
-    width: 14rem;
-    height: 1.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.res-title-and-status .name-restaurant{
-    font-size: 1.1rem;
-    margin-top: -0.3rem;
-    width: 14rem;
-    height: 1.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .ratingStar{
    display: flex;
@@ -397,9 +430,13 @@ body{
    width: 100%;
 }
 .footer-menu .span-popular{
-   color:#FF8B3D;
-   font-size: 13px;
-   padding-left: 10px;
+    color:#FF8B3D;
+    font-size: 13px;
+    width: 3.5rem;
+    height: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
 }
 .footer-menu .span-popular1{
    font-size: 13px;
@@ -408,11 +445,6 @@ body{
 .span-popular2{   
    font-size: 13px;
    color:#50CD89;
-}
-.restaurants div .recom img{
-   width:100%;
-   height:100%;
-   object-fit: cover;
 }
 .popular span div{
    padding-top: 60px;
@@ -423,10 +455,8 @@ body{
    display: flex;
    justify-content: space-between;
 }
-.chinese{
-    height: 345.33px;
-}
-.see-more{
+
+.see-more,.see-less{
    outline: none;
    border: 0;
    background-color: white;
@@ -435,7 +465,7 @@ body{
    cursor: pointer;
    text-decoration: none;
 }
-.see-more:hover{
+.see-more:hover,.see-less:hover{
    text-decoration: underline;
 }
 
@@ -507,6 +537,14 @@ body{
         right: 100px !important;
     }
 }
+@keyframes widthLefttoRight {
+    from{
+        width: 0;
+    }
+    to{
+        width: 16.3rem;
+    }
+}
 @keyframes upTo{
     from {
         /* transform: translateX(600px); */
@@ -551,17 +589,7 @@ body{
     padding-left: 15px;
 }
 
-.yourname{
-    font-size:20px;
-    color:gray;
-    font-weight: bold;
-    
-}
-#forLogin{
-    position: relative;
-    width: 120px;
-    word-break: break-all;
-}
+
 .orangebar{
     background-color: #F8EDE1;
     width: 100%;
