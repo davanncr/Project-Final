@@ -348,7 +348,7 @@ body{
 
 .restaurants .recom:hover{
     background-color: rgb(0, 0, 0);
-    outline: 3px solid black;
+    outline: 3px solid rgb(0, 0, 0,0.7);
     border-radius: 0.1rem;
     box-shadow: 1px 1px 10px black;
     color: white;
@@ -371,7 +371,8 @@ body{
     top: 50%;
     width: 16.3rem;
     height: 2.5rem;
-    background-color: rgb(0, 0, 0,0.8);
+    background-color: rgb(0, 0, 0,0.5);
+    backdrop-filter: blur(3px);
     font-size: smaller;
     padding-top: 1rem;
     animation: 0.2s ease-in 0s 1 running widthLefttoRight;
