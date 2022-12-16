@@ -173,11 +173,13 @@ body{
     animation: leftToRight 2s;   
     /* width: 100px ; */
     margin-left: 5;
-    margin-top: 1rem;
+
 }
 .menu-bar ul{
-    display: flex;
+    display: inline-flex;
     margin-right: 10px;
+    align-items: center;
+
 }
 .menu-bar ul li a{
     color: orange;
@@ -587,17 +589,7 @@ body{
     padding-left: 15px;
 }
 
-.yourname{
-    font-size:20px;
-    color:gray;
-    font-weight: bold;
-    
-}
-#forLogin{
-    position: relative;
-    width: 120px;
-    word-break: break-all;
-}
+
 .orangebar{
     background-color: #F8EDE1;
     width: 100%;
