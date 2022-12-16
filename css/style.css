@@ -345,19 +345,22 @@ body{
    height: 15.15rem;
    transition: all 0.3s ease 0s;
 }
+
 .restaurants .recom:hover{
     background-color: rgb(0, 0, 0);
     outline: 3px solid black;
     border-radius: 0.1rem;
-    box-shadow: 1px 1px 30px black;
+    box-shadow: 1px 1px 10px black;
     color: white;
     position: relative;
+    transform: scale(1.05);
 }
 .restaurants .recom:hover .name-restaurant{
     color: white;
 }
 .restaurants .recom:hover img{
     transform: scale(0.95);
+    border-radius: 0.1rem;
 }
 .restaurants .recom:hover .res-title-and-status::before{
     content: 'popular';
@@ -368,7 +371,9 @@ body{
     background-color: rgb(0, 0, 0,0.8);
     font-size: smaller;
     padding-top: 1rem;
+    animation: 0.2s ease-in 0s 1 running widthLefttoRight;
 }
+
 .restaurants .recom:hover .span-popular{
     display: none;
 }
@@ -520,6 +525,14 @@ body{
         right: 0;
     }to{
         right: 100px !important;
+    }
+}
+@keyframes widthLefttoRight {
+    from{
+        width: 0;
+    }
+    to{
+        width: 16.3rem;
     }
 }
 @keyframes upTo{
