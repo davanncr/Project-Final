@@ -27,8 +27,6 @@ restaurant_categories[5] = restaurant_data(chinese_data,8)
 const data = JSON.stringify(restaurant_categories)
 localStorage.setItem("restaurantData",data)
 
-// console.log(popupar)
-
 function restaurant_data(restaurant,n){
     for(let i=1 ; i<=n ; i++){
         let menu = restaurant.querySelector(`.menu-${i}`)
