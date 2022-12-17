@@ -47,6 +47,19 @@ get_Data(my_restaurant,8)
 menu_hover(my_restaurant,8)
 check_restaurant(my_restaurant,8)
 
+//remove overflow contact in each restaurant
+let websitID = document.querySelector("#website")
+let website = websitID.parentElement
+website.style.width = "10vw"
+website.style.overflow = "hidden"
+website.style.textOverflow = "ellipsis"
+website.style.whiteSpace = "nowrap"
+//target all links to new blank
+websitID.setAttribute("target","_blank")
+let location_link = document.querySelector("#location")
+location_link.setAttribute("target","_blank")
+
+
 
 
 //change contents
