@@ -4,6 +4,7 @@ const button3 = document.querySelector("#see-more-3").addEventListener("click",s
 const button4 = document.querySelector("#see-more-4").addEventListener("click",seeAll4)
 const button5 = document.querySelector("#see-more-5").addEventListener("click",seeAll5)
 const button6 = document.querySelector("#see-more-6").addEventListener("click",seeAll6)
+const button7 = document.querySelector("#see-more-7").addEventListener("click",seeAll7)
 
 const seeless1 = document.querySelector("#seeless1").addEventListener("click",seeLess1)
 const seeless2 = document.querySelector("#seeless2").addEventListener("click",seeLess2)
@@ -11,6 +12,7 @@ const seeless3 = document.querySelector("#seeless3").addEventListener("click",se
 const seeless4 = document.querySelector("#seeless4").addEventListener("click",seeLess4)
 const seeless5 = document.querySelector("#seeless5").addEventListener("click",seeLess5)
 const seeless6 = document.querySelector("#seeless6").addEventListener("click",seeLess6)
+const seeless7 = document.querySelector("#seeless7").addEventListener("click",seeLess7)
 
 
 function seeAll1(){
@@ -58,6 +60,14 @@ function seeAll6(){
 }
 function seeLess6(){
     style_see_less(6)
+}
+
+
+function seeAll7(){
+    style(7)
+}
+function seeLess7(){
+    style_see_less(7)
 }
 
 

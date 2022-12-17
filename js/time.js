@@ -30,6 +30,8 @@ const nearby_check = document.querySelector(".restaurant3")
 const BLDS_check = document.querySelector(".restaurant4")
 const fastfood_check = document.querySelector(".restaurant5")
 const chinese_check = document.querySelector(".restaurant6")
+const buffet_check = document.querySelector(".restaurant7")
+
 check_restaurant(recommented_check,10)
 check_restaurant(popular_check,8)
 check_restaurant(BR_check,8)
@@ -37,6 +39,7 @@ check_restaurant(nearby_check,8)
 check_restaurant(BLDS_check,8)
 check_restaurant(fastfood_check,8)
 check_restaurant(chinese_check,8)
+check_restaurant(buffet_check,8)
 
 function check_restaurant(restaurant,n){
     for(let i=1 ; i<=n ; i++){
