@@ -300,8 +300,15 @@ body{
     cursor: pointer;
     transition: 0.1s;
 }
+.overview fieldset button a{
+    text-decoration: none;
+    color: black;
+}
 .overview fieldset button:hover{
     background-color: #00a700;
+    color: white;
+}
+.overview fieldset button:hover a{
     color: white;
 }
 .overview fieldset .spacing{
@@ -332,14 +339,12 @@ body{
     text-decoration: none;
     color:black;
 }
-.open{
+.opening-time .open{
     color: green;
-    /* display: none; */
     font-weight:bold;
 }
-.close{
+.opening-time .close{
     color: red;
-    display: none;
     font-weight: bold;
 }
 .underBody{
