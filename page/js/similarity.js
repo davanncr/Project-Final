@@ -45,7 +45,31 @@ for(let i=1; i<=8 ; i++){
 
 get_Data(my_restaurant,8)
 menu_hover(my_restaurant,8)
-check_restaurant(my_restaurant,8)
+check_restaurant(my_restaurant,8)   //check opening time
+//check time for the main restaurant
+const opening_time = document.querySelector(".opening-time")
+document.querySelector(".opening-time .open").classList.add("status")
+document.querySelector(".opening-time .close").classList.add("status")
+let time_check = opening_time.querySelector(".opening-time label:nth-child(2)").innerText
+time_check.split(" ")
+let status1 = document.querySelector(".status")
+        time_result = compare_time(time_check,realTime)
+        if (time_result == true){
+            let close_hour = opening_time.querySelector(".opening-time .close")
+            close_hour.style.display = ""
+            close_hour.style.color = "red"
+            let open_hour = opening_time.querySelector(".opening-time .open")
+            open_hour.style.display = "none"
+        }
+        else{
+            let open_hour = opening_time.querySelector(".opening-time .open")
+            open_hour.style.display = ""
+            let close_hour = opening_time.querySelector(".opening-time .close")
+            close_hour.style.display = "none"
+        }
+
+
+
 
 //remove overflow contact in each restaurant
 let websitID = document.querySelector("#website")
