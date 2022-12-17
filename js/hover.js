@@ -1,3 +1,4 @@
+const recomment_hover = document.querySelector(".restaurant0")
 const popular_hover = document.querySelector(".restaurant1")
 const BR_hover = document.querySelector(".restaurant2")
 const nearby_hover = document.querySelector(".restaurant3")
@@ -6,7 +7,7 @@ const fastfood_hover = document.querySelector(".restaurant5")
 const chinese_hover = document.querySelector(".restaurant6")
 const buffet_hover = document.querySelector(".restaurant7")
 
-
+menu_hover(recomment_hover,10)
 menu_hover(popular_hover,8)
 menu_hover(BR_hover,8)
 menu_hover(nearby_hover,8)
