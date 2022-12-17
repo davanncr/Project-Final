@@ -314,13 +314,13 @@ body{
     margin-bottom: 10px;
     font-size: 1vw;
 }
-/* .overview fieldset .bottom-set #location{
-    width: 370px;
+.overview fieldset .bottom-set .location{
+    width: 20vw;
     height: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-color: red;
-} */
+    white-space: nowrap;
+}
 .overview .bottom-set{
     margin-top: 20px;
     display: flex;
