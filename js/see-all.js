@@ -73,7 +73,7 @@ function seeLess7(){
 
 function style(i){
     let contents = document.getElementsByClassName(`restaurant${i}`)
-    let button = document.querySelector(`#see-more-${i}`)
+    let button = contents.querySelector(`#see-more-${i}`)
         button.style.display = "none"
     let seeless = document.querySelector(`#seeless${i}`)
         seeless.style.display = "" 

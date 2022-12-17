@@ -59,7 +59,24 @@ websitID.setAttribute("target","_blank")
 let location_link = document.querySelector("#location")
 location_link.setAttribute("target","_blank")
 
+//image full screen on click
 
+//create a new element to display fullscreen
+function getPics() {}
+const trending = document.querySelector(".trending")
+const fullPage = document.createElement("div")
+trending.appendChild(fullPage)
+fullPage.id = "fullpage"
+fullPage.setAttribute("Onclick","this.style.display='none';")
+
+const imgs = document.querySelectorAll(".trending-content img")
+
+imgs.forEach(img => {
+    img.addEventListener('click', function() {
+      fullPage.style.backgroundImage = 'url(' + img.src + ')';
+      fullPage.style.display = 'block';
+    });
+  });
 
 
 //change contents
@@ -154,4 +171,24 @@ function compare_time(open_time,realTime) {
         }
     }
     return result
+}
+
+//fullscreen
+
+function fullscreenImage1(){     
+    fullscreen(1)
+}
+
+function fullscreen(n){
+    let my_image = document.querySelector(`.trending-content${n} img`)
+    my_image.style.maxWidth = "100%"
+    my_image.style.maxHeight = "100%"
+    my_image.style.bottom = "0"
+    my_image.style.top = "0"
+    my_image.style.left = "0"
+    my_image.style.right = "0"
+    my_image.style.margin = "auto"
+    my_image.style.overflow = "auto"
+    my_image.style.position = "fixed"
+    my_image.style.objectFit = "contain"
 }
