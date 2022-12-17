@@ -62,21 +62,32 @@ location_link.setAttribute("target","_blank")
 //image full screen on click
 
 //create a new element to display fullscreen
-function getPics() {}
-const trending = document.querySelector(".trending")
-const fullPage = document.createElement("div")
-trending.appendChild(fullPage)
-fullPage.id = "fullpage"
-fullPage.setAttribute("Onclick","this.style.display='none';")
+        const body = document.body
+        let modal_create = document.createElement("div")
+        modal_create.id = `myModal`
+        modal_create.classList.add("modal")
+        body.appendChild(modal_create)
 
-const imgs = document.querySelectorAll(".trending-content img")
+        let span1 = document.createElement("span")
+        span1.classList.add("close_cross")
+        let cross_icon = document.createElement("iconify-icon")
+        cross_icon.setAttribute("icon","charm:circle-cross")
+        span1.appendChild(cross_icon)
+        // <iconify-icon icon="charm:circle-cross"></iconify-icon>
 
-imgs.forEach(img => {
-    img.addEventListener('click', function() {
-      fullPage.style.backgroundImage = 'url(' + img.src + ')';
-      fullPage.style.display = 'block';
-    });
-  });
+        let modal_img = document.createElement("img")
+        modal_img.classList.add("modal-content")
+        modal_img.id = `img01`
+        modal_create.appendChild(span1)
+        modal_create.appendChild(modal_img)
+        var modal = document.getElementById("myModal");
+        var img = []
+        for(let i=0 ; i<12 ; i++){
+            img[i] = document.querySelector(`.trending-content${i+1} img`)
+            fullscreen(img[i])
+        }
+        var menu_list = document.querySelector(".menu-list img")
+        fullscreen(menu_list)
 
 
 //change contents
@@ -175,20 +186,15 @@ function compare_time(open_time,realTime) {
 
 //fullscreen
 
-function fullscreenImage1(){     
-    fullscreen(1)
-}
-
-function fullscreen(n){
-    let my_image = document.querySelector(`.trending-content${n} img`)
-    my_image.style.maxWidth = "100%"
-    my_image.style.maxHeight = "100%"
-    my_image.style.bottom = "0"
-    my_image.style.top = "0"
-    my_image.style.left = "0"
-    my_image.style.right = "0"
-    my_image.style.margin = "auto"
-    my_image.style.overflow = "auto"
-    my_image.style.position = "fixed"
-    my_image.style.objectFit = "contain"
+function fullscreen(image_trending){
+    var modalImg = document.getElementById("img01");
+    image_trending.onclick = function(){
+      modal.style.display = "grid";
+      modal.style.placeItems = "center"
+      modalImg.src = this.src;
+    }     
+    var span = document.querySelector(".close_cross");
+    span.onclick = function() { 
+      modal.style.display = "none"
+    }
 }
