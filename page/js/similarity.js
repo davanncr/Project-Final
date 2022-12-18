@@ -114,6 +114,12 @@ location_link.setAttribute("target","_blank")
         fullscreen(menu_list)
 
 
+//add favorite.js to every restaurant files
+let favorite_js = document.createElement("script")
+favorite_js.src = "js/favorite.js"
+document.body.appendChild(favorite_js)
+
+
 //change contents
 function get_Data(restaurant,n){
     for(let i=1 ; i<=n ; i++){
