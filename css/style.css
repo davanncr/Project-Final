@@ -600,7 +600,7 @@ body{
 #sms{
     position: absolute;
     display: none;
-    transform: translate(-305px,85px);
+    transform: translate(-155px,5px);
     transition:all 1s;
 }
 #letter{
