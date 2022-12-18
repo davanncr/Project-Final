@@ -375,7 +375,7 @@ body{
     height: 2.5rem;
     background-color: rgb(0, 0, 0,0.5);
     backdrop-filter: blur(3px);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     padding-top: 1.25rem;
     animation: 0.2s ease-in 0s 1 running widthLefttoRight;
 }
