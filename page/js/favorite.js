@@ -49,6 +49,8 @@ function wrapData(){
     if(favIcon.getAttribute("icon") == "mdi:cards-heart-outline"){
         favIcon.setAttribute("icon","material-symbols:favorite")
         favIcon.style.color = "orange"
+        let dataSend = JSON.stringify(all_restaurantData[m][n])
+        localStorage.setItem("dataFavorite",dataSend)
     }
     else{
         favIcon.setAttribute("icon","mdi:cards-heart-outline")
