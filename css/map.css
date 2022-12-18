@@ -1,7 +1,7 @@
-body{
+/* body{
     display: grid;
     place-items: center;
-}
+} */
 .body-content{
     width: 80rem;
     transform: translateY(8rem);
@@ -14,6 +14,7 @@ body{
     font-size: 1.25rem;
     color:orange;
     font-weight: bold;
+    z-index: 2;
 }
 
 .nearby{
@@ -21,7 +22,13 @@ body{
     height: 70vh;
     flex-wrap: wrap;
     padding-left: 5rem;
-    gap: 5rem;
+    gap: 2rem;
+    overflow: scroll !important;
+    margin-top: 0.000005rem;
+}
+.nearby .recom{
+    z-index: 1;
+    margin-top: -1.2rem;
 }
 .body-content .map{
     width: 100%;
@@ -35,13 +42,16 @@ body{
 .body-content .map #google-map{
     width: 100%;
     height: 68vh;
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+.orangebar{
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    transform: translateY(10rem);
+    padding-top: 1.5rem;
+    z-index: 0;
 }
 #footer{
-    transform: translateY(10rem);
+    z-index: 1;
 }
-/* .orangebar{
-    background-color: #F8EDE1;
-    width: 100%;
-    height: 10rem;
-} */

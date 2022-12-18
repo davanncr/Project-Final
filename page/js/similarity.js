@@ -34,7 +34,7 @@ let you_may_like = document.querySelector(".similar-res-title")
 you_may_like.innerText = "You may also like"
 
 
-let a = Math.floor(Math.random()*6) //random category
+let a = Math.floor(Math.random()*7) //random category
 
 //create a child class
 let my_restaurant = document.querySelector(".similarRestaurant")
@@ -112,6 +112,12 @@ location_link.setAttribute("target","_blank")
         }
         var menu_list = document.querySelector(".menu-list img")
         fullscreen(menu_list)
+
+
+//add favorite.js to every restaurant files
+let favorite_js = document.createElement("script")
+favorite_js.src = "js/favorite.js"
+document.body.appendChild(favorite_js)
 
 
 //change contents
