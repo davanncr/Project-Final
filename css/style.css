@@ -383,7 +383,7 @@ body{
 .restaurants .recom:hover .span-popular{
     display: none;
 }
-.restaurants div .recom img{
+.restaurants .recom img{
     width:100%;
     height:11.15rem;
     object-fit: cover;
