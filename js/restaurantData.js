@@ -1,10 +1,3 @@
-// const similar = document.querySelector(".similarRestaurant")
-// for(let i=1; i<=8 ; i++){
-//     let menu = similar.querySelector(`.similarRestaurant .menu:nth-child(${i})`)
-//     menu.classList.add(`menu-${i}`)
-// }
-
-
 let popupar_data = document.querySelector(".restaurant1")
 let Bar_and_Rooftop_data = document.querySelector(".restaurant2")
 let nearby_data = document.querySelector(".restaurant3")
@@ -12,7 +5,6 @@ let BLDserved_data = document.querySelector(".restaurant4")
 let fast_food_data = document.querySelector(".restaurant5")
 let chinese_data = document.querySelector(".restaurant6")
 let buffet_data = document.querySelector(".restaurant7")
-// const restaurant_categories = [popupar,Bar_and_Rooftop,nearby,BLDserved,fast_food,chinese]
 const restaurant_categories = []
 
 
@@ -23,6 +15,7 @@ restaurant_categories[2] = restaurant_data(nearby_data,8)
 restaurant_categories[3] = restaurant_data(BLDserved_data,8)
 restaurant_categories[4] = restaurant_data(fast_food_data,8)
 restaurant_categories[5] = restaurant_data(chinese_data,8)
+restaurant_categories[6] = restaurant_data(buffet_data,8)
 
 const data = JSON.stringify(restaurant_categories)
 localStorage.setItem("restaurantData",data)
