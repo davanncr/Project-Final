@@ -596,3 +596,28 @@ body{
     width: 100%;
     height: 10rem;
 }
+
+#sms{
+    position: absolute;
+    display: none;
+    transform: translate(-305px,85px);
+    transition:all 1s;
+}
+#letter{
+    position: absolute;
+    transform: translate(-150px, -15px);
+    width: 300px;
+    height: 135px;
+}
+#info{
+    text-align: left;
+    top:15px;
+    position: relative;
+}
+#info p{
+    font-size: 14px;
+}
+#info a{
+    cursor: pointer;
+    padding-left: 200px;
+}

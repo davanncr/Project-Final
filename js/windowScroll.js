@@ -6,7 +6,9 @@ window.onscroll=function(){
         document.querySelector('.header-bar').style.top="0";
     }else{
         if(prePos>200){
-            document.querySelector('.header-bar').style.top="-127px";            
+            document.querySelector('.header-bar').style.top="-127px"; 
+            document.querySelector('#sms').style.display="none";
+            i=0           
         }
     }
     prePos=newPos;
