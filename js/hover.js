@@ -22,11 +22,11 @@ function menu_hover(restaurant,n){
         let category = categories.querySelector(".span-popular").innerText
         console.log(category.length)
         console.log(category)
-        if(category.length > 67){
-            category = category.substring(0,66) + "..."
+        // if(category.length > 67){
+        //     category = category.substring(0,66) + "..."
             
-            console.log(category)
-        }
+        //     console.log(category)
+        // }
         categories.addEventListener("mouseover",mousehover(categories,category))
     }
     
