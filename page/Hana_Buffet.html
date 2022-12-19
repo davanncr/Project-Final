@@ -32,14 +32,16 @@
 <body>
     <label id="for-back"></label>
     <div class="header-bar">
-        <a href="../index.html" class="web-logo">
-            <img src="../image/logo.png" class="logo-bar">
-            <div style="transform:translateX(60px);text-align: left;" class="logo-title">
-                <label for="web-logo" class="label-logo">Phnom Penh Restaurant</label><br>
-                <label for="web-logo" style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
-                    meal!</label>
-            </div>
-        </a>
+        <div>
+            <a href="../index.html" class="web-logo">
+                <img src="../image/logo.png" class="logo-bar">
+                <div style="transform:translateX(2.35rem);text-align: left;" class="logo-title">
+                    <label class="label-logo">Phnom Penh Restaurant</label><br>
+                    <label class="label-logo-description" style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
+                        meal!</label>
+                </div>
+            </a>
+        </div>
         <div class="body-search">
             <div class="form">
                 <button type="submit" id="button-search"><img src="../image/search.png" alt="" width="20px"></button>
@@ -58,15 +60,50 @@
                 </select>
                 <script src="../js/actionSellectorBar.js"></script>
             </div>
+            <!-- <div class="list-search">
+                <a href="#"><li>Zhan Liang Chinese</li></a>
+                <a href="#"><li>YiSang</li></a>
+                <a href="#"><li>Terraza</li></a>
+                <a href="#"><li>Sundown Social Club</li></a>
+                <a href="#"><li>Red Bar</li></a>
+                <a href="#"><li>One More</li></a>
+                <a href="#"><li>Metro Azura</li></a>
+                <a href="#"><li>Ming Palace</li></a>
+            </div>             -->
+
+
         </div>
         <div class="menu-bar">
-            <div class="menu-bar">
-                <ul>
-                    <li><a href="#" class="map">Map</a></li>
-                    <li><a href="../aboutUs.html">About US</a></li>
-                    <li id="forLogin"></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="../map.html" class="map">Map</a></li>
+                <li><a href="../aboutUs.html">About US</a></li>
+                <li id="forLogin"></li>
+                <div onclick="dropDown()" class="toggle-menu">
+                    <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>
+                    <div class="drop-down-content">
+                        <a href="../map.html" class="map">Map</a>
+                        <a href="../aboutUs.html">About US</a>
+                        <a id="forLogin" href="#">Account</a>
+                    </div>
+                </div>
+                <script>
+                    function dropDown(){
+                        let dropdown = document.querySelector(".drop-down-content")
+                        if(dropdown.classList.contains("clicked") === false){
+                            document.querySelector(".drop-down-content").style.display = "block"
+                            dropdown.classList.add("clicked")
+                        }
+                        else{
+                            document.querySelector(".drop-down-content").style.display = "none"
+                            dropdown.classList.remove("clicked")
+                        }
+
+                    }
+                </script>
+            </ul>
+            <!-- <div id="sms">
+                <img src="image/letter.png" alt="" id="letter"><div id="info"><p>Name: Tet Davann</p><p>Email: davanncr@gmail.com</p><a href="">Logout</a></div>
+            </div> -->
         </div>
     </div>
     <!-- Restaurant content -->

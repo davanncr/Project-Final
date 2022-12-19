@@ -81,7 +81,7 @@
                 <li><a href="map.html" class="map">Map</a></li>
                 <li><a href="aboutUs.html">About US</a></li>
                 <li id="forLogin"></li>
-                <div onclick="dropDown()" onkeyup="Mousedown()" class="toggle-menu">
+                <div onclick="dropDown()" class="toggle-menu">
                     <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>
                     <div class="drop-down-content">
                         <a href="map.html" class="map">Map</a>
@@ -91,10 +91,16 @@
                 </div>
                 <script>
                     function dropDown(){
-                        document.querySelector(".drop-down-content").style.display = "block"
-                    }
-                    function Mousedown(){
-                        document.querySelector(".drop-down-content").style.display = "none"
+                        let dropdown = document.querySelector(".drop-down-content")
+                        if(dropdown.classList.contains("clicked") === false){
+                            document.querySelector(".drop-down-content").style.display = "block"
+                            dropdown.classList.add("clicked")
+                        }
+                        else{
+                            document.querySelector(".drop-down-content").style.display = "none"
+                            dropdown.classList.remove("clicked")
+                        }
+
                     }
                 </script>
             </ul>
