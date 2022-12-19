@@ -661,10 +661,10 @@ body{
         width: 100%;
     }
     .overview fieldset .overview-mid-content .menu .menu-list{
-        width: 84vw;
+        width: 80vw;
     }
     .overview fieldset .overview-mid-content .trending{
-        width: 84vw;
+        width: 80vw;
     }
     .overview fieldset .overview-mid-content .menu .menu-title{
         text-align: start;
@@ -748,7 +748,6 @@ body{
         flex-direction: column;
     }
     .underBody .review fieldset{
-        max-width: 80rem;
         height: 140vh;
         overflow: scroll;
         border: 1px solid rgba(0, 0, 0, 0.25);

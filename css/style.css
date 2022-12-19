@@ -149,7 +149,7 @@ body{
 
 #filter{
     color: rgb(65, 65, 65);
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bold;
     border: none;
     outline: none;
@@ -669,6 +669,12 @@ body{
     .toggle-menu{
         display: inline;
     }
+    .container{
+        height: 60vh;
+    }
+    .swiper-slide img{
+        height: 60vh;
+    }
     .share{
         height: 8rem;
     }
@@ -708,10 +714,14 @@ body{
 }
 @media only screen and (max-width:768px) {
     .logo-bar{
-        transform: translateX(0.2rem) !important;
+        transform: translateX(0.5rem) !important;
+        width: 60px;
     }
     .form{
         width: 20rem;
+    }
+    .button-search{
+        width: 3rem !important;
     }
     .body-search{
         margin-top: 0;
@@ -729,10 +739,10 @@ body{
         display: inline;
     }
     .container{
-        height: 50vh;
+        height: 30vh;
     }
     .swiper-slide img{
-        height: 50vh;
+        height: 30vh;
     }
     .share{
         display: none;
@@ -775,7 +785,7 @@ body{
     }
     #footer .right{
         margin-top: 1rem;
-        margin-left: 2rem;
+        margin-left: 0.5rem;
     }
     #footer .right .other{
         text-decoration: none;
