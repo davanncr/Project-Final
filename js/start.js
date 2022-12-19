@@ -1,3 +1,4 @@
+document.querySelector('.f1').textContent='ALL'
 const divsms=document.createElement('div');
 if(!localStorage.yourData){
         // localStorage.url=window.location.href
@@ -29,7 +30,5 @@ document.querySelector('#logout').addEventListener('click',()=>{
     delete localStorage.yourData
     window.location.reload()
 })
-document.querySelector('.f1').textContent='ALL'
-document.addEventListener('click',(e)=>{
-    console.log(e.target);
-})
+
+
