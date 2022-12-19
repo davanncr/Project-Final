@@ -1,3 +1,6 @@
+
+var width = screen.width;
+
 const button1 = document.querySelector("#see-more-1").addEventListener("click",seeAll1)
 const button2 = document.querySelector("#see-more-2").addEventListener("click",seeAll2)
 const button3 = document.querySelector("#see-more-3").addEventListener("click",seeAll3)
@@ -13,7 +16,7 @@ const seeless4 = document.querySelector("#seeless4").addEventListener("click",se
 const seeless5 = document.querySelector("#seeless5").addEventListener("click",seeLess5)
 const seeless6 = document.querySelector("#seeless6").addEventListener("click",seeLess6)
 const seeless7 = document.querySelector("#seeless7").addEventListener("click",seeLess7)
-
+console.log(width)
 
 function seeAll1(){
     style(1)
@@ -78,8 +81,11 @@ function style(i){
     let seeless = document.querySelector(`#seeless${i}`)
         seeless.style.display = "" 
         contents[0].style.flexWrap = "wrap"
-        contents[0].style.overflow = "hidden"
+        contents[0].style.overflowY = "auto"
         contents[0].style.height = "33rem"
+    if(width <= 1000 || width>=768){
+        contents[0].style.justifyContent = "center"
+    }
 }
 function style_see_less(i){
     let contents = document.getElementsByClassName(`restaurant${i}`)
@@ -88,8 +94,11 @@ function style_see_less(i){
     let button = document.querySelector(`#see-more-${i}`)
         button.style.display = ""
         contents[0].style.flexWrap = "nowrap"
-        contents[0].style.overflow = "auto"
+        //contents[0].style.overflowY = "auto"
         contents[0].style.height = "18.75rem"
+    if(width <= 1000 || width>=768){
+         contents[0].style.justifyContent = "start"
+    }
 }
 
 

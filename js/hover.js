@@ -20,8 +20,6 @@ function menu_hover(restaurant,n){
     for(let i = 1 ; i<=n ; i++){
         let categories = restaurant.querySelector(`.menu-${i}`)
         let category = categories.querySelector(".span-popular").innerText
-        console.log(category.length)
-        console.log(category)
         // if(category.length > 67){
         //     category = category.substring(0,66) + "..."
             

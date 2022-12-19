@@ -8,7 +8,6 @@ const myRestaurantName = document.querySelector(".content-left h2").innerText
 let nameLowerCase = String(myRestaurantName).toLowerCase()
 nameLowerCase = nameLowerCase.replaceAll(" ","")
 nameLowerCase = nameLowerCase.replaceAll("-","")
-console.log(nameLowerCase)
 let m
 let n
 
@@ -17,7 +16,6 @@ for(let i=0 ; i<7 ; i++){
         let dataLowerCase = String(all_restaurantData[i][j][4]).toLowerCase()
         dataLowerCase = dataLowerCase.replaceAll(" ","")
         dataLowerCase = dataLowerCase.replaceAll("-","")
-        console.log(dataLowerCase)
         if(nameLowerCase == dataLowerCase){
             m = i
             n = j

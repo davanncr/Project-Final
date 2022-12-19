@@ -40,7 +40,7 @@
                 <img src="image/logo.png" class="logo-bar">
                 <div style="transform:translateX(2.35rem);text-align: left;" class="logo-title">
                     <label class="label-logo">Phnom Penh Restaurant</label><br>
-                    <label style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
+                    <label class="label-logo-description" style="font-size:12px;font-family: Inconsolata; cursor: pointer;">find your favorite place to enjoy your
                         meal!</label>
                 </div>
             </a>
@@ -80,9 +80,20 @@
             <ul>
                 <li><a href="map.html" class="map">Map</a></li>
                 <li><a href="aboutUs.html">About US</a></li>
-                <li id="forLogin">
-                    
-                </li>
+                <li id="forLogin"></li>
+                <div onclick="dropDown()" class="toggle-menu">
+                    <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>
+                    <div class="drop-down-content">
+                        <a href="map.html" class="map">Map</a>
+                        <a href="aboutUs.html">About US</a>
+                        <a id="forLogin" href="#">Account</a>
+                    </div>
+                </div>
+                <script>
+                    function dropDown(){
+                        document.querySelector(".drop-down-content").style.display = "block"
+                    }
+                </script>
             </ul>
             <!-- <div id="sms">
                 <img src="image/letter.png" alt="" id="letter"><div id="info"><p>Name: Tet Davann</p><p>Email: davanncr@gmail.com</p><a href="">Logout</a></div>
