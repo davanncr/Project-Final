@@ -81,7 +81,7 @@
                 <li><a href="map.html" class="map">Map</a></li>
                 <li><a href="aboutUs.html">About US</a></li>
                 <li id="forLogin"></li>
-                <div onclick="dropDown()" class="toggle-menu">
+                <div onclick="dropDown()" onkeyup="Mousedown()" class="toggle-menu">
                     <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>
                     <div class="drop-down-content">
                         <a href="map.html" class="map">Map</a>
@@ -92,6 +92,9 @@
                 <script>
                     function dropDown(){
                         document.querySelector(".drop-down-content").style.display = "block"
+                    }
+                    function Mousedown(){
+                        document.querySelector(".drop-down-content").style.display = "none"
                     }
                 </script>
             </ul>
@@ -419,7 +422,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                                 <span class="span-popular">Experience A Culinary Indulgence At CUTS Restaurant.</span>
-                                <span class="span-popular1">6:00am-10:30pm</span>         Burgershack          
+                                <span class="span-popular1">6:00am-10:30pm</span>          
                             </div>
                         </div>
                     </div>
