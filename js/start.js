@@ -1,12 +1,11 @@
 document.querySelector('.f1').textContent='ALL'
+
 const divsms=document.createElement('div');
 if(!localStorage.yourData){
-        // localStorage.url=window.location.href
-        // document.querySelector('#forLogin').innerHTML = "<button class='login' id='wantLogin' onclick='goLoging()'><a>Log In</a></button>"
+        localStorage.url=window.location.href
+        document.querySelector('#forLogin').innerHTML = "<button class='login' id='wantLogin' onclick='goLoging()'><a>Log In</a></button>"
 }else{
         
-        
-        //let getData=JSON.parse(localStorage.yourData)
         let profileData=JSON.parse(localStorage.yourData);
         let username=profileData.firstname+' '+profileData.lastname
         divsms.id='sms'
