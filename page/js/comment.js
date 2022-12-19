@@ -35,7 +35,7 @@ function commentTo(data){
 let tData=[]
 function readData(){
     delete localStorage.Restaurant1
-    fetch('https://script.google.com/macros/s/AKfycbwKD2UV0Z4t8qYZ-cf52vIWgFJORbIUTLrmZNdBu5qd7xWDK8lAXFq0MOkFTX8ByY7Nig/exec')
+    fetch(commentAPI)
     .then(res=>res.json()).then(data=>{
         // console.log(data.content.length);
         document.querySelector('#numRecomment').innerHTML=data.content.length-1
