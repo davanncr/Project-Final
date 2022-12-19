@@ -2,15 +2,15 @@
 const bodySeach=document.querySelector('.body-search')
 const divSeachList=document.createElement('div')
 divSeachList.className='list-search'
+let subLink='https://davanncr.github.io/Project-Final/page/'
 let popular=[
-    {name:'Mealea Restaurant',link:''},
-    {name:'Malis Restaurant',link:''},
-    {name:'Banh Chhav Ela',link:''},
-    {name:'Burgershack',link:''},
-    {name:'CUTS ROSEWOOD',link:''},
-    {name:'Champei Garden',link:''},
-    {name:'Deja Vu -The Garden Pub',link:''},
-    {name:"Digby's Bar and Grill",link:''},
+    {name:'Mealea Restaurant',link:`${subLink}restaurant1`},
+    {name:'Malis Restaurant',link:`${subLink}restaurant2`},
+    {name:'CUTS ROSEWOOD',link:`${subLink}`},
+    {name:'Burgershack',link:`${subLink}`},
+    {name:'Deja Vu -The Garden Pub',link:`${subLink}`},
+    {name:'KYO Wagyu Omakase',link:`${subLink}`},
+    {name:"Frist Time Buffet",link:`${subLink}`},
 ]//1
 let breakfast=[
     {name:'Malis Restaurant',link:''},
@@ -36,7 +36,7 @@ let fastfood=[
     {name:'O',link:''},
 
 ]//5
-let chinese=[
+let chineseAndJapanese=[
     {name:'S',link:''},
     {name:'T',link:''},
     {name:'U',link:''},
@@ -47,41 +47,28 @@ let nearly=[
     {name:'Z',link:''},
     {name:'$',link:''},
 ]//7
-let natural=[
-    {name:'V',link:''},
-    {name:'W',link:''},
-    {name:'x',link:''},
-]//8
-let realsonablePrice=[
-    {name:'P',link:''},
-    {name:'Q',link:''},
-    {name:'R',link:''},
-]//9
-let drink=[
-    {name:'G',link:''},
-    {name:'K',link:''},
-    {name:'L',link:''},
-]//10
 let barAndRooftop=[
-    {name:'D',link:''},
-    {name:'E',link:''},
-    {name:'F',link:''},
-]//11
+    {name:'Deja Vo -The Garden Club',link:`${subLink}`},
+    {name:"Digby's Bar and Grill",link:`${subLink}`},
+    {name:'Burgershark',link:`${subLink}`},
+    {name:'Eclipse Sky Bar',link:`${subLink}`},
+    {name:'FiveFive Rooftop',link:`${subLink}`},
+    {name:'Le moon Rooftop',link:`${subLink}`},
+    {name:'Juniper Gin',link:`${subLink}`},
+]//8
 let bufet=[
-    {name:'@',link:''},
-    {name:'#',link:''},
-    {name:'!',link:''},
-]//12
+    {name:'First Time',link:`${subLink}`},
+    {name:'Oishi Buffet Sukisoup & BBQ',link:`${subLink}`},
+    {name:'HaNa Buffet BBBQ&Sukisoup',link:`${subLink}`},
+    {name:'Lunch Time',link:`${subLink}`},
+]//9
 let popularCode=''
 let lunchCode=''
 let breakfastCode=''
 let dinnerCode=''
 let fastfoodCode=''
-let chineseCode=''
+let chineseAndJapaneseCode=''
 let nearlyCode=''
-let naturalCode=''
-let realsonablePriceCode=''
-let drinkCode=''
 let barAndRooftopCode=''
 let bufetCode=''
 
@@ -100,21 +87,13 @@ dinner.forEach(data=>{
 fastfood.forEach(data=>{
     fastfoodCode+=`<a href='${data.link}'><li>${data.name}</li></a>`
 })
-chinese.forEach(data=>{
-    chineseCode+=`<a href='${data.link}'><li>${data.name}</li></a>`
+chineseAndJapanese.forEach(data=>{
+    chineseAndJapaneseCode+=`<a href='${data.link}'><li>${data.name}</li></a>`
 })
 nearly.forEach(data=>{
     nearlyCode+=`<a href='${data.link}'><li>${data.name}</li></a>`
 })
-natural.forEach(data=>{
-    naturalCode+=`<a href='${data.link}'><li>${data.name}</li></a>`
-})
-realsonablePrice.forEach(data=>{
-    realsonablePriceCode+=`<a href='${data.link}'><li>${data.name}</li></a>`
-})
-drink.forEach(data=>{
-    drinkCode+=`<a href='${data.link}'><li>${data.name}</li></a>`
-})
+
 barAndRooftop.forEach(data=>{
     barAndRooftopCode+=`<a href='${data.link}'><li>${data.name}</li></a>`
 })
@@ -122,7 +101,7 @@ bufet.forEach(data=>{
     bufetCode+=`<a href='${data.link}'><li>${data.name}</li></a>`
 })
 
-let codeString=popularCode+breakfastCode+lunchCode+dinnerCode+fastfoodCode+chineseCode+nearlyCode+naturalCode+realsonablePriceCode+drinkCode+barAndRooftopCode+bufetCode
+let codeString=popularCode+breakfastCode+lunchCode+dinnerCode+fastfoodCode+chineseAndJapaneseCode+nearlyCode+barAndRooftopCode+bufetCode
 divSeachList.innerHTML=codeString
 bodySeach.appendChild(divSeachList)
 
@@ -130,7 +109,7 @@ let filterID=document.querySelector('#filter')
 filterID.addEventListener('change',(e)=>{
     let index=filterID.selectedIndex
     if(index==1){
-        divSeachList.innerHTML=popularCod
+        divSeachList.innerHTML=popularCode
     }else if(index==2){
         divSeachList.innerHTML=breakfastCode
     }else if(index==3){
@@ -144,14 +123,8 @@ filterID.addEventListener('change',(e)=>{
     }else if(index==7){
         divSeachList.innerHTML=nearlyCode
     }else if(index==8){
-        divSeachList.innerHTML=naturalCode
-    }else if(index==9){
-        divSeachList.innerHTML=realsonablePriceCode
-    }else if(index==10){
-        divSeachList.innerHTML=drinkCode
-    }else if(index==11){
         divSeachList.innerHTML=barAndRooftopCode
-    }else if(index==12){
+    }else if(index==9){
         divSeachList.innerHTML=bufetCode
     }else{
         divSeachList.innerHTML=codeString

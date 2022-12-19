@@ -4,12 +4,12 @@ setInterval(function(){
     const listSearch=document.querySelector(".list-search")
     let y=91.5-75
     var indexSellcted=select.selectedIndex;
-    var wth=350+70;
+    var wth=340+70;
     if(indexSellcted==0){
-        select.style.width="75px";
-        search.style.width=wth-75+"px";
+        select.style.width="65px";
+        search.style.width=wth-65+"px";
         listSearch.style.width=wth-(75+y)+"px";
-    }else if(indexSellcted==1||indexSellcted==6){
+    }else if(indexSellcted==1){
         select.style.width="75px";
         search.style.width=wth-75+"px";
         listSearch.style.width=wth-(75+y)+"px";
@@ -29,27 +29,19 @@ setInterval(function(){
         select.style.width="90px";
         search.style.width=wth-90+"px";
         listSearch.style.width=wth-(90+y)+"px";
+    }else if(indexSellcted==6){
+        select.style.width="150px";
+        search.style.width=wth-150+"px";
+        listSearch.style.width=wth-(150+y)+"px";
     }else if(indexSellcted==7){
         select.style.width="70px";
         search.style.width=wth-70+"px";
         listSearch.style.width=wth-(70+y)+"px";
     }else if(indexSellcted==8){
-        select.style.width="155px";
-        search.style.width=wth-155+"px";
-        listSearch.style.width=wth-(155+y-7)+"px";
-    }else if(indexSellcted==9){
-        select.style.width="135px";
-        search.style.width=wth-135+"px";
-        listSearch.style.width=wth-(135+y)+"px";
-    }else if(indexSellcted==10){
-        select.style.width="150px";
-        search.style.width=wth-150+"px";
-        listSearch.style.width=wth-(150+y-2)+"px";
-    }else if(indexSellcted==11){
         select.style.width="140px";
         search.style.width=wth-140+"px";
         listSearch.style.width=wth-(140+y)+"px";
-    }else if(indexSellcted==12){
+    }else if(indexSellcted==9){
         select.style.width="65px";
         search.style.width=wth-65+"px";
         listSearch.style.width=wth-(65+y)+"px";

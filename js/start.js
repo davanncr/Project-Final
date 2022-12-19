@@ -29,4 +29,7 @@ document.querySelector('#logout').addEventListener('click',()=>{
     delete localStorage.yourData
     window.location.reload()
 })
-
+document.querySelector('.f1').textContent='ALL'
+document.addEventListener('click',(e)=>{
+    console.log(e.target);
+})

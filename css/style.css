@@ -157,7 +157,7 @@ body{
     border-bottom-right-radius:20px;
     border-left:1px solid rgb(65, 65, 65);
     background-color:#F3F3F3 ;
-
+    margin-right: 10px;
 }
 #filter #f1{
     font-weight: bold !important;
