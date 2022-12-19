@@ -14,6 +14,6 @@ myform.addEventListener('submit',(e)=>{
     var current=hour+':'+minute+':'+second+' '+year+'/'+month+'/'+day+'  '
     cd.value=current+"";
     let mydataform=new FormData(myform);
-    fetch('https://script.google.com/macros/s/AKfycbxdzqG2qBRqSuqwuzb0VYnOXwi0eDv2KTkTZQ7LE93QAwxrcYf0YNOmRXOGI2Fol3zH2g/exec',{method:'POST',body:mydataform})
+    fetch(commentAPI,{method:'POST',body:mydataform})
 })
 
