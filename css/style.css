@@ -763,14 +763,15 @@ body{
     }
     #footer {
         height: 5rem;
+        margin-left: -2rem;
     }
     #footer .left img{
-        width: 4rem;
-        height: 3.5rem;
+        width: 3.5rem;
+        height: 3rem;
     }
     #footer .left h3{
-        font-size: 1rem;
-        padding-left: 0.2rem;
+        font-size: 0.8rem;
+        padding-left: 0.125rem;
         margin-top: 1rem;
         white-space: nowrap;
     }
@@ -779,17 +780,17 @@ body{
         white-space: nowrap;
     }
     #footer .left .social-media a{
-       font-size: 1rem;
+       font-size: 0.8rem;
        padding-left: 0.2rem;
 
     }
     #footer .right{
         margin-top: 1rem;
-        margin-left: 0.5rem;
+        margin-left: 1.25vw;
     }
     #footer .right .other{
         text-decoration: none;
-        font-size: 0.65rem;
+        font-size: 0.5rem;
         padding: 0.4rem;
     }
     .orangebar{
