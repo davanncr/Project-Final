@@ -83,6 +83,9 @@ body{
     overflow: hidden;
     display: none;
 }
+.list-search{
+    width: 337px;
+}
 .list-search a{
     text-align: none;
     text-decoration: none;
@@ -113,6 +116,7 @@ body{
     background-color: #F3F3F3;
 } */
 #search-bar{
+    width: 350px;
     outline: none;
     border: none;
     padding: 15px 15px;
@@ -157,14 +161,22 @@ body{
     border-bottom-right-radius:20px;
     border-left:1px solid rgb(65, 65, 65);
     background-color:#F3F3F3 ;
-    margin-right: 10px;
+    width: 65px;
+    font-size: 18px;
+    opacity: 0.5;
+    
 }
 #filter #f1{
     font-weight: bold !important;
+    text-overflow:hidden;
 }
 #filter .f{
+    text-overflow:hidden;
+    width: 20px;
+    text-overflow: ellipsis !important;
     font-size: 15px !important;
     font-weight: none ;
+    white-space: nowrap;
 }
 .menu-bar{
     position: relative;
@@ -650,7 +662,7 @@ body{
 }
 #info a{
     cursor: pointer;
-    padding-left: 200px;
+    margin-left: 200px;
 }
 
 @media only screen and (min-width:768px) and (max-width:1000px) {
