@@ -457,17 +457,23 @@ body{
     text-overflow: ellipsis;
 }
 
-/* #email{
+#email{
     width: 200px;
     height: 20px;
     outline: none;
-    
+    display: none !important;
 }
 #username{
     height: 20px;
     outline: none;
-    
-} */
+    display: none !important;
+}
+.flabel1{
+    display: none !important;
+}
+.flabel2{
+    display: none !important;
+}
 .review-section{
     display: flex;
     gap: 1rem;
@@ -481,13 +487,15 @@ body{
 #comment{
     outline: none;
     resize: none;
+    width: 13em !important;
+    height: 5em !important;
 }
 #comment::placeholder{
     font-size: 20px;
     text-align: center;
     opacity: 0.5;
     font-style: italic;
-    transform: translateY(150%);
+    transform: translateY(90%);
 }
 #post{
     padding: 5px;
@@ -751,14 +759,9 @@ body{
         flex-direction: column;
     }
     .underBody .review fieldset{
-        max-width: 70%;
-    }
-
-    .underBody .review{
-        width: 90%;
+        width: 100% !important;
     }
     .underBody .menuRestaurant{
-        width: 90%;
         margin-top: 1rem;
     }
     .underBody .menuRestaurant .similar-res-title{
