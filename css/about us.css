@@ -1,5 +1,5 @@
 .body-content{
-    width: 80rem;
+    width: 100vw;
     display: grid;
     place-items: center;
 }
@@ -71,13 +71,17 @@ h3{
     text-align: justify;
 }
 .feedback{
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     margin-bottom: 5rem;
-    gap: 1.5rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .feedback input{
-    margin-top: 1.2rem;
+    margin-top: -1rem;
     width: 15rem;
     height: 1.25rem;
 }
@@ -86,5 +90,15 @@ h3{
 }
 .feedback textarea::placeholder{
     text-align: center;
-    transform: translateY(1.25rem);
+}
+@media only screen and (max-width:768px){
+    .profile{
+        grid-template-columns: repeat(1,60vw);
+        grid-row-gap: 1rem;
+    }
+    .privacy-term-and-condition{
+        width: 50%;
+        grid-template-columns: 100%;
+        place-items: center !important;
+    }
 }
