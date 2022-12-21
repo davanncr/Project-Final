@@ -29,7 +29,7 @@ function commentTo(data){
         recomnots=notrecom
         stars = "<span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span>"
     }
-    var html="<div class='commented'><div class='topcomment'><img src='../image/user.png' width='40px'><label class='name'><label>"+data.name+"<br>"+data.email+"</label></label><label><br>"+stars+"</label><label class='recomnot'><br><label>"+recomnots+"</label></label><label><br><label>"+data.current+"</label></label></div><div class='bottoncomment'>"+data.comment+"</div></div>"
+    var html="<div class='commented'><div class='topcomment'><img src='../image/user.png' width='40px'><label class='name'><label>"+data.name+"<br>"+data.email+"</label></label><label style='width:70px'><br>"+stars+"</label><label class='recomnot'><br><label>"+recomnots+"</label></label><label><br><label>"+data.current+"</label></label></div><div class='bottoncomment'>"+data.comment+"</div></div>"
     $('#getPost').append(html)
 }
 let tData=[]
