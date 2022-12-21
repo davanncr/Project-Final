@@ -4,8 +4,8 @@ const divSeachList=document.createElement('div')
 divSeachList.className='list-search'
 let subLink='https://davanncr.github.io/Project-Final/page/'
 let popular=[
-    {name:'Mealea Restaurant',link:`${subLink}restaurant1`},
-    {name:'Malis Restaurant',link:`${subLink}restaurant2`},
+    {name:'Mealea',link:`${subLink}restaurant1`},
+    {name:'Malis',link:`${subLink}restaurant2`},
     {name:'CUTS ROSEWOOD',link:`${subLink}`},
     {name:'Burgershack',link:`${subLink}`},
     {name:'Deja Vu -The Garden Pub',link:`${subLink}`},
@@ -13,7 +13,7 @@ let popular=[
     {name:"Frist Time Buffet",link:`${subLink}`},
 ]//1
 let breakfast=[
-    {name:'Malis Restaurant',link:''},
+    {name:'Malis',link:''},
     {name:'CUTS ROSEWOOD',link:''},
     {name:'Deja Vu -The Garden Pub',link:''},
     {name:'Burgershack',link:''},
@@ -31,9 +31,11 @@ let dinner=[
 
 ]//4
 let fastfood=[
-    {name:'M',link:''},
-    {name:'N',link:''},
-    {name:'O',link:''},
+    {name:'KFC',link:''},
+    {name:'Burgershack',link:''},
+    {name:"Carl's Jr.",link:''},
+    {name:"Louisiana Famous Fried Chicken",link:''},
+    
 
 ]//5
 let chineseAndJapanese=[
