@@ -35,8 +35,9 @@ body{
     text-align: center;
 }
 .content-left ul li a div{
-    width: 50px;
+    /* width: 50px; */
     height: 10px;
+    padding: 0 10px;
     background-color: white;
     border-radius: 3px;
 }
@@ -437,6 +438,9 @@ body{
     font-size: 0.75rem;
     padding-top: 1.25rem;
     animation: 0.2s ease-in 0s 1 running widthLefttoRight;
+}
+.underBody .menuRestaurant .similarRestaurant .menu:hover .span-popular{
+      display: none;  
 }
 
 .underBody .menuRestaurant .similarRestaurant .menu .res-title-and-status{

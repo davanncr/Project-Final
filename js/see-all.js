@@ -82,7 +82,7 @@ function style(i){
         seeless.style.display = "" 
         contents[0].style.flexWrap = "wrap"
         contents[0].style.overflowY = "auto"
-        contents[0].style.height = "33rem"
+        contents[0].style.height = "33.5rem"
     if(width <= 1000 || width>=768){
         contents[0].style.justifyContent = "center"
     }
