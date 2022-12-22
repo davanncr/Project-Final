@@ -1,3 +1,15 @@
+//just to change the placeholder of the search bar when device max-width is 470px
+var width = screen.width;
+const placeholder = document.querySelector("#search-bar")
+if(width <= 470){
+    placeholder.setAttribute("placeholder","search...")
+    console.log(width)
+}
+else{
+    placeholder.setAttribute("placeholder","Search for any Restaurant")
+}
+
+//hover effect
 const recomment_hover = document.querySelector(".restaurant0")
 const popular_hover = document.querySelector(".restaurant1")
 const BR_hover = document.querySelector(".restaurant2")
