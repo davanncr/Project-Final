@@ -55,7 +55,7 @@ select.addEventListener('change',function(e){
         select.style.opacity=0.55;
     
     }else{
-        select.style.fontSize="18px";
+        select.style.fontSize="15px";
         select.style.opacity=0.55;
     }
     console.log(document.querySelector("#search-bar").offsetWidth)
