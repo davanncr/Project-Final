@@ -809,3 +809,21 @@ body{
         height: 5rem;
     }
 }
+@media only screen and (max-width:470px){
+    .form{
+        width: 10rem;
+    }
+    #search-bar{
+        width: 8rem;
+    }
+    #filter{
+        width: 3rem;
+        transform: translateX(-100%);
+    }
+    #footer .left img{
+        display: none;
+    }
+    #footer .right{
+        margin-left: 2vw;
+    }
+}
