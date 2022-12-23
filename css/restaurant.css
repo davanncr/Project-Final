@@ -476,8 +476,8 @@ body{
 }
 .flabel2{
     display: none !important;
-}
-.review-section{ */
+}*/
+.review-section{ 
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
