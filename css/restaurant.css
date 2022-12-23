@@ -461,7 +461,7 @@ body{
     text-overflow: ellipsis;
 }
 
-#email{
+/* #email{
     width: 200px;
     height: 20px;
     outline: none;
@@ -470,7 +470,6 @@ body{
 #username{
     height: 20px;
     outline: none;
-    display: none !important;
 }
 .flabel1{
     display: none !important;
@@ -478,7 +477,7 @@ body{
 .flabel2{
     display: none !important;
 }
-.review-section{
+.review-section{ */
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
