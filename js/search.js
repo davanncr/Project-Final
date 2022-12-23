@@ -88,8 +88,8 @@ let barAndRooftop=[
 ]//8
 let bufet=[
     {name:'First Time Buffet',link:`${subLink}FirstTimeBuffet`},
-    {name:'Oishi Buffet Sukisoup & BBQ',link:`${subLink}`},
-    {name:'HaNa Buffet BBBQ&Sukisoup',link:`${subLink}Oishi_Buffet`},
+    {name:'Oishi Buffet Sukisoup & BBQ',link:`${subLink}Oishi_Buffet`},
+    {name:'HaNa Buffet BBBQ&Sukisoup',link:`${subLink}Hana_Buffet`},
     {name:'Lunch Time',link:`${subLink}LunchTimeBuffet`},
     {name:"Sakura Buffet",link:`${subLink}Sakura_Buffet`},
     {name:"OneMore",link:`${subLink}OneMore`},
